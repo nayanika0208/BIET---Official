@@ -15,10 +15,6 @@ class App extends Component {
          </div>
          <Parallax />
          <Navigation />
-        
-         
-         
-
       </div>
       
     );
