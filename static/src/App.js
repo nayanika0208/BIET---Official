@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Parallax from './Components/ParallaxEffect';
 import Navigation from './Components/Navigation';
+import Check from './Components/Check';
 
 
 import './App.css';
@@ -11,6 +12,7 @@ class App extends Component {
       <div>
      
          <Navigation />
+         <Check/>
       </div>
       
     );
