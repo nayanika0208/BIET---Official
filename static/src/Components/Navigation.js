@@ -12,7 +12,7 @@ const Navigation=()=>{
       <Navbar inverse collapseOnSelect fixedTop style={{backgroundColor: '#FFACAA'}} className="">
 		  <Navbar.Header >
 		    <Navbar.Brand>
-		    <img src={mainlogo} style={{height:"100px"}} className=" grow" alt="fireSpot"/>
+		    <img src={mainlogo}  className=" grow" alt="fireSpot"/>
 		      
 		    </Navbar.Brand>
 
