@@ -7,15 +7,21 @@ import Logobar from './Components/Logobar';
 
 import './App.css';
 
+const tst=(value)=>{
+  		console.log(value)
+  	}
 class App extends Component {
+
+	
   render() {
+  
     return (
       
         <div>
         <Logobar/>
         <StickyContainer >
         
-        <Sticky>{({ style })=>(<Collapsebar style={style}/>)}</Sticky>
+        <Sticky>{({ style,isSticky })=>(<Collapsebar style={style} tst={tst(isSticky)} isSticky={isSticky}/>)}</Sticky>
         <Parallax />
         </StickyContainer>
         </div>
