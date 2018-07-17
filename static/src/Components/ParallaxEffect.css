@@ -1,22 +1,41 @@
 .paral1{ 
     /* The image used */
-    background-image: url("img5.jpeg");
+    /*background:linear-gradient(to bottom, rgba(6, 34, 16,0.6),rgba(6, 34, 16,0.6)),url("img1.jpg");*/
+    background-image:url(./img1.jpg);
 
     /* Set a specific height */
-    height: 100vh; 
-
+    height: 60vh; 
+    margin-top:0px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    text-align:center;
+    padding:10px;
 }
+
+.Primary-head
+{
+    font-size:60px;
+    color:black;
+}
+
+.Main-head
+{
+    font-size:100px;
+    display:block;
+    color:black;
+
+
+}
+
 .paral2{ 
     /* The image used */
-    background-image: url("img3.jpeg");
+    background-image: url("./img2.jpg");
 
     /* Set a specific height */
-    height: 100vh; 
+    height:60vh; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;

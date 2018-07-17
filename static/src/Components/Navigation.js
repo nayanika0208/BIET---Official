@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar,Nav,NavItem,MenuItem,NavDropdown} from 'react-bootstrap';
-import mainlogo from './BIETLogo.png';
+import mainlogo from './Logo.png';
 import './Navigation.css';
 
 

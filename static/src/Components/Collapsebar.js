@@ -1,23 +1,17 @@
 import React, { Component } from 'react';
 import{Navbar,NavDropdown,NavItem,Nav,MenuItem} from 'react-bootstrap';
-
-
-
+import "./Collapsebar.css";
 
 const Collapsebar=()=>{
  
     return (
-    	
-      <Navbar inverse collapseOnSelect fixedTop style={{marginTop:'50px'}}>
+      
+  <Navbar inverse collapseOnSelect fixedTop className="Navbar">
   <Navbar.Header>
-    <Navbar.Brand>
-      <a href="#brand">we can write moto here</a>
-    </Navbar.Brand>
-    <Navbar.Toggle />
+  <Navbar.Toggle />
   </Navbar.Header>
   <Navbar.Collapse>
-    
-    <Nav pullRight>
+    <Nav className="Nav-content">
       <NavItem eventKey={1} href="#">
        Home
       </NavItem>

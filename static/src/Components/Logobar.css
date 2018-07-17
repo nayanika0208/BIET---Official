@@ -1,0 +1,11 @@
+.LogoBox
+{
+  height:40vh;
+  width:100vw;
+  display:block;
+  background:linear-gradient(to right ,rgba(6,34,16,0.8),rgba(6,34,16,0.8)), url("./img3.jpg");
+  background-position:center;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+}

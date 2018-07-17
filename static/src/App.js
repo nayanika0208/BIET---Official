@@ -3,6 +3,7 @@ import Parallax from './Components/ParallaxEffect';
 import Navigation from './Components/Navigation';
 import Check from './Components/Check';
 import Collapsebar from './Components/Collapsebar';
+import Logobar from './Components/Logobar';
 
 import './App.css';
 
@@ -10,11 +11,10 @@ class App extends Component {
   render() {
     return (
       <div>
-         <div>
-         <Collapsebar />
-         </div>
-         <Parallax />
-         <Navigation />
+      <Logobar/>
+      <Collapsebar />
+      <Parallax />
+        
       </div>
       
     );
