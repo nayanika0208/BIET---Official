@@ -17,13 +17,13 @@
 
 .Primary-head
 {
-    font-size:60px;
+    font-size:6rem;
     color:black;
 }
 
 .Main-head
 {
-    font-size:100px;
+    font-size:10rem;
     display:block;
     color:black;
 
@@ -35,7 +35,7 @@
     background-image: url("./img2.jpg");
 
     /* Set a specific height */
-    height:60vh; 
+    /*height:100vh;*/
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -43,3 +43,14 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.head-back
+{
+    display:block;
+    background-color:black;
+    color:white;  
+    padding:10px;
+    margin:0px;
+    height:250px;
+}
+
