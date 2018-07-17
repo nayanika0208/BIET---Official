@@ -21,5 +21,10 @@
 .Navbar
 {
   background-color:black;
-  margin-top:0px;
+  overflow:hidden;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
