@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 import{Navbar,NavDropdown,NavItem,Nav,MenuItem} from 'react-bootstrap';
 import "./Collapsebar.css";
 
-const Collapsebar=()=>{
+class Collapsebar extends Component{
+
+
+   
+  render(){
+    const { style } = this.props;
  
     return (
       
-  <Navbar inverse collapseOnSelect fixedTop className="Navbar">
+  <Navbar inverse collapseOnSelect  className="Navbar" style={style}>
   <Navbar.Header>
   <Navbar.Toggle />
   </Navbar.Header>
@@ -32,6 +37,7 @@ const Collapsebar=()=>{
 </Navbar>
 );
   
+}
 }
 
 export default Collapsebar;
