@@ -1,15 +1,13 @@
 import React, { Component } from 'react';
-import Parallax from './Components/ParallaxEffect';
-import Navigation from './Components/Navigation';
+import Parallax from './Components/Home/ParallaxEffect';
+import Navigation from './Components/Home/Navigation';
 import { StickyContainer, Sticky } from 'react-sticky';
-import Collapsebar from './Components/Collapsebar';
-import Logobar from './Components/Logobar';
+import Collapsebar from './Components/Home/Collapsebar';
+import Logobar from './Components/Home/Logobar';
 
 import './App.css';
 
-const tst=(value)=>{
-  		console.log(value)
-  	}
+
 class App extends Component {
 
 	
@@ -21,8 +19,9 @@ class App extends Component {
         <Logobar/>
         <StickyContainer >
         
-        <Sticky>{({ style,isSticky })=>(<Collapsebar style={style} tst={tst(isSticky)} isSticky={isSticky}/>)}</Sticky>
+        <Sticky>{({ style,isSticky })=>(<Collapsebar style={style}  isSticky={isSticky}/>)}</Sticky>
         <Parallax />
+        
         </StickyContainer>
         </div>
       

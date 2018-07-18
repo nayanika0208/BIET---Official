@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './ParallaxEffect.css';
 import ProjectDisplay from './Project_Display';
-
+import ProjectList from '../OngoingProjects/OngoingProject';
 
 
 
@@ -18,6 +18,7 @@ const Parallax=()=>{
     
         <div className="paral2">
         <ProjectDisplay/>
+        <ProjectList/>
         </div>
       </div>
 
