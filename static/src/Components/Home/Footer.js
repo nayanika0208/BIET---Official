@@ -2,14 +2,18 @@ import React from 'react';
 import mainLogo from "./BIETLogo.png";
 import{Glyphicon} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
-
 import './Footer.css';
+import Map from './Maps';
+
 
 
 const Footer=()=>
 {
   return(
+
+
     <div className="Footer-box">
+    <Map/>
 
       <div className="Contact-box">
         <h3>Contact-Us</h3>
@@ -23,7 +27,7 @@ const Footer=()=>
         </div>
       </div>
 
-      <div className="#">
+      <div className="logo-container">
         <img src={mainLogo} alt="Logo" className="Logo" />
       </div>
 
@@ -36,6 +40,7 @@ const Footer=()=>
         <SocialIcon className="icon" url="https://www.linkedin.com/" />
         <SocialIcon className="icon" url="https://www.github.com/" />
       </div>
+
     </div>
   )
 }

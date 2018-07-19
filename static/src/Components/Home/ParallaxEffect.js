@@ -21,18 +21,14 @@ const Parallax=()=>{
     
         <div className="paral2">
         <ProjectDisplay/>
-        {//<ProjectList/>
-        }
+
         </div>
-
-        <Map/>
-
 
         <div className="paral3">
         <Footer/>
         <div className="Certify-box">
        <p>Copyright by -----</p>
-      <p>Creted proudly by----</p>
+      <p>Developed by----</p>
       </div>
       </div>
 
