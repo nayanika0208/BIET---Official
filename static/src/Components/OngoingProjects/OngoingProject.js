@@ -15,7 +15,7 @@ const PROJECTS=project_list.map((value,index)=>
 });
 
   return(
-    <div>
+    <div className="ongoing-project">
     <div class="primary-head">
     ONGOING PROJECTS
     </div>
