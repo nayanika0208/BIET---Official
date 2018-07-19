@@ -14,6 +14,19 @@
   position: absolute;;
   left:50%;
   transform:translateX(-50%);
+  transition:all 1.5s;
+  
+
+}
+.Nav-content-two
+{
+  background-color:black;
+  font-size:20px;
+  position: absolute;;
+  left:60%;
+  transform:translateX(0%);
+  transition:all 1.5s;
+
   
 
 }
@@ -23,8 +36,10 @@
   background-color:black;
   overflow:hidden;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.logo-size{
+  height: 100%;
+  width:50px;
+  background-color: "white";
+  transform:translateX(0%);
+  transition:all 1.5s;
 }

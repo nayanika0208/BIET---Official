@@ -22,15 +22,16 @@ class App extends Component {
         <Logobar/>
         <StickyContainer >
         <Sticky>{({ style,isSticky })=>(<Collapsebar style={style}  isSticky={isSticky}/>)}</Sticky>
-        {//<Parallax />
+         {//<Parallax />
         }
+        <ProjectList/>
         </StickyContainer>
 
         {
         //<About/>
 
         }
-        <ProjectList/>
+        
         </div>
       
       
