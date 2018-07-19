@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import{Navbar,NavDropdown,NavItem,Nav,MenuItem} from 'react-bootstrap';
 import "./Collapsebar.css";
 import mainLogo from "./BIETLogo.png";
+import {NavLink} from 'react-router-dom';
 
 class Collapsebar extends Component{
 
@@ -24,19 +25,19 @@ class Collapsebar extends Component{
       <Navbar.Collapse>
         <Nav className="Nav-content-two" >
           <NavItem eventKey={1} href="#" >
-           Home
-          </NavItem>
+          <NavLink to='/'>Home </NavLink>
+           </NavItem>
           <NavItem eventKey={1} href="#">
-            About
+          <NavLink to='/About'> About </NavLink>
           </NavItem>
           <NavItem eventKey={2} href="#">
-            Ongoing Projets
+           <NavLink to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            join New Projects
+            <NavLink to='/JoinNew'> join New Projects </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            Blogs
+            <NavLink to='/Blogs'>  Blogs </NavLink>
           </NavItem>
         </Nav>
       </Navbar.Collapse>
@@ -51,19 +52,20 @@ class Collapsebar extends Component{
       <Navbar.Collapse>
         <Nav className="Nav-content" >
           <NavItem eventKey={1} href="#" onClick={tst}>
-           Home
+          <NavLink to='/'>Home </NavLink>
           </NavItem>
           <NavItem eventKey={1} href="#">
-            About
+          <NavLink to='/About'> About </NavLink>
+
           </NavItem>
           <NavItem eventKey={2} href="#">
-            Ongoing Projets
+          <NavLink to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            join New Projects
+            <NavLink to='/JoinNew'> join New Projects </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            Blogs
+            <NavLink to='/Blogs'>  Blogs </NavLink>
           </NavItem>
         </Nav>
       </Navbar.Collapse>

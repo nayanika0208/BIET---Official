@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import{Navbar,NavDropdown,NavItem,Nav,MenuItem} from 'react-bootstrap';
 import "./Collapsebar.css";
+import {Navlink} from 'react-router-dom';
 
 class Collapsebar extends Component{
 
@@ -17,14 +18,20 @@ class Collapsebar extends Component{
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav className="Nav-content" >
+
+          <NavLink to='/'>
             <NavItem eventKey={1} href="#" onClick={tst}>
-             Home
-            </NavItem>
+             Homedcd
+          </NavItem>
+          </NavLink>
+
+          <NavLink to='/About'>
             <NavItem eventKey={1} href="#">
-              About
+            Aboutukkbbkkkb
             </NavItem>
+            </NavLink>
             <NavItem eventKey={2} href="#">
-              Ongoing Projets
+            <NavLink to='/OngoingProjects'> Ongoing Projets</NavLink>
             </NavItem>
               <NavItem eventKey={1} href="#">
               join New Projects
