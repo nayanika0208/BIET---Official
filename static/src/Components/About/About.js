@@ -86,11 +86,30 @@ class About extends Component
      </div>
 
      <div className="Section-2">
-     <h1 className="primary-head">OUR CLIENTS</h1>
-     <img src={DSIR} alt="Logo"/>
-     <img src={DST} alt="Logo"/>
-     <img src={ICMR} alt="Logo"/>
-     <img src={VIT} alt="Logo"/>
+     <h1 className="primary-head">OUR SUPPORTERS</h1>
+     <div className="section-detail">
+     <div className="info-box">
+     <img src={DSIR} alt="Logo" className="org_logo"/>
+     <div className="org_name"><h3>SUPPORTER NAME </h3></div>>
+     </div>
+
+     <div className="info-box">
+     <img src={DST} alt="Logo" className="org_logo"/>
+     <div className="org_name"><h3>SUPPORTER NAME </h3></div>>
+     </div>
+
+     <div className="info-box">
+     <img src={ICMR} alt="Logo" className="org_logo"/>
+     <div className="org_name"><h3>SUPPORTER NAME </h3></div>>
+     </div>
+
+     <div className="info-box">
+     <img src={VIT} alt="Logo" className="org_logo"/>
+     <div className="org_name"><h3>SUPPORTER NAME </h3></div>>
+     </div>
+
+     </div>
+
      </div>
 
 
