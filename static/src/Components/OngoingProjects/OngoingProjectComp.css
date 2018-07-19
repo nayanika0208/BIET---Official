@@ -70,19 +70,19 @@
   left:0rem;
   top:0rem;
   text-align:left;
-  clip-path: polygon(81% 0, 100% 0, 100% 100%, 63% 100%);
+  clip-path:polygon(81% 0, 100% 0, 100% 100%, 63% 100%);
   transition:all 1.5s;
   opacity:0;
   transform:translateX(100%);
 }
-.img2{
+.img2
+{
    height:50%;
    width:20%;
    position: absolute;
    top:25%;
    right:2rem;
-
-}
+  }
 
 .main:hover .info
 {

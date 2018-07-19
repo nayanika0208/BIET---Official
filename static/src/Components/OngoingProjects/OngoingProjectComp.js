@@ -8,7 +8,7 @@ import{Glyphicon} from 'react-bootstrap';
 const OngoingProjectComp =() =>
 {
   return(
-    <div class="project_component ">
+    <div class="project_component">
     <div className="project_image shadow-5">
     <div className="main">
     <img src={image} alt="project-image" height="100%" width="100%" className="front-face"/> 

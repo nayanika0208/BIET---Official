@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import './ParallaxEffect.css';
 import ProjectDisplay from './Project_Display';
+import Map from './Maps';
 import ProjectList from '../OngoingProjects/OngoingProject';
+import Footer from './Footer';
+
 
 
 
@@ -18,8 +21,24 @@ const Parallax=()=>{
     
         <div className="paral2">
         <ProjectDisplay/>
-        <ProjectList/>
+        {//<ProjectList/>
+        }
         </div>
+
+        <Map/>
+
+
+        <div className="paral3">
+        <Footer/>
+        <div className="Certify-box">
+       <p>Copyright by -----</p>
+      <p>Creted proudly by----</p>
+      </div>
+      </div>
+
+        
+        
+
       </div>
 
     );

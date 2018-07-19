@@ -1,0 +1,31 @@
+.Section-1
+{
+
+  text-align:center;
+  background:black;
+ 
+}
+
+.Section-2
+{
+
+  text-align:center;
+  background:black;
+ 
+}
+
+.a-display
+{
+  display:inline-block;
+  width:80%;
+}
+.b-display
+{
+  display:inline-block;
+  width:80%;
+}
+.c-display
+{
+  display:inline-block;
+  width:70%;
+}

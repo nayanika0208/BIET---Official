@@ -42,7 +42,36 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-bottom:2rem;
 }
+
+
+.paral3{ 
+    /* The image used */
+    background-image: url("./img1.jpg");
+
+
+
+ 
+  display:block;
+  background:linear-gradient(to right ,rgba(6,34,16,0.8),rgba(6,34,16,0.8)), url("./img3.jpg");
+  background-position:center;
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  padding-top:0.6rem;
+    /* Set a specific height */
+    /*height:100vh;*/
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
 
 .head-back
 {
@@ -54,3 +83,10 @@
     height:250px;
 }
 
+.Certify-box
+{
+    border-top:5px solid black;
+    position: relative;
+    background-color:black;
+    color:white;
+}

@@ -1,0 +1,50 @@
+
+.Footer-box
+{
+  display:block;
+  position: relative;
+  padding:0px;
+
+}
+
+.Contact-box
+{
+ 
+  display:inline-block;
+  position:absolute;
+  left:15%;
+  top:50%;
+  transform:translateY(-50%);
+  color:white;
+}
+.Logo
+{
+  display:inline-block;
+  height:20rem;
+  width:25rem;
+}
+
+
+.Footer_details
+{
+  position:relative;
+
+}
+
+.Social-media-box
+{
+  display:inline-block;
+  position:absolute;
+  top:50%;
+  right:10%;
+  transform:translateY(-50%);
+  color:white;
+}
+
+.icon
+{
+  display:inline-block;
+  margin:0.4rem;
+}
+
+
