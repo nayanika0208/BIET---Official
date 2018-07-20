@@ -40,10 +40,10 @@ class App extends Component {
         <Route path="/" component={Parallax} exact/>
         <Route path="/About" component={About} />
         <Route path="/OngoingProject" component={ProjectList} />
+        <Route path="/JoinNew" component={Joinform} />
         <Route path="/Blogs" component={Blogs} />
 
         </switch>
-        <Joinform/>
         </div>
         
         </BrowserRouter>

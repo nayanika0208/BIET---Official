@@ -1,5 +1,57 @@
+.Blog_Section-2 , .Blog_Section-3
+
+{
+ /* border:3px solid blue;*/
+  display:block;
+}
+
 .Carousel
 {
-  border:3px solid red;
+  border:3px solid black;
+  width:1000px;
+  height:auto;
+  margin:0 auto;
+}
+
+
+
+.Blog_form-box
+{
+  width:60%;
+  border:3px solid black;
+  display:block;
+  margin:0 auto;
+  padding:5px;
+  background-color:grey;
+  text-align:center;
 
 }
+
+
+#blog_formControlsText,#blog_formControlsEmail
+{
+  width:45%;
+  display: inline-block;
+  margin:8px;
+  border:1px solid black;
+}
+
+#blog_formControlsProposal
+{
+  width:90%;
+  margin:8px;
+  display:inline-block;
+  border:1px solid black;
+
+}
+
+#blog_formControlsAbstract
+{
+  height:10rem;
+  width:90%;
+  display:inline-block;
+  border:1px solid black;
+
+}
+
+
