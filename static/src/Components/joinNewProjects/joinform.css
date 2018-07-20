@@ -1,0 +1,21 @@
+.container-box{
+
+	background-color: lightblue;
+	height:100rem;
+	width:90rem;
+	position:absolute;
+
+	margin-left:40rem;
+	margin-top:5rem;
+
+}
+
+.form-box{
+	width:70rem;
+	margin-left:10rem;
+	margin-top:5rem;
+	font-size:2rem;
+}
+.inline-box{
+	display:inline-block;
+}

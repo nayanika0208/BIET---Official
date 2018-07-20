@@ -13,7 +13,9 @@ const Footer=()=>
 
 
     <div className="Footer-box">
-    <Map/>
+     <div classNmae="map-box">
+       <Map/>
+      </div>
 
       <div className="Contact-box">
         <h3>Contact-Us</h3>
