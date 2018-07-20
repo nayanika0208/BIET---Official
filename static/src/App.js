@@ -6,6 +6,7 @@ import Collapsebar from './Components/Home/Collapsebar';
 import Logobar from './Components/Home/Logobar';
 import About from './Components/About/About'
 import ProjectList from './Components/OngoingProjects/OngoingProject';
+import Joinform from './Components/joinNewProjects/joinform.js'
 import {BrowserRouter, Route} from 'react-router-dom';
 
 import './App.css';
@@ -20,13 +21,16 @@ class App extends Component {
 
 
       <BrowserRouter>
-
+      
+     
       <div>
       
         <div>
+
         <Logobar/>
         <StickyContainer >
         <Sticky>{({ style,isSticky })=>(<Collapsebar style={style}  isSticky={isSticky}/>)}</Sticky>
+        
         </StickyContainer>
         </div>
 
@@ -37,9 +41,9 @@ class App extends Component {
         <Route path="/OngoingProject" component={ProjectList} />
 
         </switch>
-
+        <Joinform/>
         </div>
-
+        
         </BrowserRouter>
       
       
