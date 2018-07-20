@@ -7,28 +7,13 @@ import './joinform.css';
   return (
     <FormGroup controlId={id}>
       <ControlLabel>{label}</ControlLabel>
+      <span className="required">*</span>
       <FormControl {...props} />
       {help && <HelpBlock>{help}</HelpBlock>}
     </FormGroup>
   );
 }
 
-const linkFun=()=>{
-  const selectedLink=document.querySelector("#selection");
-  const addon=document.querySelector("#addon-value")
-  if(selectedLink.selectedIndex===0){
-   
-    addon.innerHTML="https://www.facebook.com/"
-  }
-  else if(selectedLink.selectedIndex===2){
-   
-    addon.innerHTML="https://github.com/"
-  }
-  else if(selectedLink.selectedIndex===1){
-   
-    addon.innerHTML="https://www.linkedin.com/"
-  }
-}
 
 class Joinform extends Component
 {
@@ -40,7 +25,7 @@ class Joinform extends Component
     <Form horizontal className="form-box">
     
        <FormGroup controlId="formControlsSelect">
-      <ControlLabel>Project</ControlLabel>
+      <ControlLabel>Project<span className="required">*</span></ControlLabel>
       <FormControl componentClass="select"  placeholder="select">
         <option value="project1">project1</option>
         <option value="project2">project2</option>
@@ -77,13 +62,6 @@ class Joinform extends Component
     <FieldGroup
       id="formControlsText"
       type="text"
-      label="project no"
-      placeholder="input pr no"
-      
-    />
-    <FieldGroup
-      id="formControlsText"
-      type="text"
       label="Branch"
       placeholder="Enter branch"
     />
@@ -97,21 +75,33 @@ class Joinform extends Component
     />
     
 
-     <FormGroup controlId="formControlsSelect">
-      <ControlLabel>Links</ControlLabel>
-      <FormControl componentClass="select" placeholder="select" id="selection" onChange={linkFun}>
-        <option value="select">Facebook</option>
-        <option value="other">Linkedin</option>
-        <option value="other">Github</option>
-      </FormControl>
-      
+     
+      <FormGroup>
+      <ControlLabel>link ur profiles</ControlLabel>
       <FormGroup>
       <InputGroup>
-      <InputGroup.Addon id="addon-value"></InputGroup.Addon>
+      <InputGroup.Addon id="addon-value">https://www.facebook.com/</InputGroup.Addon>
       <FormControl type="text" />
         </InputGroup>
       </FormGroup>
+     
+      <FormGroup>
+      <InputGroup>
+      <InputGroup.Addon id="addon-value">https://github.com/</InputGroup.Addon>
+      <FormControl type="text" />
+        </InputGroup>
       </FormGroup>
+
+      <FormGroup>
+      <InputGroup>
+      <InputGroup.Addon id="addon-value">https://www.linkedin.com/</InputGroup.Addon>
+      <FormControl type="text" />
+        </InputGroup>
+      </FormGroup>
+
+      </FormGroup>
+
+      
 
     <Button type="submit">Submit</Button>
 </Form>
