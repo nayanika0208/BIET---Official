@@ -7,6 +7,7 @@ import Logobar from './Components/Home/Logobar';
 import About from './Components/About/About'
 import ProjectList from './Components/OngoingProjects/OngoingProject';
 import {BrowserRouter, Route} from 'react-router-dom';
+import Blogs from './Components/Blogs/Blogs';
 
 import './App.css';
 
@@ -35,6 +36,7 @@ class App extends Component {
         <Route path="/" component={Parallax} exact/>
         <Route path="/About" component={About} />
         <Route path="/OngoingProject" component={ProjectList} />
+        <Route path="/Blogs" component={Blogs} />
 
         </switch>
 

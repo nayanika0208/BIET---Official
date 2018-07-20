@@ -27,7 +27,7 @@ class Collapsebar extends Component{
 
           <NavLink to='/About'>
             <NavItem eventKey={1} href="#">
-            Aboutukkbbkkkb
+            Aboutukkbbkkkb 
             </NavItem>
             </NavLink>
             <NavItem eventKey={2} href="#">
