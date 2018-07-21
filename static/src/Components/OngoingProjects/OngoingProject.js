@@ -6,7 +6,7 @@ import { StickyContainer, Sticky } from 'react-sticky';
 import Collapsebar from '../Home/Collapsebar';
 import Logobar from '../Home/Logobar';
 
-const project_list =[1,2,3,4,5,6]
+const project_list =[1,2,3,4,5]
 
 
 
