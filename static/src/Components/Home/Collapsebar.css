@@ -9,23 +9,31 @@
 
 .Nav-content
 {
-  background-color:black;
+  background-color:#474B4f;
   font-size:20px;
   position: absolute;;
   left:50%;
   transform:translateX(-50%);
   transition:all 0.5s;
+
+  
   
 
 }
+
+.Nav-link{
+  color:#86c232;
+}
+
 .Nav-content-two
 {
-  background-color:black;
+
   font-size:20px;
   position: absolute;;
   left:60%;
   transform:translateX(0%);
   transition:all 0.5s;
+ 
 
   
 
@@ -33,7 +41,7 @@
 
 .Navbar
 {
-  background-color:black;
+  background-color:#474B4f;
   overflow:hidden;
 }
 .logo-size{

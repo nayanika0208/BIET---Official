@@ -13,7 +13,7 @@ class Collapsebar extends Component{
      if(isSticky){
         return (
         
-      <Navbar   inverse fixedTop className="Navbar" style={style} >
+      <Navbar   inverse fixedTop className="Navbar Navbar-color" style={style} >
       <Navbar.Header>
       <Navbar.Brand >
       <a href="#home" >
@@ -25,19 +25,19 @@ class Collapsebar extends Component{
       <Navbar.Collapse>
         <Nav className="Nav-content-two" >
           <NavItem eventKey={1} href="#" >
-          <NavLink to='/'>Home </NavLink>
+          <NavLink className="Nav-link" to='/'>Home </NavLink>
            </NavItem>
           <NavItem eventKey={1} href="#">
-          <NavLink to='/About'> About </NavLink>
+          <NavLink className="Nav-link" to='/About'> About </NavLink>
           </NavItem>
           <NavItem eventKey={2} href="#">
-           <NavLink to='/OngoingProject'> Ongoing Projets </NavLink>
+           <NavLink className="Nav-link" to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            <NavLink to='/JoinNew'> join New Projects </NavLink>
+            <NavLink className="Nav-link" to='/JoinNew'> join New Projects </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            <NavLink to='/Blogs'>  Blogs </NavLink>
+            <NavLink className="Nav-link" to='/Blogs'>  Blogs </NavLink>
           </NavItem>
         </Nav>
       </Navbar.Collapse>
@@ -52,20 +52,20 @@ class Collapsebar extends Component{
       <Navbar.Collapse>
         <Nav className="Nav-content" >
           <NavItem eventKey={1} href="#" >
-          <NavLink to='/'>Home </NavLink>
+          <NavLink className="Nav-link" to='/'>Home </NavLink>
           </NavItem>
           <NavItem eventKey={1} href="#">
-          <NavLink to='/About'> About </NavLink>
+          <NavLink className="Nav-link" to='/About'> About </NavLink>
 
           </NavItem>
           <NavItem eventKey={2} href="#">
-          <NavLink to='/OngoingProject'> Ongoing Projets </NavLink>
+          <NavLink className="Nav-link" to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            <NavLink to='/JoinNew'> join New Projects </NavLink>
+            <NavLink className="Nav-link" to='/JoinNew'> join New Projects </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            <NavLink to='/Blogs'>  Blogs </NavLink>
+            <NavLink className="Nav-link" to='/Blogs'>  Blogs </NavLink>
           </NavItem>
         </Nav>
       </Navbar.Collapse>
