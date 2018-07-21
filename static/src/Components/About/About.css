@@ -14,7 +14,15 @@
  
 }
 
+.about-1{
+  background-color: #fff;
+  position:absolute;
+  left:40rem;
+ top:45rem;
+  height:40rem;
+  width:100rem;
 
+}
 .a-display
 {
   display:inline-block;
