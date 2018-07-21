@@ -1,42 +1,69 @@
 .paral1{ 
     /* The image used */
     /*background:linear-gradient(to bottom, rgba(6, 34, 16,0.6),rgba(6, 34, 16,0.6)),url("img1.jpg");*/
-    background-image:linear-gradient(to bottom,rgba(34,38,41,0.8),rgba(6, 34, 16,0.6)),url(./img1.jpg);
+    box-sizing: border-box;
+    background-image:linear-gradient(to bottom,rgba(34,38,41,0.6),rgba(6, 34, 16,0.4)),url(./img1.jpg);
  
 
     /* Set a specific height */
     height: 60vh; 
-    margin-top:0px;
+    margin:0px;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding:0;
-    margin:0px;
+
     text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items:center;
   
 }
 
 .Primary-head
 {
     font-size:6rem;
-    color:black;
+    color:#86c232;
+    font-weight: 1000;
+ font-family: 'Roboto', sans-serif;
+font-family: 'Gaegu', cursive;
+text-align:center;
+   
+
 }
+.Paragraph{
+    font-size:3rem;
+    color:#fff;
+    font-weight: 1000;
+ font-family: 'Roboto', sans-serif;
+font-family: 'Gaegu', cursive;
+   
+}
+.About-box{
+    height:50rem;
+    text-align:center;
+    background:rgba(34,38,41,1);
+
+}
+
 
 .Main-head
 {
     font-size:10rem;
     display:block;
-    color:black;
+    color:#fff;
+    font-weight: 1000;
+  font-family: 'Roboto', sans-serif;
+font-family: 'Gaegu', cursive;
 
 
 }
 
 .paral2{ 
     /* The image used */
-    background-image: url("./img2.jpg");
-
+   
+    background-image:linear-gradient(to bottom,rgba(34,38,41,0.6),rgba(6, 34, 16,0.4)),url(./img2.jpg);
     /* Set a specific height */
     /*height:100vh;*/
 

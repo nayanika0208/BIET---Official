@@ -13,7 +13,7 @@ const Footer=()=>
 
 
     <div className="Footer-box">
-     <div classNmae="map-box">
+     <div className="map-box">
        <Map/>
       </div>
 

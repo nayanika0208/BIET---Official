@@ -10,8 +10,8 @@
 .Nav-content
 {
   background-color:#474B4f;
-  font-size:20px;
-  position: absolute;;
+  font-size:1.5rem;
+  position: absolute;
   left:50%;
   transform:translateX(-50%);
   transition:all 0.5s;
@@ -22,13 +22,18 @@
 }
 
 .Nav-link{
-  color:#86c232;
+  color:#fff;
+  border-radius:0.5rem;
+  padding:1rem;
+  background-color: #86c232; 
+  box-shadow: .1rem .1rem black;
 }
+
 
 .Nav-content-two
 {
 
-  font-size:20px;
+  font-size:1.5rem;
   position: absolute;;
   left:60%;
   transform:translateX(0%);
@@ -42,6 +47,7 @@
 .Navbar
 {
   background-color:#474B4f;
+  border: 0.2rem solid #86c232;
   overflow:hidden;
 }
 .logo-size{

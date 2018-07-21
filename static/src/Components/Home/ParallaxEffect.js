@@ -22,9 +22,19 @@ const Parallax=()=>{
         
         <div className="paral1">
         <div>
-        <h1 className="Primary-head"> WELCOME TO </h1> <span className="Main-head">INNOVATION LABS </span>
+        <h1 className="Primary-head "> WELCOME TO </h1> 
+        <span className="Main-head ">INNOVATION LABS </span>
         </div>
         </div>
+        <div className="About-box">
+        <h1 className="Primary-head">ABOUT US</h1> 
+        <div className="Paragraph">
+             <p>I'm a paragraph. Click here to add your own text and edit me.
+             It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+             </p>
+             </div>
+             </div>
+      
     
         <div className="paral2">
         <ProjectDisplay/>
