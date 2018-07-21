@@ -2,7 +2,7 @@ import React,{Component} from'react';
 import ProjectComp from './Project_Comp'
 import "./Project_Comp.css";
 
-const project_list =[1,2,3,4,5,6]
+const project_list =[1,2,3,4,5]
 
 console.log(ProjectComp);
 
