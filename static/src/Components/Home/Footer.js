@@ -13,7 +13,7 @@ const Footer=()=>
 
 
     <div className="Footer-box">
-     <div classNmae="map-box">
+     <div className="map-box">
        <Map/>
       </div>
 
@@ -29,9 +29,7 @@ const Footer=()=>
         </div>
       </div>
 
-      <div className="logo-container">
-        <img src={mainLogo} alt="Logo" className="Logo" />
-      </div>
+      
 
 
       <div className="Social-media-box">

@@ -1,18 +1,27 @@
 .paral1{ 
     /* The image used */
 
+
+ 
+      box-sizing: border-box;
+
  background:linear-gradient(to bottom, rgb(34,38, 41,0.2),rgba(34,38,41,0.2)),url("img2.8.jpeg");    /* Set a specific height */
     height: 70vh;
         /* Create the parallax scrolling effect */
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding:0;
-    margin:0px;
+
     text-align:center;
 
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
     padding:6rem;
+
 }
 
 .head-box
@@ -25,22 +34,51 @@
 {
     font-size:6rem;
     color:white;
+    font-weight: 1000;
+ font-family: 'Roboto', sans-serif;
+font-family: 'Gaegu', cursive;
+text-align:center;
+   
+
+}
+.Paragraph{
+    font-size:3rem;
+    color:#fff;
+    font-weight: 1000;
+ font-family: 'Roboto', sans-serif;
+font-family: 'Gaegu', cursive;
+   
+}
+.About-box{
+    height:50rem;
+    text-align:center;
+    background:rgba(34,38,41,1);
+
 }
 
 
 .Main-head
 {
-    font-size:10rem;
+
+      font-size:10rem;
+
     display:inline-block;
     color:whitesmoke;
     padding:5px;
     border-radius:5px;
     margin-bottom:10px;
+   font-family: 'Roboto', sans-serif;
+font-family: 'Gaegu', cursive;
+
+
 }
 
 .paral2{ 
     /* The image used */
+
+
     background-image: url("./img1.jpg");
+
 
     /* Set a specific height */
     /*height:100vh;*/
@@ -93,8 +131,12 @@
 
 .Certify-box
 {
+    display:block;
     border-top:5px solid black;
     position: relative;
-    background-color:black;
+    background-color:#222629;
+    height:10rem;
     color:white;
+    top:10px;
+ 
 }

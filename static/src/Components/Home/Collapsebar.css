@@ -11,6 +11,8 @@
 
 .Nav-content
 {
+
+
   background-color:black;
   font-size:20px;
   position: absolute;;
@@ -25,13 +27,24 @@
 
 .Nav-link{
   color:white;
+  border-radius:1rem;
+  padding:1rem 1.5rem;
+  background-color: #86c232; 
+  box-shadow: .1rem .1rem black;
+}
+
+.Nav-link:hover{
+  color:#61892f;
+
+
 
 }
+
 
 .Nav-content-two
 {
 
-  font-size:20px;
+  font-size:1.5rem;
   position: absolute;;
   left:60%;
   transform:translateX(0%);
@@ -44,6 +57,9 @@
 
 .Navbar
 {
+  background-color:#black;
+  border: 0.2rem solid #86c232;
+
   background-color:black;
   overflow:hidden;
   margin:0px;

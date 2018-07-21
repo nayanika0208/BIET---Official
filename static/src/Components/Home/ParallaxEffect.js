@@ -7,7 +7,7 @@ import Footer from './Footer';
 import Collapsebar from './Collapsebar';
 import Logobar from './Logobar';
 import { StickyContainer, Sticky } from 'react-sticky';
-
+import mainLogo from "./BIETLogo.png"
 
 
 
@@ -21,10 +21,20 @@ const Parallax=()=>{
         <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
         
         <div className="paral1">
+
         <div className="head-box">
         <h1 className="Primary-head"> WELCOME TO </h1> <span className="Main-head">INNOVATION LABS </span>
         </div>
         </div>
+        <div className="About-box">
+        <h1 className="Primary-head">ABOUT US</h1> 
+        <div className="Paragraph">
+             <p>I'm a paragraph. Click here to add your own text and edit me.
+             It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+             </p>
+             </div>
+             </div>
+      
     
         <div className="paral2">
         <ProjectDisplay/>
@@ -34,8 +44,13 @@ const Parallax=()=>{
         <div className="paral3">
         <Footer/>
         <div className="Certify-box">
+        <div className="logo-container" style={{position:"absolute",left:"80%"}} >
+        <img src={mainLogo} alt="Logo" className="Logo" />
+      </div>
+        <div style={{position:"absolute",top:"2rem",left:"20rem"}}>
        <p>Copyright by -----</p>
       <p>Developed by----</p>
+      </div>
       </div>
       </div>
 </StickyContainer>

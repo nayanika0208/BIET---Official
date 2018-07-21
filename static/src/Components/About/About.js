@@ -68,11 +68,13 @@ class About extends Component
         <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
         
         <div className="paral1">
-        <div class="about-1  shadow-5">
-             <h1 className="primary-head">ABOUT US</h1> 
+        <div className="About-box  shadow-5">
+             <h1 className="Primary-head">ABOUT US</h1> 
+             <div className="Paragraph">
              <p>I'm a paragraph. Click here to add your own text and edit me.
              It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
              </p>
+             </div>
              </div>
         </div>
     
