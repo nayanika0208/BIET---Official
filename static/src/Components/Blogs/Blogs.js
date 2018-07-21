@@ -28,13 +28,14 @@ const Blogs = ()=>
         <StickyContainer >
         <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
         
-    
-    <div className="Blog_Section-1">
+    <div className="paral1">
+        <div className="Blog_Section-1">
 
     </div>
-
+        </div>
     
-    <div className="Blog_Section-2">
+        <div className="paral2">
+        <div className="Blog_Section-2">
     <h1 className="primary-head">New Innovations </h1> 
 
     <Carousel className="Carousel">
@@ -63,13 +64,12 @@ const Blogs = ()=>
     </Carousel.Caption>
   </Carousel.Item>
   
-</Carousel>;
+</Carousel>
 
 
+        </div>
 
-    </div>
-
-    
+        <div className="paral3">
     <div className="Blog_Section-3">
 
     <h1 className="primary-head">SHARE YOUR IDEA</h1>
@@ -109,6 +109,8 @@ const Blogs = ()=>
   <Button type="submit">Submit</Button>
 
 </form>
+</div>
+</div>
 </div>
 </div>
 

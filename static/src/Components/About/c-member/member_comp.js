@@ -6,7 +6,7 @@ const Ccomp=({name,image})=>
 {
 
   return(
-    <div class="c-member">
+    <div class="c-member shadow-3">
     <img src={temp_image} alt="Member-photograph" className="member-photo"/>
     <div className="part">
     <span className="content-1">{name} </span>

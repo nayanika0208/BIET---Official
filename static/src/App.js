@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import Parallax from './Components/Home/ParallaxEffect';
+
+import { StickyContainer, Sticky } from 'react-sticky';
+import Collapsebar from './Components/Home/Collapsebar';
 import Logobar from './Components/Home/Logobar';
 import About from './Components/About/About'
 import ProjectList from './Components/OngoingProjects/OngoingProject';
@@ -19,9 +22,6 @@ class App extends Component {
 
 
       <BrowserRouter>
-      
-     
-      <div>
         <switch>
 
         <Route path="/" component={Parallax} exact/>
@@ -31,8 +31,6 @@ class App extends Component {
         <Route path="/Blogs" component={Blogs} />
 
         </switch>
-
-        </div>
         </BrowserRouter>
       
       
