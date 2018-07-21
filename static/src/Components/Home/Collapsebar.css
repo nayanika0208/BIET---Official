@@ -23,8 +23,8 @@
 
 .Nav-link{
   color:#fff;
-  border-radius:0.5rem;
-  padding:1rem;
+  border-radius:1rem;
+  padding:1rem 1.5rem;
   background-color: #86c232; 
   box-shadow: .1rem .1rem black;
 }

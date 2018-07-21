@@ -124,8 +124,12 @@ font-family: 'Gaegu', cursive;
 
 .Certify-box
 {
+    display:block;
     border-top:5px solid black;
     position: relative;
-    background-color:black;
+    background-color:#222629;
+    height:10rem;
     color:white;
+    top:10px;
+ 
 }

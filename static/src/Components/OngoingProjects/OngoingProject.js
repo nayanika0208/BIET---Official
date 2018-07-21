@@ -26,7 +26,7 @@ const PROJECTS=project_list.map((value,index)=>
         <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
         
     <div className="ongoing-project">
-    <div class="primary-head">
+    <div class="Primary-head">
     ONGOING PROJECTS
     </div>
     <div className="project-box">

@@ -12,8 +12,8 @@ class Map extends Component {
    return(
       <div>
         <GoogleMapExample
-          containerElement={ <div style={{ height: `20rem`, width: '30%', textAlign:"center" }} /> }
-          mapElement={ <div style={{ display:"inline-block", height: `100%`,width:'90%' }} /> }
+          containerElement={ <div style={{ height: `20rem`, width: '30%', textAlign:"center"}} /> }
+          mapElement={ <div style={{ display:"inline-block", height: `100%`,width:'100%', }} /> }
         />
       </div>
    );
