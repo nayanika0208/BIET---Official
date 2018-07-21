@@ -122,13 +122,6 @@ class About extends Component
      </div>
      </StickyContainer>
      </div>
-
-
-
-
-
-
-
      </div>
   )
 }
