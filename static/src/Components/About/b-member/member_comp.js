@@ -6,7 +6,7 @@ const Bcomp=({name,designation,image})=>
 {
 
   return(
-    <div class="b-member">
+    <div class="b-member shadow-5">
     <img src={temp_image} alt="Member-photograph" className="member-photo"/>
     <div className="part-1">
     <span className="content-1">{name} </span>
