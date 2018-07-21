@@ -1,5 +1,7 @@
 .navbar.center .navbar-inner {
   text-align: center;
+
+  
 }
 
 .navbar.center .navbar-inner .nav {
@@ -9,9 +11,11 @@
 
 .Nav-content
 {
-  background-color:#474B4f;
-  font-size:1.5rem;
-  position: absolute;
+
+
+  background-color:black;
+  font-size:20px;
+  position: absolute;;
   left:50%;
   transform:translateX(-50%);
   transition:all 0.5s;
@@ -22,7 +26,7 @@
 }
 
 .Nav-link{
-  color:#fff;
+  color:white;
   border-radius:1rem;
   padding:1rem 1.5rem;
   background-color: #86c232; 
@@ -31,6 +35,9 @@
 
 .Nav-link:hover{
   color:#61892f;
+
+
+
 }
 
 
@@ -50,9 +57,13 @@
 
 .Navbar
 {
-  background-color:#474B4f;
+  background-color:#black;
   border: 0.2rem solid #86c232;
+
+  background-color:black;
   overflow:hidden;
+  margin:0px;
+
 }
 .logo-size{
   height: 100%;

@@ -1,17 +1,14 @@
 .paral1{ 
     /* The image used */
 
-    /*background:linear-gradient(to bottom, rgba(6, 34, 16,0.6),rgba(6, 34, 16,0.6)),url("img1.jpg");*/
-    box-sizing: border-box;
 
  
+      box-sizing: border-box;
 
- background:linear-gradient(to bottom, rgb(34,38, 41,0),rgba(34,38,41,0)),url("img2.jpg");    /* Set a specific height */
-    height: 60vh; 
+ background:linear-gradient(to bottom, rgb(34,38, 41,0.2),rgba(34,38,41,0.2)),url("img2.8.jpeg");    /* Set a specific height */
+    height: 70vh;
+        /* Create the parallax scrolling effect */
 
-    margin-top:-20px;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,10 +24,16 @@
 
 }
 
+.head-box
+{
+    background-color:rgba(0,0,0,0.6);
+    padding-top:7px;
+}
+
 .Primary-head
 {
     font-size:6rem;
-    color:#86c232;
+    color:white;
     font-weight: 1000;
  font-family: 'Roboto', sans-serif;
 font-family: 'Gaegu', cursive;
@@ -56,11 +59,15 @@ font-family: 'Gaegu', cursive;
 
 .Main-head
 {
-    font-size:10rem;
-    display:block;
-    color:#fff;
-    font-weight: 1000;
-  font-family: 'Roboto', sans-serif;
+
+      font-size:10rem;
+
+    display:inline-block;
+    color:whitesmoke;
+    padding:5px;
+    border-radius:5px;
+    margin-bottom:10px;
+   font-family: 'Roboto', sans-serif;
 font-family: 'Gaegu', cursive;
 
 

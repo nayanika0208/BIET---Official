@@ -21,9 +21,9 @@ const Parallax=()=>{
         <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
         
         <div className="paral1">
-        <div>
-        <h1 className="Primary-head "> WELCOME TO </h1> 
-        <span className="Main-head ">INNOVATION LABS </span>
+
+        <div className="head-box">
+        <h1 className="Primary-head"> WELCOME TO </h1> <span className="Main-head">INNOVATION LABS </span>
         </div>
         </div>
         <div className="About-box">
