@@ -5,6 +5,11 @@ import img1 from './img1.jpeg';
 import img2 from './img2.jpg';
 import img3 from './img3.jpg';
 
+import { StickyContainer, Sticky } from 'react-sticky';
+import Collapsebar from '../Home/Collapsebar';
+import Logobar from '../Home/Logobar';
+
+
 import './Blogs.css';
 
 const Blogs = ()=>
@@ -13,7 +18,11 @@ const Blogs = ()=>
   return(
 
     <div>
-
+    <div>
+        <Logobar/>
+        <StickyContainer >
+        <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
+        
     
     <div className="Blog_Section-1">
 
@@ -96,6 +105,9 @@ const Blogs = ()=>
 </form>
 </div>
 </div>
+
+  </StickyContainer>
+  </div>
     </div>
   )
 }

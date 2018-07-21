@@ -9,7 +9,7 @@ class Collapsebar extends Component{
 
    
   render(){
-    const { style ,tst ,isSticky} = this.props;
+    const { style ,wasSticky ,isSticky} = this.props;
      if(isSticky){
         return (
         
@@ -51,7 +51,7 @@ class Collapsebar extends Component{
       </Navbar.Header>
       <Navbar.Collapse>
         <Nav className="Nav-content" >
-          <NavItem eventKey={1} href="#" onClick={tst}>
+          <NavItem eventKey={1} href="#" >
           <NavLink to='/'>Home </NavLink>
           </NavItem>
           <NavItem eventKey={1} href="#">

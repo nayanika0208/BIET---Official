@@ -4,6 +4,10 @@ import Bcomp from './b-member/member_comp';
 import Ccomp from './c-member/member_comp';
 import './About.css';
 
+import { StickyContainer, Sticky } from 'react-sticky';
+import Collapsebar from '../Home/Collapsebar';
+import Logobar from '../Home/Logobar';
+
 //import pictures of logo
 
 import DSIR from './DSIR.png';
@@ -58,6 +62,11 @@ class About extends Component
 
   return(
     <div>
+    <div>
+        <Logobar/>
+        <StickyContainer >
+        <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
+        
     <div class="about-1">
      <h1 className="primary-head">ABOUT US</h1> 
      <p>I'm a paragraph. Click here to add your own text and edit me.
@@ -111,7 +120,8 @@ class About extends Component
      </div>
 
      </div>
-
+     </StickyContainer>
+     </div>
 
 
 
