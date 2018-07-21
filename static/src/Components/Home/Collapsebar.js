@@ -13,7 +13,7 @@ class Collapsebar extends Component{
      if(isSticky){
         return (
         
-      <Navbar  collapseOnSelect inverse fixedTop className="Navbar" style={style} >
+      <Navbar   inverse fixedTop className="Navbar" style={style} >
       <Navbar.Header>
       <Navbar.Brand >
       <a href="#home" >
@@ -45,7 +45,7 @@ class Collapsebar extends Component{
 
     }else{
       return(
-      <Navbar inverse collapseOnSelect className="Navbar" style={style} >
+      <Navbar inverse  className="Navbar" style={style} >
       <Navbar.Header>
       <Navbar.Toggle />
       </Navbar.Header>

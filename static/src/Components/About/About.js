@@ -67,34 +67,35 @@ class About extends Component
         <StickyContainer >
         <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
         
-    <div class="about-1">
-     <h1 className="primary-head">ABOUT US</h1> 
-     <p>I'm a paragraph. Click here to add your own text and edit me.
-     It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-     </p>
-     </div>
-
-     <div className="Section-1">
-     <h1 className="primary-head">MEET OUR TEAM </h1>
-      <div className="a-display"> 
-     {a_display}
-     </div>
-   
-
-     
-     <div className="b-display">  
-     {b_display}
-     </div>
+        <div className="paral1">
+        <div class="about-1">
+             <h1 className="primary-head">ABOUT US</h1> 
+             <p>I'm a paragraph. Click here to add your own text and edit me.
+             It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+             </p>
+             </div>
+        </div>
     
-     <div className="c-display">  
-     {c_display}
-     </div>
+        <div className="paral2">
+        <div className="Section-1">
+             <h1 className="primary-head">MEET OUR TEAM </h1>
+              <div className="a-display"> 
+             {a_display}
+             </div>
+              <div className="b-display">  
+             {b_display}
+             </div>
+                
+             <div className="c-display">  
+             {c_display}
+             </div>
 
-     
+        </div>
+        </div>
 
-     </div>
-
-     <div className="Section-2">
+        <div className="paral3">
+    
+         <div className="Section-2">
      <h1 className="primary-head">OUR SUPPORTERS</h1>
      <div className="section-detail">
      <div className="info-box">
@@ -120,6 +121,8 @@ class About extends Component
      </div>
 
      </div>
+     </div>
+     
      </StickyContainer>
      </div>
      </div>
