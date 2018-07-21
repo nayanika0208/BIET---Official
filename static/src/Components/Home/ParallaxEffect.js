@@ -8,7 +8,7 @@ import Collapsebar from './Collapsebar';
 import Logobar from './Logobar';
 import { StickyContainer, Sticky } from 'react-sticky';
 import mainLogo from "./BIETLogo.png"
-
+import icon from './bulb.png';
 
 
 const Parallax=()=>{
@@ -27,13 +27,18 @@ const Parallax=()=>{
         </div>
         </div>
         <div className="About-box">
-        <h1 className="Primary-head">ABOUT US</h1> 
-        <div className="Paragraph">
-             <p>I'm a paragraph. Click here to add your own text and edit me.
-             It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-             </p>
+        <div className="left-part"> 
+
+        <h2 className="Secondary-head">About Us</h2>
+        <p className="paragraph">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
              </div>
-             </div>
+            <div className="right-part">
+            <div className="image-box">
+            <img src={icon} alt="icon" width="100%" height="100%" />
+            </div>
+
+            </div>
+            </div>
       
     
         <div className="paral2">

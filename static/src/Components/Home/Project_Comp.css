@@ -1,34 +1,46 @@
+
 .proj_component
 {
   padding:0rem;
-  padding:1rem;
+  padding:5rem;
   display:inline-block;
   margin:-0.5rem;
+
 
 }
 
 .proj_image
 {
+  box-sizing:border-box;
   position:relative;
   height:30rem;
   width:50rem;
   border-radius:1.2rem;
   overflow: hidden;
-  box-shadow:0.3rem 0.3rem green
+  box-shadow:0.5rem 0.5rem #61892f;
 }
 
 .proj_name
 {
   height:10%;
   width:100%;
-  background-color:black;
-  color:whitesmoke;
   position:absolute;
   bottom:0rem;
   display:block;
   text-align:center;
+
+
 }
 
+
+.proj_name p
+{
+  color:#61892f;
+  height:100%;
+  background-color:#474b4f;;
+
+
+}
 
 
 .Side-1
@@ -49,7 +61,8 @@
 {
   height:100%;
   width:100%;
-  background-color:rgba(255,255,255,0.6);
+  background-color:rgba(134,194,50,0.4);
+
   position:absolute;
   cursor:pointer;
   left:0rem;
@@ -70,7 +83,7 @@
 .proj_title
 {
   font-size:2rem;
-  color:black;
+  color:#222629;
   text-align:center;
   display: inline-block;
   width:60%;
@@ -88,8 +101,8 @@
   transform:translateX(-50%);
   padding:1rem;
   font-size:1.5rem;
-  background-color:black;
-  color:whitesmoke;
+  background-color:#222629;
+  color:#222629;
 
 
 
@@ -99,11 +112,12 @@
 .project-box
 {
   text-align:center;
+  padding:100px;
 }
 
 .primary-head
 {
-  color:green;
+  color:white;
   position: relative;
   left:3rem;
   font-size:5rem;

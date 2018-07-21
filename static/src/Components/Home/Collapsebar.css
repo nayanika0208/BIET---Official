@@ -26,10 +26,12 @@
 }
 
 .Nav-link{
-  color:white;
+  
+  color:#86c232;
   border-radius:1rem;
-  padding:1rem 1.5rem;
-  background-color: #86c232; 
+  padding:1rem 1rem;
+  font-size:1.8rem;
+  background-color:black;; 
   box-shadow: .1rem .1rem black;
 }
 
@@ -57,9 +59,6 @@
 
 .Navbar
 {
-  background-color:#black;
-  border: 0.2rem solid #86c232;
-
   background-color:black;
   overflow:hidden;
   margin:0px;
