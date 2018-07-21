@@ -29,6 +29,10 @@
   box-shadow: .1rem .1rem black;
 }
 
+.Nav-link:hover{
+  color:#61892f;
+}
+
 
 .Nav-content-two
 {
