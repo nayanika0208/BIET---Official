@@ -1,9 +1,12 @@
 .LogoBox
 {
-  height:30vh;
+  position:absolute;
+  top:100px;
+  border:3px solid green;
+  height:10vh;
+  /*
   width:100vw;
   display:block;
-  /*background:linear-gradient(to right, rgba(104,110,112,0.4),rgba(104,110,112,0.4)) , url(./img1.jpg);*/
   background:linear-gradient(to right, rgba(134,194,50,0.3)
 ,rgba(97,137,47,0.3)) , url(./img1.jpg);
 
@@ -11,4 +14,5 @@
   background-size:cover;
   background-position:center;
   text-align:center;
+  */
 }

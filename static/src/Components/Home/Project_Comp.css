@@ -2,9 +2,9 @@
 .proj_component
 {
   padding:0rem;
-  padding:5rem;
   display:inline-block;
-  margin:-0.5rem;
+transform:skewX(100px);
+margin:1rem;
 
 
 }
@@ -18,6 +18,7 @@
   border-radius:1.2rem;
   overflow: hidden;
   box-shadow:0.5rem 0.5rem #61892f;
+ 
 }
 
 .proj_name
@@ -37,7 +38,7 @@
 {
   color:#61892f;
   height:100%;
-  background-color:#474b4f;;
+  background-color:black;
 
 
 }
@@ -61,7 +62,7 @@
 {
   height:100%;
   width:100%;
-  background-color:rgba(134,194,50,0.4);
+  background-color:rgba(134,194,50,1);
 
   position:absolute;
   cursor:pointer;
@@ -93,7 +94,7 @@
   transform:translateX(-50%);
 }
 
-.Details_button
+.Proj_Details_button
 {
   position: absolute;
   left:50%;
@@ -101,8 +102,10 @@
   transform:translateX(-50%);
   padding:1rem;
   font-size:1.5rem;
-  background-color:#222629;
-  color:#222629;
+  background-color:black;
+  color:#61892f;
+  border-radius:1.5rem;
+
 
 
 

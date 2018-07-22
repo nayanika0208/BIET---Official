@@ -7,7 +7,7 @@ import Footer from './Footer';
 import Collapsebar from './Collapsebar';
 import Logobar from './Logobar';
 import { StickyContainer, Sticky } from 'react-sticky';
-import mainLogo from "./BIETLogo.png"
+import mainLogo from "./Logo.png"
 import icon from './bulb.png';
 
 
@@ -49,13 +49,15 @@ const Parallax=()=>{
         <div className="head-back">
         <Footer/>
         <div className="Certify-box">
-        <div className="logo-container" style={{position:"absolute",left:"80%"}} >
-        <img src={mainLogo} alt="Logo" className="Logo" />
+        <div className="logo-container">
+        <img src={mainLogo} alt="Logo" className="Foot_Logo"  />
       </div>
-        <div style={{position:"absolute",top:"2rem",left:"20rem"}}>
+        <div className="Foot_status-1">
        <p>Copyright by -----</p>
-      <p>Developed by----</p>
       </div>
+      <div className="Foot_status-2">
+      <p>Developed by -----</p>
+     </div>
       </div>
       </div>
 </StickyContainer>
