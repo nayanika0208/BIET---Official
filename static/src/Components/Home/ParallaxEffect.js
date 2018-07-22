@@ -17,8 +17,8 @@ const Parallax=()=>{
     	<div>
         <div>
         <Logobar/>
-        <StickyContainer >
-        <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
+        
+      <Collapsebar/>
         
         <div className="paral1">
 
@@ -46,7 +46,7 @@ const Parallax=()=>{
 
         </div>
 
-        <div className="paral3">
+        <div className="head-back">
         <Footer/>
         <div className="Certify-box">
         <div className="logo-container">
@@ -60,7 +60,7 @@ const Parallax=()=>{
      </div>
       </div>
       </div>
-</StickyContainer>
+
         </div>
         
         
