@@ -160,26 +160,12 @@ text-align:center;
 
 .paral3{ 
     /* The image used */
-    background-image: url("./img1.jpg");
 
-
-
+    margin:0px;
  
   display:block;
-  background:linear-gradient(to right ,rgba(6,34,16,0.8),rgba(6,34,16,0.8)), url("./img3.jpg");
-  background-position:center;
-  background-size:cover;
-  background-position:center;
-  text-align:center;
-  padding-top:0.6rem;
-    /* Set a specific height */
-    /*height:100vh;*/
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  padding:0rem;
+  
 }
 
 
@@ -198,11 +184,65 @@ text-align:center;
 .Certify-box
 {
     display:block;
-    border-top:5px solid black;
     position: relative;
     background-color:#222629;
-    height:10rem;
+    height:20rem;
     color:white;
+    margin-top:-1rem;
     top:10px;
+    padding:2rem;
+    background:linear-gradient(to right, rgba(134,194,50,0.3)
+    ,rgba(97,137,47,0.3)) , url(./img1.jpg);
+    background-position:center;
+    background-size:cover;
+
  
+}
+
+.Foot_Logo
+{
+    width:25rem;
+}
+
+.logo-container
+{
+
+    display:inline-block;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+
+}
+
+
+.Foot_status-1
+{
+    display:inline-block;
+    position:absolute;
+    left:10%;
+    top:50%;
+    font-size:1.7rem;
+    color:lightgrey;
+    background-color:rgba(34,38,41,0.3);
+    border-radius:1rem;
+    padding:0.5rem;
+    text-align:center;
+
+
+}
+
+.Foot_status-2
+{
+    display:inline-block;
+    position:absolute;
+    right:10%;
+    top:50%;
+    font-size:1.7rem;
+    color:lightgrey;
+    background-color:rgba(34,38,41,0.3);
+    border-radius:1rem;
+    padding:0.5rem;
+    text-align:center;
+
 }
