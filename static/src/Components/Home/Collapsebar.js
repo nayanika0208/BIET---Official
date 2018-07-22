@@ -3,7 +3,7 @@ import{Navbar,NavDropdown,NavItem,Nav,MenuItem} from 'react-bootstrap';
 import "./Collapsebar.css";
 import mainLogo from "../logo2.jpg";
 import {NavLink} from 'react-router-dom';
-import Header from "@material-kit-react/src/components/Header/Header.jsx";
+//import Header from "@material-kit-react/src/components/Header/Header.jsx";
 
 class Collapsebar extends Component{
 
