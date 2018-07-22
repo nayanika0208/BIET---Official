@@ -34,7 +34,7 @@ class Collapsebar extends Component{
            <NavLink className="Nav-link" to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            <NavLink className="Nav-link" to='/JoinNew'> join New Projects </NavLink>
+            <NavLink className="Nav-link" to='/JoinNew'> Join New Projects </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
             <NavLink className="Nav-link" to='/Blogs'>  Blogs </NavLink>
@@ -62,7 +62,7 @@ class Collapsebar extends Component{
           <NavLink className="Nav-link" to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            <NavLink className="Nav-link" to='/JoinNew'> join New Projects </NavLink>
+            <NavLink className="Nav-link" to='/JoinNew'> Join New Projects </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
             <NavLink className="Nav-link" to='/Blogs'>  Blogs </NavLink>

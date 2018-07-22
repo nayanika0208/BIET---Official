@@ -46,7 +46,7 @@ const Parallax=()=>{
 
         </div>
 
-        <div className="paral3">
+        <div className="head-back">
         <Footer/>
         <div className="Certify-box">
         <div className="logo-container" style={{position:"absolute",left:"80%"}} >
