@@ -13,8 +13,35 @@ import Blogs from './Components/Blogs/Blogs';
 import './topography.css';
 
 
+
 class App extends Component {
 
+ constructor(props) {
+    super(props)
+    this.handleScroll = this.handleScroll.bind(this);
+  }
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+  handleScroll(e) {
+   const navbar =document.querySelector("#navBar");
+   if(window.scrollY>105){
+   navbar.style.backgroundColor="#6b6e70";
+   navbar.style.border="0px";
+
+
+
+
+}
+else{
+  navbar.style.background="transparent";
+  navbar.style.border="0px";
+}
+}
+  
 	
   render() {
   

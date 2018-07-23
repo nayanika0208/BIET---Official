@@ -9,7 +9,7 @@
         /* Create the parallax scrolling effect */
 
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -22,6 +22,16 @@
     padding:6rem;
 
 }
+.paral1 .paral1-image {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.paral1 .paral1-image img {
+  width: 100%;
+}
+
 
 .head-box
 {

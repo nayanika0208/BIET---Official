@@ -15,10 +15,10 @@
   background:transparent;
 }
 #transparent{
-  background-color:rgba(107,110,112,0.5);
+  background:transparent;
   border:0px;
 }
-#transparent.scroll
+
 
 .Nav-content
 {
@@ -28,6 +28,7 @@
   font-size:20px;
   position: absolute;;
   left:50%;
+  top:50%;
   transform:translateX(-50%);
   transition:all 0.5s;
 
@@ -72,11 +73,11 @@
   margin:0px;
   position:absolute;
 
+
 }
 .logo-size{
-  height: 100%;
-  width:50px;
-  background-color: "white";
-  transform:translateX(0%);
-  transition:all 1.5s;
+  position:absolute;
+  top:0%;
+  height: 50px;
+  width:100px;
 }

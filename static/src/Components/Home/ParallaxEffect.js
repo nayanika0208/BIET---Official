@@ -7,8 +7,10 @@ import Footer from './Footer';
 import Collapsebar from './Collapsebar';
 import Logobar from './Logobar';
 import { StickyContainer, Sticky } from 'react-sticky';
-import mainLogo from "./Logo.png"
+import mainLogo from "../BIETLogo1.png"
 import icon from './bulb.png';
+
+
 
 
 const Parallax=()=>{
@@ -20,7 +22,7 @@ const Parallax=()=>{
         
       <Collapsebar/>
         
-        <div className="paral1">
+        <div className="paral1" >
 
         <div className="head-box">
         <h1 className="Primary-head"> WELCOME TO </h1> <span className="Main-head">INNOVATION LABS </span>
