@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import{Navbar,NavDropdown,NavItem,Nav,MenuItem} from 'react-bootstrap';
 import "./Collapsebar.css";
-import mainLogo from "../logo2.jpg";
+import mainLogo from "../BIETLogo1.png";
 import {NavLink} from 'react-router-dom';
 //import Header from "@material-kit-react/src/components/Header/Header.jsx";
+const Onscroll=(e)=>{
+   
+}
+
 
 class Collapsebar extends Component{
+
 
 
    
@@ -14,7 +19,7 @@ class Collapsebar extends Component{
    
         return (
         
-      <Navbar  fixedTop className="navbar  navbar-inverse" id="transparent"style={style} >
+      <Navbar  fixedTop className="navbar  navbar-inverse " id="navBar"style={style} >
       <Navbar.Header>
       <Navbar.Brand >
       <a href="#home" >

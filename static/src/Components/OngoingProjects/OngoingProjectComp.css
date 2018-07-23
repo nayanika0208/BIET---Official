@@ -54,7 +54,7 @@
 {
   height:100%;
   width:100%;
-  background-color:rgba(255,255,255,0.6);
+  background-color:rgba(47,45,46,0.6);
   position:absolute;
   cursor:pointer;
   left:0rem;
@@ -62,15 +62,30 @@
   text-align:left;
   clip-path: polygon(0 0, 81% 0, 63% 100%, 0 100%);
   transition:all 1.5s;
-  opacity:0;
-  transform:translateX(-100%);
+  opacity:1;
+  transform:translateX(0%);
+}
+.info2
+{
+  height:100%;
+  width:100%;
+  background-color:rgba(47,45,46,0.6);
+  position:absolute;
+  cursor:pointer;
+  left:0rem;
+  top:0rem;
+  text-align:left;
+ 
+  transition:all 1.5s;
+  opacity:1;
+  transform:translateX(0%);
 }
 
 .side_logo
 {
   height:100%;
   width:100%;
-  background-color:rgba(255,255,255,0.8);
+  background-color:rgba(134,194,50,0.8);
   position:absolute;
   cursor:pointer;
   left:0rem;
@@ -78,7 +93,36 @@
   text-align:left;
   clip-path:polygon(81% 0, 100% 0, 100% 100%, 63% 100%);
   transition:all 1.5s;
-  opacity:0;
+  opacity:1;
+  transform:translateX(0%);
+}
+.arrow-button{
+  border-radius:100px;
+  background-color:#61892f;
+  position:absolute;
+  right:0rem;
+  top:50%;
+
+}
+.arrow-button-left{
+  border-radius:100px;
+  background-color:#61892f;
+  position:absolute;
+  left:0rem;
+  top:50%;
+
+}
+.second-display{
+   height:100%;
+  width:100%;
+  background-color:rgba(134,194,50,0.8);
+  position:absolute;
+  cursor:pointer;
+  left:0rem;
+  top:0rem;
+  text-align:left;
+  transition:all 1.5s;
+  opacity:1;
   transform:translateX(100%);
 }
 .img2
@@ -89,20 +133,6 @@
    top:25%;
    right:2rem;
   }
-
-.main:hover .info
-{
-  transform:translateX(0%);
-  transition:all 1.5s;
-  opacity:1;
-}
-
-.main:hover .side_logo
-{
-  transform:translateX(0%);
-  transition:all 1.5s;
-  opacity:1;
-}
 
 
 .details{
