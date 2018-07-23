@@ -1,6 +1,6 @@
 import React from 'react';
 import './a-member.css';
-import temp_image from './img1.jpg';
+import temp_image from './img1.1.jpg';
 
 const Acomp=({name,designation,image})=>
 {

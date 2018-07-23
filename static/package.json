@@ -5,10 +5,12 @@
   "dependencies": {
     "material-kit": "^2.0.4",
     "material-kit-react": "^1.1.0",
+    "particles.js": "^2.0.0",
     "react": "^16.4.1",
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.4.1",
     "react-google-maps": "^9.4.5",
+    "react-particles-js": "^2.2.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-sticky": "^6.0.3",

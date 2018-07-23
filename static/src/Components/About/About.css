@@ -1,8 +1,37 @@
+.About_paral1
+{
+  background:linear-gradient(to bottom, rgb(34,38, 41,0.8),rgba(34,38,41,0.8)),url("img2.jpg");    /* Set a specific height */
+  height: 70vh;
+  /* Create the parallax scrolling effect */
+
+background-attachment: fixed;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+
+text-align:center;
+
+display:flex;
+justify-content: center;
+align-items:center;
+
+padding:6rem;
+
+}
+
+
+.About_paral2
+{
+  background-color:#86C232;;
+}
+
+
 .Section-1
 {
-
+  clip-path:polygon(0% 15%,15% 0%,100% 0%,100% 85%,85% 100%,0% 100%);
+  background-color:#222629;
   text-align:center;
- 
+  padding:4rem;
  
 }
 
@@ -11,6 +40,7 @@
 
   text-align:center;
   background:black;
+  margin:0px;
  
 }
 
@@ -27,16 +57,33 @@
 {
   display:inline-block;
   width:80%;
+  background-color:rgba(107,110,112,0.5);
+  border-radius:1rem;
+  margin-bottom:2rem;
+  box-shadow:0.4rem 0.4rem 1rem black;
+
 }
 .b-display
 {
   display:inline-block;
   width:80%;
+  background-color:rgba(107,110,112,0.5);
+  border-radius:1rem;
+    margin-bottom:2rem;
+    box-shadow:0.4rem 0.4rem 1rem black;
+
+
+
 }
 .c-display
 {
   display:inline-block;
-  width:70%;
+  width:80%;
+  background-color:rgba(107,110,112,0.5);
+  border-radius:1rem;
+  margin-bottom:2rem;
+  box-shadow:0.4rem 0.4rem 1rem black;
+
 }
 
 .section-detail
@@ -46,16 +93,17 @@
   display:box;
   text-align:center;
   margin:0 auto;
+  padding-top:2rem;
  
 }
 
 .info-box
 {
-  height:25rem;
-  width:25rem;
+  height:20rem;
+  width:20rem;
   display: inline-block;
   overflow:hidden;
-  margin:2rem;
+  margin:4.3rem;
 }
 
 .org_logo

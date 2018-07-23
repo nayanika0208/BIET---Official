@@ -12,12 +12,12 @@
 
 
 .navbar-inner{
-  background:transparent;
+  background-color:rgba(0,0,0,1);
 
 }
 #navBar{
 
- background:transparent;
+  background-color:rgba(0,0,0,1);
   border:0px;
   height:10rem;
 }
@@ -27,7 +27,7 @@
 {
 
 
-  background:transparent;
+  background-color:rgba(0,0,0,1);
   font-size:20px;
 
 
@@ -40,37 +40,35 @@
 .Nav-link{
   
   color:#86c232;
-  border-radius:1rem;
+  border-radius:.5rem;
   padding:1rem 1rem;
   font-size:1.8rem;
-  background-color:transparent; 
+  background-color:rgba(0,0,0,0.1);
+  ; 
 }
 
 .Nav-link:hover{
   color:#61892f;
 
-
-
 }
+
 
 
 .Nav-content-two
 {
 
   font-size:1.5rem;
-  position: absolute;;
+  position: absolute;
   left:50%;
   transform:translateX(-50%);
   transition:all 0.5s;
   padding:0px;
-
-  
-
 }
+
 
 .Navbar
 {
-  background:transparent;
+  background-color:rgba(0,0,0,1);
   overflow:hidden;
   margin:0px;
   position:absolute;

@@ -18,7 +18,7 @@ import VIT from './VIT.png';
 
 
 
-const a_members=[{name:"Member Name",designation:"Member Post",image:"../img1.jpg"},{name:"Member Name",designation:"Member Post",image:"../img1.jpg"}];
+const a_members=[{name:"Sayan",designation:"Manager",image:"../img1.jpg"},{name:"Member Name",designation:"Member Post",image:"../img1.jpg"}];
 
 const b_members=[{name:"Member Name",designation:"Member Post",image:"../img1.jpg"},{name:"Member Name",designation:"Member Post",image:"../img1.jpg"}
 ,{name:"Member Name",designation:"Member Post",image:"../img1.jpg"},{name:"Member Name",designation:"Member Post",image:"../img1.jpg"}];
@@ -67,7 +67,7 @@ class About extends Component
         <StickyContainer >
         <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
         
-        <div className="paral1">
+        <div className="About_paral1">
         <div className="About-box  shadow-5">
              <h1 className="Primary-head">ABOUT US</h1> 
              <div className="Paragraph">
@@ -78,7 +78,7 @@ class About extends Component
              </div>
         </div>
     
-        <div className="paral2">
+        <div className="About_paral2">
         <div className="Section-1">
              <h1 className="primary-head">MEET OUR TEAM </h1>
               <div className="a-display"> 
@@ -102,31 +102,36 @@ class About extends Component
      <div className="section-detail">
      <div className="info-box">
      <img src={DSIR} alt="Logo" className="org_logo"/>
-     <div className="org_name"><h3>SUPPORTER NAME </h3></div>>
      </div>
 
      <div className="info-box">
      <img src={DST} alt="Logo" className="org_logo"/>
-     <div className="org_name"><h3>SUPPORTER NAME </h3></div>>
      </div>
 
      <div className="info-box">
      <img src={ICMR} alt="Logo" className="org_logo"/>
-     <div className="org_name"><h3>SUPPORTER NAME </h3></div>>
      </div>
 
      <div className="info-box">
      <img src={VIT} alt="Logo" className="org_logo"/>
-     <div className="org_name"><h3>SUPPORTER NAME </h3></div>>
      </div>
 
      </div>
 
      </div>
      </div>
+
+
+
+     
+
+
      
      </StickyContainer>
      </div>
+  
+
+
      </div>
   )
 }

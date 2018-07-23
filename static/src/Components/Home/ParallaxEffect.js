@@ -9,6 +9,24 @@ import Logobar from './Logobar';
 import { StickyContainer, Sticky } from 'react-sticky';
 import mainLogo from "../BIETLogo1.png"
 import icon from './bulb.png';
+import Particles from 'react-particles-js';
+
+const para=
+{
+  particles: {
+
+    number:
+    {
+      value:55,
+      density:
+      {
+      enable:true,
+      value_area:700
+      }
+    }
+  }
+}
+
 
 
 
@@ -18,6 +36,7 @@ const Parallax=()=>{
     return (
     	<div>
         <div>
+        <Particles params={para} className="Particle"/>
         <Logobar/>
         
       <Collapsebar/>
