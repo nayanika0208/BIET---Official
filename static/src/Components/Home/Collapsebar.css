@@ -13,10 +13,13 @@
 
 .navbar-inner{
   background:transparent;
+
 }
-#transparent{
-  background:transparent;
+#navBar{
+
+ background:transparent;
   border:0px;
+  height:10rem;
 }
 
 
@@ -26,9 +29,8 @@
 
   background:transparent;
   font-size:20px;
-  position: absolute;;
-  left:50%;
-  top:50%;
+
+
   transform:translateX(-50%);
   transition:all 0.5s;
 
@@ -77,7 +79,7 @@
 }
 .logo-size{
   position:absolute;
-  top:0%;
-  height: 50px;
-  width:100px;
+  top:-30%;
+  height: 120px;
+  width:150px;
 }

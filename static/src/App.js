@@ -28,9 +28,11 @@ class App extends Component {
   }
   handleScroll(e) {
    const navbar =document.querySelector("#navBar");
+   const navContent=document.querySelector("#navContent")
    if(window.scrollY>105){
    navbar.style.backgroundColor="#6b6e70";
    navbar.style.border="0px";
+   navContent.style.top="60%";
 
 
 
@@ -39,6 +41,7 @@ class App extends Component {
 else{
   navbar.style.background="transparent";
   navbar.style.border="0px";
+  navContent.style.top="0%";
 }
 }
   

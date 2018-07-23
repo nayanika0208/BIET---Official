@@ -22,14 +22,14 @@ class Collapsebar extends Component{
       <Navbar  fixedTop className="navbar  navbar-inverse " id="navBar"style={style} >
       <Navbar.Header>
       <Navbar.Brand >
-      <a href="#home" >
+      <a href="#home" style={{position:"absolute",top:"0px",width:"150px"}}>
       <img src={mainLogo} alt="Logo" height="100%" className="logo-size" />
       </a>
     </Navbar.Brand>
       <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
-        <Nav className="Nav-content-two" >
+        <Nav className="Nav-content-two" id="navContent">
           <NavItem eventKey={1} href="#" >
           <NavLink className="Nav-link" to='/'>Home </NavLink>
            </NavItem>
