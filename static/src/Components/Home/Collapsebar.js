@@ -19,9 +19,9 @@ class Collapsebar extends Component{
    
         return (
         
-      <Navbar  fixedTop className="navbar  navbar-inverse " id="navBar"style={style} >
+      <Navbar  fixedTop className="navbar navbar-inverse " id="navBar"style={style} >
       <Navbar.Header>
-      
+
       <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
@@ -40,6 +40,7 @@ class Collapsebar extends Component{
           </a>
           </Navbar.Brand>
          <Nav  className="Nav-content-two" >
+      
           <NavItem eventKey={2} href="#">
            <NavLink className="Nav-link" to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>

@@ -44,6 +44,7 @@ class App extends Component {
 
 
 }
+  }
 else{
   navbar.style.background="transparent";
   navbar.style.borderBottom="0px";
