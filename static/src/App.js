@@ -44,7 +44,7 @@ class App extends Component {
 
 
 }
-  }
+  
 else{
   navbar.style.background="transparent";
   navbar.style.borderBottom="0px";
@@ -55,9 +55,10 @@ else{
  navContent.classList.add("Nav-content-one")
     navContent.classList.remove("onscroll-navContent1")
 }
-}
+
+
   
-	
+}
   render() {
   
     return (

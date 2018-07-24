@@ -2,24 +2,25 @@
 {
     display:block;
     position: relative;
-    background-color:#222629;
+    background-color:black;
     height:20rem;
     color:white;
-    margin-top:-1rem;
-    top:10px;
-    padding:2rem;
+    margin-top:0rem;
+    padding:3rem;
+    border-top:5px solid #86c232; 
   
     /*background:linear-gradient(to right, rgba(134,194,50,0.3)
     ,rgba(97,137,47,0.3)) , url(./img1.jpg);*/
     background-position:center;
     background-size:cover;
-
  
 }
 
 .Foot_Logo
 {
-    width:25rem;
+    width:35rem;
+    height:25rem; 
+    padding:0px;
 }
 
 .logo-container

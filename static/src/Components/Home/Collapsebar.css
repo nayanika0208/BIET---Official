@@ -14,11 +14,11 @@
 .navbar-inner{
   background-color:rgba(0,0,0,1);
 
+
 }
 #navBar{
 
   background-color:rgba(0,0,0,1);
- 
   height:13rem;
   border-top:10px solid #86c232;
 }
@@ -30,7 +30,7 @@
 
   background-color:rgba(0,0,0,1);
   font-size:20px;
-  
+
 
 
   
@@ -43,9 +43,8 @@
   color:#86c232;
   border-radius:.5rem;
   padding:1rem 1rem;
-  font-size:1.8rem;
-  background-color:rgba(0,0,0,0.1);
-  ; 
+  font-size:2rem;
+  background-color:rgba(0,0,0,1);
 }
 
 .Nav-link:hover{
@@ -60,28 +59,29 @@
 
   font-size:1.5rem;
   position: absolute;
+  left:15%;
   top:20%;
-  left:25%;
-  transform:translateX(-50%);
+  transform:translateX(-20%);
   transition:all 0.5s;
   padding:0px 100px;
+
 }
 .Nav-content-two
 {
 
   font-size:1.5rem;
   position: absolute;
-  left:70%;
+  right:20%;
   top:20%;
-  transform:translateX(-50%);
+  transform:translateX(30%);
   transition:all 0.5s;
-  padding:0px;
+
 }
 
 
 .Navbar
 {
-  background-color:rgba(0,0,0,1);
+  background-color:black;
   overflow:hidden;
   margin:0px;
   position:absolute;
@@ -92,23 +92,39 @@
   position:absolute;
   top:-30%;
   left:375px;
-  height: 15rem;
-  
+  height: 20rem;
 }
 .onscroll-navContent1{
   font-size:1.5rem;
   position: absolute;
   top:20%;
   left:50%;
-  transform:translateX(-50%);
+  transform:translateX(-75%);
   transition:all 0.5s;
-  padding:0px 100px;
+
 }
+
+.onscroll-navContent2{
+  font-size:1.5rem;
+  position: absolute;
+  top:20%;
+  left:50%;
+  transform:translateX(-100%);
+  transition:all 0.5s;
+
+}
+
+
+
+
+
 .onScroll-logo{
   position:absolute;
-  top:-30%;
-  left:100px;
-  height: 15rem;
+  top:-2.5rem;
+  left:-2rem;
+  height:17rem;
+  transform:translateY(0%);
+  padding:0px;
 }
 .half-circle {
     width: 230px;

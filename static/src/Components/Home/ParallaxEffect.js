@@ -38,7 +38,6 @@ const Parallax=()=>{
     	<div>
         <div>
         <Particles params={para} className="Particle"/>
-        <Logobar/>
         
       <Collapsebar/>
         
