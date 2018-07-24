@@ -46,7 +46,7 @@ class App extends Component {
 }
   
 else{
-  navbar.style.background="transparent";
+  navbar.style.backgroundColor="black";
   navbar.style.borderBottom="0px";
   navContent.style.top="20%";
   logo.classList.add("logo-size");
