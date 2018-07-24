@@ -19,13 +19,9 @@ class Collapsebar extends Component{
    
         return (
         
-      <Navbar  fixedTop className="navbar  navbar-inverse " id="navBar"style={style} >
+      <Navbar  fixedTop className="navbar navbar-inverse " id="navBar"style={style} >
       <Navbar.Header>
-      <Navbar.Brand >
-      <a href="#home" style={{position:"absolute",top:"0px",width:"150px"}}>
-      <img src={mainLogo} alt="Logo" height="100%" className="logo-size" />
-      </a>
-    </Navbar.Brand>
+     
       <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
@@ -36,6 +32,11 @@ class Collapsebar extends Component{
           <NavItem eventKey={1} href="#">
           <NavLink className="Nav-link" to='/About'> About </NavLink>
           </NavItem>
+          <Navbar.Brand >
+          <a href="#home" style={{position:"absolute",top:"0px",width:"150px"}}>
+          <img src={mainLogo} alt="Logo" height="100%" className="logo-size" />
+          </a>
+        </Navbar.Brand>
           <NavItem eventKey={2} href="#">
            <NavLink className="Nav-link" to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>

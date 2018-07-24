@@ -33,11 +33,7 @@ class App extends Component {
    navbar.style.backgroundColor="#6b6e70";
    navbar.style.border="0px";
    navContent.style.top="60%";
-
-
-
-
-}
+  }
 else{
   navbar.style.background="transparent";
   navbar.style.border="0px";
