@@ -21,33 +21,41 @@ class Collapsebar extends Component{
         
       <Navbar  fixedTop className="navbar  navbar-inverse " id="navBar"style={style} >
       <Navbar.Header>
-      <Navbar.Brand >
-      <a href="#home" style={{position:"absolute",top:"0px",width:"150px"}}>
-      <img src={mainLogo} alt="Logo" height="100%" className="logo-size" />
-      </a>
-    </Navbar.Brand>
+      
       <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
-        <Nav className="Nav-content-two" id="navContent">
+        <Nav className="Nav-content-one" id="navContent">
           <NavItem eventKey={1} href="#" >
-          <NavLink className="Nav-link" to='/'>Home </NavLink>
+          <NavLink className="Nav-link" to='/' >Home </NavLink>
            </NavItem>
           <NavItem eventKey={1} href="#">
-          <NavLink className="Nav-link" to='/About'> About </NavLink>
+          <NavLink className="Nav-link" to='/About' > About </NavLink>
           </NavItem>
+          </Nav>
+          
+          <Navbar.Brand >
+          <a href="#home" style={{position:"absolute",top:"0px",width:"150px"}} className="middle">
+          <img src={mainLogo} alt="Logo" height="100%" className="logo-size" />
+          </a>
+          </Navbar.Brand>
+         <Nav  className="Nav-content-two" >
           <NavItem eventKey={2} href="#">
            <NavLink className="Nav-link" to='/OngoingProject'> Ongoing Projets </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            <NavLink className="Nav-link" to='/JoinNew'> Join New Projects </NavLink>
+            <NavLink className="Nav-link" to='/JoinNew' > Join New Projects </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
             <NavLink className="Nav-link" to='/Blogs'>  Blogs </NavLink>
           </NavItem>
         </Nav>
       </Navbar.Collapse>
-    </Navbar>);
+    </Navbar>
+
+
+    
+);
 
     
     }

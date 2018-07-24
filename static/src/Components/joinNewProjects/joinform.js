@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import{form,Form,FormGroup,FormControl,InputGroup,DropdownButton,Button,Glyphicon,MenuItem,ControlLabel} from 'react-bootstrap';
 import{HelpBlock} from 'react-bootstrap';
 import './joinform.css';
-
+import Pagefooter from '../PageFooter/PageFooter.js';
 
 import { StickyContainer, Sticky } from 'react-sticky';
 import Collapsebar from '../Home/Collapsebar';
@@ -163,6 +163,7 @@ class Joinform extends Component
         </Form>
           </div>
           </div>
+       
         </div>
    
       
@@ -172,7 +173,7 @@ class Joinform extends Component
 
 
 
-
+   <Pagefooter/>
 
    
     </StickyContainer>
