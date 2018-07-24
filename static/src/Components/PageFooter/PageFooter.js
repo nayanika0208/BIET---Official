@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import mainLogo from "../BIETLogo1.png"
-
+import './Pagefooter.css';
 
 
 const Pagefooter=()=> {

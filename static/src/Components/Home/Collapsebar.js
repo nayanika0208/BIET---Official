@@ -35,8 +35,8 @@ class Collapsebar extends Component{
           </Nav>
           
           <Navbar.Brand >
-          <a href="#home" style={{position:"absolute",top:"0px",width:"150px"}} className="middle">
-          <img src={mainLogo} alt="Logo" height="100%" className="logo-size" />
+          <a href="#home" style={{position:"absolute",top:"0px",width:"30rem"}} >
+          <img src={mainLogo} alt="Logo" height="100%" className="logo-size half-circle" id="logo"/>
           </a>
           </Navbar.Brand>
          <Nav  className="Nav-content-two" >

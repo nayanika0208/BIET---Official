@@ -29,10 +29,16 @@ class App extends Component {
   handleScroll(e) {
    const navbar =document.querySelector("#navBar");
    const navContent=document.querySelector("#navContent")
+   const logo=document.querySelector("#logo");
+  
    if(window.scrollY>105){
    navbar.style.backgroundColor="#222629";
-   navbar.style.border="0px";
-  
+   navbar.style.borderBottom="0px";
+    logo.classList.remove("logo-size");
+    logo.classList.add("onScroll-logo");
+    logo.classList.remove("half-circle");
+    navContent.classList.remove("Nav-content-one")
+    navContent.classList.add("onscroll-navContent1")
 
 
 
@@ -40,8 +46,13 @@ class App extends Component {
 }
 else{
   navbar.style.background="transparent";
-  navbar.style.border="0px";
+  navbar.style.borderBottom="0px";
   navContent.style.top="20%";
+  logo.classList.add("logo-size");
+  logo.classList.remove("onScroll-logo");
+ logo.classList.add("half-circle");
+ navContent.classList.add("Nav-content-one")
+    navContent.classList.remove("onscroll-navContent1")
 }
 }
   

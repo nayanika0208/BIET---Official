@@ -18,8 +18,9 @@
 #navBar{
 
   background-color:rgba(0,0,0,1);
-  border:0px;
-  height:10rem;
+ 
+  height:13rem;
+  border-top:10px solid #86c232;
 }
 
 
@@ -29,6 +30,7 @@
 
   background-color:rgba(0,0,0,1);
   font-size:20px;
+  
 
 
   
@@ -89,12 +91,39 @@
 .logo-size{
   position:absolute;
   top:-30%;
-  left:450px;
-  height: 120px;
-  width:150px;
+  left:375px;
+  height: 15rem;
+  
+}
+.onscroll-navContent1{
+  font-size:1.5rem;
+  position: absolute;
+  top:20%;
+  left:50%;
+  transform:translateX(-50%);
+  transition:all 0.5s;
+  padding:0px 100px;
+}
+.onScroll-logo{
+  position:absolute;
+  top:-30%;
+  left:100px;
+  height: 15rem;
+}
+.half-circle {
+    width: 230px;
+    height: 130px; /* as the half of the width */
+    background:transparent;
+    border-bottom-left-radius: 140px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 140px; /* 100px of height + 10px of border */
+    border: 10px solid #86c232;
+    border-bottom: 0;
 }
 
 .left-side{
   position:absolute;
+
+}
+.onScroll-navContent{
 
 }
