@@ -64,8 +64,7 @@ class About extends Component
     <div>
     <div>
         <Logobar/>
-        <StickyContainer >
-        <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
+       <Collapsebar/>
         
         <div className="About_paral1">
         <div className="About-box  shadow-5">
@@ -127,7 +126,6 @@ class About extends Component
 
 
      
-     </StickyContainer>
      </div>
   
 

@@ -25,8 +25,7 @@ const Blogs = ()=>
     <div>
     <div>
         <Logobar/>
-        <StickyContainer >
-        <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
+        <Collapsebar/>
         
     <div className="paral1">
         <div className="Blog_Section-1">
@@ -115,7 +114,6 @@ const Blogs = ()=>
 </div>
 <Pagefooter/>
 
-  </StickyContainer>
   </div>
     </div>
   )
