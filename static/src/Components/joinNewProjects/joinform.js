@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import{form,Form,FormGroup,FormControl,InputGroup,DropdownButton,Button,Glyphicon,MenuItem,ControlLabel} from 'react-bootstrap';
 import{HelpBlock} from 'react-bootstrap';
 import './joinform.css';
-
+import Pagefooter from '../PageFooter/PageFooter.js';
 
 import { StickyContainer, Sticky } from 'react-sticky';
 import Collapsebar from '../Home/Collapsebar';
@@ -29,6 +29,18 @@ class Joinform extends Component
   return(
     <div>
     <div>
+
+   
+      
+
+
+
+
+
+
+
+   
+
     <Logobar/>
     <StickyContainer>
     <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
@@ -37,7 +49,8 @@ class Joinform extends Component
     </div>
     </StickyContainer>
     </div>
-    </div>
+   <Pagefooter/>
+   </div>
   );
 }
 }

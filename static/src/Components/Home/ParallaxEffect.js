@@ -10,6 +10,7 @@ import { StickyContainer, Sticky } from 'react-sticky';
 import mainLogo from "../BIETLogo1.png"
 import icon from './bulb.png';
 import Particles from 'react-particles-js';
+import Pagefooter from '../PageFooter/PageFooter.js';
 
 const para=
 {
@@ -69,17 +70,7 @@ const Parallax=()=>{
 
         <div className="head-back">
         <Footer/>
-        <div className="Certify-box">
-        <div className="logo-container">
-        <img src={mainLogo} alt="Logo" className="Foot_Logo"  />
-      </div>
-        <div className="Foot_status-1">
-       <p>Copyright by -----</p>
-      </div>
-      <div className="Foot_status-2">
-      <p>Developed by -----</p>
-     </div>
-      </div>
+        <Pagefooter />
       </div>
 
         </div>
