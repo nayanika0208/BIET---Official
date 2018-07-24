@@ -44,8 +44,10 @@ class Joinform extends Component
     <Logobar/>
     <StickyContainer>
     <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
+    <div className="form-box">
     <div className="form-container">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegQ3wPCz3bs3YfuGwMKxaQX0uUKMV2LsM154wOi94g9reYBQ/viewform?embedded=true" width="700" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>   
+    </div>
     </div>
     </StickyContainer>
     </div>

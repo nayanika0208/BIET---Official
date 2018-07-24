@@ -1,8 +1,8 @@
+
 .ongoing-project
 {
-
   background-color:black;
-
+  clip-path:polygon(0% 15%,15% 0%,100% 0%,100% 85%,85% 100%,0% 100%);
 }
 .project_component
 {
@@ -194,4 +194,9 @@
 
 }
 
+.ongoing-box
+{
+  background-color:#86C232;
+  width:100%;
 
+}

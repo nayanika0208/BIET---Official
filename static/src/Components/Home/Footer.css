@@ -13,10 +13,11 @@
   position:absolute;
   left:10%;
   top:25%;
-  color:#222629;
-  font-size:2.5rem;
-
-
+  color:whitesmoke;
+  background-color:#222629;
+  font-size:2.2rem;
+  padding:2rem;
+  border-radius:1rem;
 }
 
 
@@ -80,6 +81,9 @@
   left:7%;
   color:white;
   transform:translate(-7%,20%);
+  background-color:#222629;
+  padding:2rem;
+  border-radius:1rem;
 }
 
 .icon
@@ -111,12 +115,14 @@
 .Contact_About-box{
   height:60rem;
   position:relative;
+
 }
 
 .Contact_Paragraph{
   font-size:3rem;
   color:#fff;
   font-weight: 1000;
+
 }
 
 
