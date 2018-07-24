@@ -8,7 +8,6 @@ const Logobar = ()=>
   return(
 
     <div className="LogoBox">
-    <img src={mainLogo} alt="Logo" height="100%" />
     </div>
   )
 }

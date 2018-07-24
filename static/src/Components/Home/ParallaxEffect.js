@@ -64,15 +64,13 @@ const Parallax=()=>{
     
         <div className="paral2">
         <ProjectDisplay/>
-
         </div>
 
-        <div className="head-back">
+      <div className="head-back">
         <Footer/>
         <Pagefooter />
       </div>
-
-        </div>
+      </div>
         
         
 
