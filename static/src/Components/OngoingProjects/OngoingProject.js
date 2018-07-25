@@ -38,7 +38,7 @@ const PROJECTS=project_list.map((value,index)=>
     </div>
     </div>
     <Pagefooter/>
-    
+    </StickyContainer>
     </div>
   )
 }
