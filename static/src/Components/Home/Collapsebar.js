@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import{Navbar,NavDropdown,NavItem,Nav,MenuItem} from 'react-bootstrap';
 import "./Collapsebar.css";
-import mainLogo from "../BIETLogo1.png";
+import mainLogo from "../BietLogo1.svg";
 import {NavLink} from 'react-router-dom';
 //import Header from "@material-kit-react/src/components/Header/Header.jsx";
 const Onscroll=(e)=>{

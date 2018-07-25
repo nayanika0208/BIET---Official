@@ -3,7 +3,7 @@
     display:block;
     position: relative;
     background-color:black;
-    height:20rem;
+    height:10rem;
     color:white;
     margin-top:0rem;
     padding:3rem;
@@ -18,8 +18,8 @@
 
 .Foot_Logo
 {
-    width:35rem;
-    height:25rem; 
+    width:25rem;
+    height:15rem; 
     padding:0px;
 }
 

@@ -24,9 +24,6 @@ const PROJECTS=project_list.map((value,index)=>
      <div>
         <Logobar/>
         <Collapsebar/>
-    
-      
-        <Collapsebar />
         <div className="ongoing-box">
         <div className="ongoing-project">
         <div class="Primary-head">
@@ -38,7 +35,7 @@ const PROJECTS=project_list.map((value,index)=>
     </div>
     </div>
     <Pagefooter/>
-    
+   
     </div>
   )
 }

@@ -41,7 +41,6 @@ class Joinform extends Component
 
    
 
-    <Logobar/>
     <StickyContainer>
     <Sticky>{({ style,isSticky,wasSticky })=>(<Collapsebar style={style}  isSticky={isSticky} wasSticky={wasSticky}/>)}</Sticky>
     <div className="form-box">
