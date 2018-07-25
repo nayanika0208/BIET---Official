@@ -63,7 +63,7 @@ class About extends Component
   return(
     <div>
     <div>
-        <Logobar/>
+      
        <Collapsebar/>
         
         <div className="About_paral1">
