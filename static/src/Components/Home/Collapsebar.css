@@ -56,6 +56,9 @@
 
 .Nav-link:hover{
   color:#61892f;
+  box-sizing: border-box;
+  text-decoration:none;
+  border-top:0.5rem solid #61892f;
 
 }
 
