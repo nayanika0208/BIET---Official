@@ -11,6 +11,7 @@ import mainLogo from "../BIETLogo1.png"
 import icon from './bulb.png';
 import Particles from 'react-particles-js';
 import Pagefooter from '../PageFooter/PageFooter.js';
+import Navigation from '../Navigation/Navigation.js'
 
 const para=
 {
@@ -39,7 +40,7 @@ const Parallax=()=>{
         <div>
         <Particles params={para} className="Particle"/>
         
-      <Collapsebar/>
+      <Navigation/>
         
         <div className="paral1" >
 
