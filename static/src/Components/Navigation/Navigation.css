@@ -1,0 +1,41 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+     overflow: hidden;
+      position: fixed;
+    top: 0;
+    width: 100%;
+}
+li a {
+    display: block;
+    width: 100px;
+}
+
+
+li {
+    text-align: center;
+     float: left;
+     margin:0 10px;
+  }
+
+.navlogo{
+  position:absolute;
+  top:0%;
+  left:30%;
+}
+  li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.half-circle {
+    width: 300px;
+    height: 130px; /* as the half of the width */
+    background:transparent;
+    border-bottom-left-radius: 140px;  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 140px; /* 100px of height + 10px of border */
+    border: 10px solid #86c232;
+    border-bottom: 0;
+}

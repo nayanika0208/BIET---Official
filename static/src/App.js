@@ -25,39 +25,15 @@ class App extends Component {
     window.removeEventListener('scroll', this.handleScroll);
   }
   handleScroll(e) {
-   const navbar =document.querySelector("#navBar");
-   const navContentLeft=document.querySelector("#navContent1");
-   const navContentRight=document.querySelector('#navContent2');
-   const logo=document.querySelector("#logo");
+   
   
    if(window.scrollY>105){
-   navbar.style.backgroundColor="black";
-   navbar.style.borderBottom="0px";
-    logo.classList.remove("logo-size");
-    logo.classList.add("onScroll-logo");
-    logo.classList.remove("half-circle");
-    navContentLeft.classList.remove("Nav-content-one");
-    navContentLeft.classList.add("onscroll-navContent1");
-    navbar.classList.add("onscrollNavbar");
-    navContentRight.classList.remove("Nav-content-two");
-    navContentRight.classList.add("onscroll-navContent2");
-
+   
 
 
 }
   
 else{
-  navbar.style.backgroundColor="black";
-  navbar.style.borderBottom="0px";
-  navContentLeft.style.top="20%";
-  logo.classList.add("logo-size");
-  logo.classList.remove("onScroll-logo");
- logo.classList.add("half-circle");
- navContentLeft.classList.add("Nav-content-one");
- navbar.classList.remove("onscrollNavbar");
-navContentLeft.classList.remove("onscroll-navContent1");
- navContentRight.classList.add("Nav-content-two");
-navContentRight.classList.remove("onscroll-navContent2");
 }
 }
   render() {
