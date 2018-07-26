@@ -19,8 +19,14 @@
 #navBar{
 
   background-color:rgba(0,0,0,1);
-  height:13rem;
+ 
+}
+.normalNavbar{
+   height:13rem;
   border-top:10px solid #86c232;
+}
+.onscrollNavbar{
+  height:10rem;
 }
 
 
@@ -42,9 +48,10 @@
   
   color:#86c232;
   border-radius:.5rem;
-  padding:1rem 1rem;
+  padding:1rem 2rem;
   font-size:2rem;
-  background-color:rgba(0,0,0,1);
+  background-color:rgba(71,75,79,1);
+  margin:0 1rem;
 }
 
 .Nav-link:hover{
@@ -59,7 +66,7 @@
 
   font-size:1.5rem;
   position: absolute;
-  left:25%;
+  left:20%;
   top:20%;
   transform:translateX(-25%);
   transition:all 0.5s;
@@ -71,7 +78,7 @@
 
   font-size:1.5rem;
   position: absolute;
-  right:20%;
+  right:25%;
   top:20%;
   transform:translateX(30%);
   transition:all 0.5s;
@@ -101,7 +108,7 @@
   font-size:1.5rem;
   position: absolute;
   top:20%;
-  left:60%;
+  left:44%;
   transform:translateX(-75%);
   transition:all 0.5s;
 
@@ -111,7 +118,7 @@
   font-size:1.5rem;
   position: absolute;
   top:20%;
-  left:50%;
+  right:2%;
   transform:translateX(-100%);
   transition:all 0.5s;
 
@@ -123,12 +130,15 @@
 
 .onScroll-logo{
   position:absolute;
-  top:-2.5rem;
-  left:-2rem;
-  height:17rem;
+  top:-25%;
+  left:20%;
+  height:10rem;
   transform:translateY(0%);
+  transition:all 0.5s;
   padding:0px;
 }
+
+
 .half-circle {
     width: 230px;
     height: 130px; /* as the half of the width */
@@ -141,8 +151,5 @@
 
 .left-side{
   position:absolute;
-
-}
-.onScroll-navContent{
 
 }
