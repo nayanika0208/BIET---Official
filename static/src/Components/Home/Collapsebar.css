@@ -69,9 +69,9 @@
 
   font-size:1.5rem;
   position: absolute;
-  left:20vw;
+  left:25%;
   top:20%;
-  transform:translateX(-5vw);
+  transform:translateX(-75%);
   transition:all 0.5s;
   padding:0px 0px;
 
@@ -81,9 +81,9 @@
 
   font-size:1.5rem;
   position: absolute;
-  right:20vw;
+  right:35%;
   top:20%;
-  transform:translateX(10vw);
+  transform:translateX(100%);
   transition:all 0.5s;
 
 
@@ -111,7 +111,7 @@
   font-size:1.5rem;
   position: absolute;
   top:20%;
-  left:0vh;
+  left:30%;
   /*transform:translateX(20vw);*/
   transition:all 0.5s;
 
@@ -121,8 +121,8 @@
   font-size:1.5rem;
   position: absolute;
   top:20%;
-  right:2vw;
-  transform:translateX(-20vw);
+  right:28%;
+  transform:translateX(0%);
   transition:all 0.5s;
 
 }
