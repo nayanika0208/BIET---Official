@@ -59,11 +59,11 @@
 
   font-size:1.5rem;
   position: absolute;
-  left:15%;
+  left:25%;
   top:20%;
-  transform:translateX(-20%);
+  transform:translateX(-25%);
   transition:all 0.5s;
-  padding:0px 100px;
+  padding:0px 0px;
 
 }
 .Nav-content-two
@@ -75,6 +75,7 @@
   top:20%;
   transform:translateX(30%);
   transition:all 0.5s;
+
 
 }
 
@@ -91,14 +92,16 @@
 .logo-size{
   position:absolute;
   top:-30%;
-  left:375px;
-  height: 20rem;
+  left:48rem;
+  height:5rem;
 }
+
+
 .onscroll-navContent1{
   font-size:1.5rem;
   position: absolute;
   top:20%;
-  left:50%;
+  left:60%;
   transform:translateX(-75%);
   transition:all 0.5s;
 

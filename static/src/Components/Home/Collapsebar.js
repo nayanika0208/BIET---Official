@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import{Navbar,NavDropdown,NavItem,Nav,MenuItem} from 'react-bootstrap';
 import "./Collapsebar.css";
-import mainLogo from "../BIETLogo1.png";
+import mainLogo from './BietLogo1.svg';
 import {NavLink} from 'react-router-dom';
 //import Header from "@material-kit-react/src/components/Header/Header.jsx";
 const Onscroll=(e)=>{
@@ -30,25 +30,25 @@ class Collapsebar extends Component{
           <NavLink className="Nav-link" to='/' >Home </NavLink>
            </NavItem>
           <NavItem eventKey={1} href="#">
-          <NavLink className="Nav-link" to='/About' > About </NavLink>
+          <NavLink className="Nav-link" to='/About' >About </NavLink>
           </NavItem>
           </Nav>
           
           <Navbar.Brand >
           <a href="#home" style={{position:"absolute",top:"0px",left:"10%",width:"40rem"}} >
-          <img src={mainLogo} alt="Logo" height="100%" className="logo-size half-circle" id="logo"/>
+          <img src={mainLogo} alt="Logo" width="100px" height="100px"  className="logo-size half-circle" id="logo"/>
           </a>
           </Navbar.Brand>
          <Nav  className="Nav-content-two" >
       
           <NavItem eventKey={2} href="#">
-           <NavLink className="Nav-link" to='/OngoingProject'> Ongoing Projets </NavLink>
+           <NavLink className="Nav-link" to='/OngoingProject'>Projets </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            <NavLink className="Nav-link" to='/JoinNew' > Join New Projects </NavLink>
+            <NavLink className="Nav-link" to='/JoinNew' >Join </NavLink>
           </NavItem>
             <NavItem eventKey={1} href="#">
-            <NavLink className="Nav-link" to='/Blogs'>  Blogs </NavLink>
+            <NavLink className="Nav-link" to='/Blogs'> Blogs </NavLink>
           </NavItem>
         </Nav>
       </Navbar.Collapse>
