@@ -7,12 +7,16 @@ ul {
       position: fixed;
     top: 0;
     width: 100%;
+    z-index:11;
 }
 li a {
     display: block;
     width: 100px;
 }
+.nav{
+  border-top:1rem solid #61892f ;
 
+}
 
 li {
     text-align: center;
@@ -25,9 +29,24 @@ li {
   top:0%;
   left:30%;
 }
-  li a:hover {
-    background-color: #555;
-    color: white;
+
+.Nav-link:hover{
+  color:#61892f;
+  box-sizing: border-box;
+  text-decoration:none;
+ border-bottom:1rem solid #86c232;
+  
+
+}
+
+.Nav-link{
+  
+  color:#86c232;
+  border-radius:.5rem;
+  padding:1rem 2rem;
+  font-size:2rem;
+  background-color:rgba(71,75,79,0.2);
+  margin:0 1rem;
 }
 
 .half-circle {
