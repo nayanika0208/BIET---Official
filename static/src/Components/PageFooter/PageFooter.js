@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import mainLogo from "../BIETLogo1.png"
+import mainLogo from "../BietLogo1.svg"
 import './Pagefooter.css';
 
 
