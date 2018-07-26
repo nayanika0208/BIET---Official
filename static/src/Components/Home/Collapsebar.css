@@ -45,24 +45,9 @@
 }
 
 
-.Nav-link{
-  
-  color:#86c232;
-  border-radius:.5rem;
-  padding:1rem 2rem;
-  font-size:2rem;
-  background-color:rgba(71,75,79,0.2);
-  margin:0 1rem;
-}
 
-.Nav-link:hover{
-  color:#61892f;
-  background:blue;
-  box-sizing: border-box;
-  text-decoration:none;
-  border-top:0.5rem solid #61892f;
 
-}
+
 
 
 
@@ -144,15 +129,7 @@
 }
 
 
-.half-circle {
-    width: 230px;
-    height: 130px; /* as the half of the width */
-    background:transparent;
-    border-bottom-left-radius: 140px;  /* 100px of height + 10px of border */
-    border-bottom-right-radius: 140px; /* 100px of height + 10px of border */
-    border: 10px solid #86c232;
-    border-bottom: 0;
-}
+
 
 .left-side{
   position:absolute;

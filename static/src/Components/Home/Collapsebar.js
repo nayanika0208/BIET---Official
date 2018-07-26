@@ -36,11 +36,11 @@ class Collapsebar extends Component{
           </NavItem>
           </Nav>
           
-          <Navbar.Brand >
+          
           <a href="#home" style={{position:"absolute",top:"0px",left:"10%",width:"40rem"}} >
           <img src={mainLogo} alt="Logo" width="100px" height="100px"  className="logo-size half-circle" id="logo"/>
           </a>
-          </Navbar.Brand>
+          
          <Nav  className="Nav-content-two"  id="navContent2">
       
           <NavItem eventKey={2} href="#">
@@ -55,6 +55,7 @@ class Collapsebar extends Component{
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+
 
 
     
