@@ -1,30 +1,127 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import SwipeableViews from 'react-swipeable-views';
+
 import HorizontalTimeline from 'react-horizontal-timeline';
-import './timeline.css';
+import HorizontalTimelineConfigurator from 'react-horizontal-timeline';
 
-const VALUES = [ "2010-12-05","2009-06-05","1998-06-05","2001-12-08","2010-12-05","2010-12-05"];
 
-export default class App extends React.Component {
-  state = { value: 0, previous: 0 };
+export default class Timeline extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 0,
+      previous: 0,
+      showConfigurator: false,
+
+      // timelineConfig
+      minEventPadding: 20,
+      maxEventPadding: 120,
+      linePadding: 100,
+      labelWidth: 100,
+      fillingMotionStiffness: 150,
+      fillingMotionDamping: 25,
+      slidingMotionStiffness: 150,
+      slidingMotionDamping: 25,
+      stylesBackground: '#f8f8f8',
+      stylesForeground: '#7b9d6f',
+      stylesOutline: '#dfdfdf',
+      isTouchEnabled: true,
+      isKeyboardEnabled: true,
+      isOpenEnding: true,
+      isOpenBeginning: true,
+    };
+
+    console.log(this.props);
+
+  }
+
+
+  static propTypes = {
+    content: PropTypes.arrayOf(PropTypes.object).isRequired
+  }
+
+  componentWillMount() {
+    this.dates = this.props.content.map((entry)=>entry.date);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    this.dates = nextProps.content.map((entry) => entry.date);
+  }
 
   render() {
+    const state = this.state;
+
+    const views = this.props.content.map((entry, index) => {
+      return (
+        <div className='container' key={index}>
+          { entry.component }
+        </div>
+      );
+    });
+
+    let configurator = (<div></div>);
+    if (this.state.showConfigurator) {
+      configurator = (
+        <HorizontalTimelineConfigurator
+          setConfig={(key, value) => {
+            this.setState({ [key]: value });
+          }}
+          {...this.state}
+        />
+      );
+    }
+
     return (
-      <div className="timeline-box">
-        {/* Bounding box for the Timeline */}
-        <div style={{ width: '80%', height: '100px', margin: '0 auto' }}>
+      <div>
+        <div style={{ width: '80%', height: '100px', margin: '300px auto',backgroundColor:"black" }}>
           <HorizontalTimeline
+            fillingMotion={{ stiffness: state.fillingMotionStiffness, damping: state.fillingMotionDamping }}
             index={this.state.value}
             indexClick={(index) => {
               this.setState({ value: index, previous: this.state.value });
             }}
-            values={ VALUES } />
+
+            isKeyboardEnabled={state.isKeyboardEnabled}
+            isTouchEnabled={state.isTouchEnabled}
+            labelWidth={state.labelWidth}
+            linePadding={state.linePadding}
+            maxEventPadding={state.maxEventPadding}
+            minEventPadding={state.minEventPadding}
+            slidingMotion={{ stiffness: state.slidingMotionStiffness, damping: state.slidingMotionDamping }}
+            styles={{
+              background: state.stylesBackground,
+              foreground: state.stylesForeground,
+              outline: state.stylesOutline
+            }}
+            values={ this.dates }
+            isOpenEnding={state.isOpenEnding}
+            isOpenBeginning={state.isOpenBeginning}
+          />
         </div>
         <div className='text-center'>
-          {/* any arbitrary component can go here */}    
-          {this.state.value}
+          <SwipeableViews
+            index={this.state.value}
+            onChangeIndex={(value, previous) => {
+              this.setState({ value: value, previous: previous });
+            }}
+            resistance>
+            {views}
+          </SwipeableViews>
         </div>
+        <div className='checkbox text-center' >
+          <label>
+            <input
+              onChange={() => {
+                this.setState({ showConfigurator: !this.state.showConfigurator });
+              }}
+              type='checkbox'
+            />
+            Configure the Timeline
+          </label>
+        </div>
+        { configurator }
       </div>
     );
   }
 }
-

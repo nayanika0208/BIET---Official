@@ -6667,7 +6667,7 @@ react-swipeable-views-core@^0.12.11, react-swipeable-views-core@^0.12.14:
     "@babel/runtime" "^7.0.0-beta.42"
     warning "^4.0.1"
 
-react-swipeable-views-utils@^0.12.13:
+react-swipeable-views-utils@^0.12.13, react-swipeable-views-utils@^0.12.14:
   version "0.12.14"
   resolved "https://registry.yarnpkg.com/react-swipeable-views-utils/-/react-swipeable-views-utils-0.12.14.tgz#7ba72ea8eff8149f2c50ed8abc6fb21d1e0de227"
   dependencies:
@@ -6688,6 +6688,17 @@ react-swipeable-views@0.12.13:
     react-swipeable-views-core "^0.12.11"
     react-swipeable-views-utils "^0.12.13"
     warning "^3.0.0"
+
+react-swipeable-views@^0.12.15:
+  version "0.12.15"
+  resolved "https://registry.yarnpkg.com/react-swipeable-views/-/react-swipeable-views-0.12.15.tgz#5af82d9cb2b2240c78cf74f4055002ecd14c90a2"
+  dependencies:
+    "@babel/runtime" "^7.0.0-beta.42"
+    dom-helpers "^3.2.1"
+    prop-types "^15.5.4"
+    react-swipeable-views-core "^0.12.14"
+    react-swipeable-views-utils "^0.12.14"
+    warning "^4.0.1"
 
 react-transition-group@^2.0.0, react-transition-group@^2.2.0, react-transition-group@^2.2.1:
   version "2.4.0"
