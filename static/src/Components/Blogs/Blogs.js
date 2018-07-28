@@ -33,7 +33,7 @@ const Blogs = ()=>
     <div className="Blog_paral1">
         <div className="Blog_Section-1">
 
-
+        <Timeline/>
 
     </div>
         </div>

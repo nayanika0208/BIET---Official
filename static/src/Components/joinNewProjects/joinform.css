@@ -66,6 +66,13 @@
 
 }
 */
+
+.form-body
+{
+	background-color:black;
+}
+
+
 .form-container
 {
 	width:100%;
@@ -100,8 +107,9 @@
 	height:300px;
 	width:400px;
 	position:absolute;
-	top:10rem;
+	top:50vh;
 	left:40%;
+	border:3px solid red;
 }
 
 .load .ring {animation: loadingD 1.5s .3s cubic-bezier(.17,.37,.43,.67) infinite;}

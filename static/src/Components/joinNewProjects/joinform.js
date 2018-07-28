@@ -49,11 +49,15 @@ class Joinform extends Component
     const { loading }=this.state;
     if(loading){
       return(
+        <div className="Form-body">
+        <Navigation/>
+        <NavigationTwo/>
           <div className="load ">
                 <p className="Primary-head">Loading</p>
                 <div className="ring">
                 </div>
        </div> 
+       </div>
         );
 
     }else{
