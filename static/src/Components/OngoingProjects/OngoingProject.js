@@ -2,8 +2,9 @@ import React,{Component} from'react';
 import OngoingProjectComp from './OngoingProjectComp'
 import "./OngoingProjectComp.css";
 import Pagefooter from '../PageFooter/PageFooter.js';
-import { StickyContainer, Sticky } from 'react-sticky';
-import Collapsebar from '../Home/Collapsebar';
+import Navigation from '../Navigation/Navigation.js';
+import NavigationTwo from '../Navigation/Navigation2.js'
+
 import Logobar from '../Home/Logobar';
 
 
@@ -22,8 +23,8 @@ const PROJECTS=project_list.map((value,index)=>
   return(
 
      <div>
-        <Logobar/>
-        <Collapsebar/>
+        
+        <NavigationTwo/>
         <div className="ongoing-box">
         <div className="ongoing-project">
         <div class="Primary-head">

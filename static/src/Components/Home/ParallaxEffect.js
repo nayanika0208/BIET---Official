@@ -4,14 +4,12 @@ import ProjectDisplay from './Project_Display';
 import Map from './Maps';
 import ProjectList from '../OngoingProjects/OngoingProject';
 import Footer from './Footer';
-import Collapsebar from './Collapsebar';
-import Logobar from './Logobar';
-import { StickyContainer, Sticky } from 'react-sticky';
 import mainLogo from "../BIETLogo1.png"
 import icon from './bulb.png';
 import Particles from 'react-particles-js';
 import Pagefooter from '../PageFooter/PageFooter.js';
-import Navigation from '../Navigation/Navigation.js'
+import Navigation from '../Navigation/Navigation.js';
+import NavigationTwo from '../Navigation/Navigation2.js'
 
 const para=
 {
@@ -40,7 +38,10 @@ const Parallax=()=>{
         <div>
         <Particles params={para} className="Particle"/>
         
-      <Navigation/>
+        <NavigationTwo/>
+        <Navigation/>
+     
+
         
         <div className="paral1" >
 

@@ -7,14 +7,17 @@ ul {
       position: fixed;
     top: 0;
     width: 100%;
-    z-index:11;
+    
 }
 li a {
-    display: block;
+    display: inline;
     width: 100px;
 }
-.nav{
+#nav1{
   border-top:1rem solid #61892f ;
+  background:rgba(0,0,0,0.5);
+  opacity:1;
+  z-index:15;
 
 }
 
@@ -27,7 +30,10 @@ li {
 .navlogo{
   position:absolute;
   top:0%;
-  left:30%;
+  left:35%;
+}
+.navlogo:hover{
+
 }
 
 .Nav-link:hover{
@@ -47,6 +53,8 @@ li {
   font-size:2rem;
   background-color:rgba(71,75,79,0.2);
   margin:0 1rem;
+  position:absolute;
+  top:25%;
 }
 
 .half-circle {
@@ -57,4 +65,41 @@ li {
     border-bottom-right-radius: 140px; /* 100px of height + 10px of border */
     border: 10px solid #86c232;
     border-bottom: 0;
+}
+.leftPart{
+  
+}
+.Home{
+position:absolute;
+top:25%;
+left:8%;
+
+}
+.About{
+ position:absolute;
+top:25%;
+left:20%;
+
+}
+.rightPart{
+  float:right;
+
+}
+.Project{
+position: absolute;
+top:25%;
+left:60%;
+margin-right:100px;
+}
+.JoinNew{
+position: absolute;
+top:25%;
+left:72%;
+margin-right:100px;
+}
+.Blogs{
+position: absolute;
+top:25%;
+left:84%;
+margin-right:100px;
 }
