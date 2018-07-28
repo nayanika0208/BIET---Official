@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
+import './timeline.css';
 import Timeline from './timeline';
 import GameInfo from './timelinecontent';
 
@@ -33,7 +33,7 @@ class Timelinedisp extends React.Component {
 
   render() {
     return (
-      <Timeline
+      <Timeline className="Timeline-box"
         content={this.data} />
     );
   }

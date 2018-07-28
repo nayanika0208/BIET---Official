@@ -74,7 +74,7 @@ export default class Timeline extends React.Component {
 
     return (
       <div>
-        <div style={{ width: '80%', height: '100px', margin: '300px auto',backgroundColor:"black" }}>
+        <div style={{ width: '80%', height:'100px', margin: '0px auto', marginTop:'20rem', backgroundColor:"black" }}>
           <HorizontalTimeline
             fillingMotion={{ stiffness: state.fillingMotionStiffness, damping: state.fillingMotionDamping }}
             index={this.state.value}
