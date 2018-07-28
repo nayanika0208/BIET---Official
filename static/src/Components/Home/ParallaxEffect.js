@@ -38,8 +38,9 @@ const Parallax=()=>{
         <div>
         <Particles params={para} className="Particle"/>
         
-        <NavigationTwo/>
+      
         <Navigation/>
+        <NavigationTwo/>
      
 
         

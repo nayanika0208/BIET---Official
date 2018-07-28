@@ -30,6 +30,7 @@ class Joinform extends Component
   return(
     <div>
     <div>
+    <Navigation/>
     <NavigationTwo/>
     <div className="form-box">
     <div className="form-container">
