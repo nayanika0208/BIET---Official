@@ -1,8 +1,15 @@
 
 
 #nav2{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+     overflow: hidden;
+      position: fixed;
+    top: 0;
+    width: 100%;
   border-top:1rem solid #61892f ;
-  background-color:rgba(0,0,0,0.5);
+  background-color:rgba(0,0,0,1);
   height:100px;
   z-index:12;
 

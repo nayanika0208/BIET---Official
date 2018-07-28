@@ -64,6 +64,7 @@ class About extends Component
     <div>
       
        <NavigationTwo/>
+       <Navigation/>
         
         <div className="About_paral1">
         <div className="About-box  shadow-5">

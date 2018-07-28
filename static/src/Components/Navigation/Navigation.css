@@ -1,23 +1,26 @@
 
 ul {
-    list-style-type: none;
+   
+    
+}
+li a {
+    display: inline;
+    width: 100px;
+
+}
+#nav1{
+   list-style-type: none;
     margin: 0;
     padding: 0;
      overflow: hidden;
       position: fixed;
     top: 0;
     width: 100%;
-    
-}
-li a {
-    display: inline;
-    width: 100px;
-}
-#nav1{
   border-top:1rem solid #61892f ;
   background:rgba(0,0,0,0.5);
-  opacity:1;
+ 
   z-index:15;
+  height:15rem;
 
 }
 
@@ -31,6 +34,7 @@ li {
   position:absolute;
   top:0%;
   left:35%;
+  opacity: 1
 }
 .navlogo:hover{
 

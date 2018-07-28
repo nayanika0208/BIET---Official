@@ -26,7 +26,8 @@ const Blogs = ()=>
     <div>
      
         <NavigationTwo/>
-      
+
+        <Navigation/>
 
         
     <div className="Blog_paral1">

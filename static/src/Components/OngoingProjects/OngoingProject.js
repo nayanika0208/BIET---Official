@@ -23,7 +23,7 @@ const PROJECTS=project_list.map((value,index)=>
   return(
 
      <div>
-        
+        <Navigation/>
         <NavigationTwo/>
         <div className="ongoing-box">
         <div className="ongoing-project">

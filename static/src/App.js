@@ -29,15 +29,15 @@ class App extends Component {
    const nav2=document.querySelector('#nav2');
   
    if(window.scrollY>105){
-   // nav1.style.opacity="0";
-   // nav2.style.opacity="1";
+   nav1.style.opacity="0";
+   nav2.style.opacity="1";
 
 
 }
   
 else{
-   // nav1.style.opacity="1";
-   // nav2.style.opacity="0";
+   nav1.style.opacity="1";
+   nav2.style.opacity="0";
 }
 }
   render() {
