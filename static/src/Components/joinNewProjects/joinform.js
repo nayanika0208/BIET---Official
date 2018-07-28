@@ -24,23 +24,55 @@ import Logobar from '../Home/Logobar';
 
 class Joinform extends Component
 {
+       constructor(props) {
+        super(props);
+        this.state = {
+          data: undefined,
+          loading:true,
+        }
+      }
 
+      componentDidMount(){
+        const source ="https://docs.google.com/forms/d/e/1FAIpQLSegQ3wPCz3bs3YfuGwMKxaQX0uUKMV2LsM154wOi94g9reYBQ/viewform?embedded=true";
+          this.setState({ data: source});
+          const form =document.querySelector('#form-1');
+          if(this.state.loading !==true)
+         { form.innerHTML=`<iframe src=${this.state.data} width="700" height="1500" frameborder="0" marginheight="0" marginwidth="0"></iframe>`
+         }
+          setTimeout(() => this.setState({ loading: false }), 1500);
+        }
+
+
+      
 
   render(){
-  return(
-    <div>
-    <div>
-    <Navigation/>
-    <NavigationTwo/>
-    <div className="form-box">
-    <div className="form-container">
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSegQ3wPCz3bs3YfuGwMKxaQX0uUKMV2LsM154wOi94g9reYBQ/viewform?embedded=true" width="700" height="1500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>   
-    </div>
-    </div>
-    </div>
-   <Pagefooter/>
-   </div>
+    const { loading }=this.state;
+    if(loading){
+      return(
+          <div className="load ">
+                <p className="Primary-head">Loading</p>
+                <div className="ring">
+                </div>
+       </div> 
+        );
+
+    }else{
+        return(
+        <div>
+        <div>
+       
+         <Navigation/>
+        <NavigationTwo/>
+        <div className="form-box">
+        <div className="form-container" id="form-1">
+        <iframe src={this.state.data} width="700" height="1500" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+        </div>
+        </div>
+        </div>
+       <Pagefooter/>
+       </div>
   );
+      }
 }
 }
 
