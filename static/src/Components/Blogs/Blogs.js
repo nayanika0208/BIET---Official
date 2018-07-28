@@ -1,6 +1,6 @@
 import React ,{Component} from 'react';
 import {Carousel,FormControl,FormGroup,Button} from 'react-bootstrap';
-import Timeline from './timeline';
+import Timelinedisp from './Timeline_disp';
 
 import img1 from './img1.jpeg';
 import img2 from './img2.jpg';
@@ -33,73 +33,7 @@ const Blogs = ()=>
     <div className="Blog_paral1">
         <div className="Blog_Section-1">
 
-        <Timeline  content={[{
-          date:'01/01/1994',
-          avatarURL: 'https://upload.wikimedia.org/wikipedia/en/8/89/Elder_Scrolls_Arena_Cover.jpg',
-          photo: './the_elder_scrolls_1_arena_wallpaper_by_thejackmoriarty-d8mlpzc.png',
-          title: 'The Elder Scrolls: 1',
-          subtitle: 'Arena',
-          content:"sdcsklcslkvlsmlvksmvlmsvlkmslvmslvm"
-        },
-        {
-          date:'01/01/1994',
-          avatarURL: 'https://upload.wikimedia.org/wikipedia/en/8/89/Elder_Scrolls_Arena_Cover.jpg',
-          photo: './the_elder_scrolls_1_arena_wallpaper_by_thejackmoriarty-d8mlpzc.png',
-          title: 'The Elder Scrolls: 1',
-          subtitle: 'Arena',
-          content:"sdcsklcslkvlsmlvksmvlmsvlkmslvmslvm"
-        },
-        {
-          date:'01/01/1994',
-          avatarURL: 'https://upload.wikimedia.org/wikipedia/en/8/89/Elder_Scrolls_Arena_Cover.jpg',
-          photo: './the_elder_scrolls_1_arena_wallpaper_by_thejackmoriarty-d8mlpzc.png',
-          title: 'The Elder Scrolls: 1',
-          subtitle: 'Arena',
-          content:"sdcsklcslkvlsmlvksmvlmsvlkmslvmslvm"
-        },
-
-        {
-          date:'01/01/1994',
-          avatarURL: 'https://upload.wikimedia.org/wikipedia/en/8/89/Elder_Scrolls_Arena_Cover.jpg',
-          photo: './the_elder_scrolls_1_arena_wallpaper_by_thejackmoriarty-d8mlpzc.png',
-          title: 'The Elder Scrolls: 1',
-          subtitle: 'Arena',
-          content:"sdcsklcslkvlsmlvksmvlmsvlkmslvmslvm"
-        },
-        {
-          date:'01/01/1994',
-          avatarURL: 'https://upload.wikimedia.org/wikipedia/en/8/89/Elder_Scrolls_Arena_Cover.jpg',
-          photo: './the_elder_scrolls_1_arena_wallpaper_by_thejackmoriarty-d8mlpzc.png',
-          title: 'The Elder Scrolls: 1',
-          subtitle: 'Arena',
-          content:"sdcsklcslkvlsmlvksmvlmsvlkmslvmslvm"
-        },
-        {
-          date:'01/01/1994',
-          avatarURL: 'https://upload.wikimedia.org/wikipedia/en/8/89/Elder_Scrolls_Arena_Cover.jpg',
-          photo: './the_elder_scrolls_1_arena_wallpaper_by_thejackmoriarty-d8mlpzc.png',
-          title: 'The Elder Scrolls: 1',
-          subtitle: 'Arena',
-          content:"sdcsklcslkvlsmlvksmvlmsvlkmslvmslvm"
-        },
-        {
-          date:'01/01/1994',
-          avatarURL: 'https://upload.wikimedia.org/wikipedia/en/8/89/Elder_Scrolls_Arena_Cover.jpg',
-          photo: './the_elder_scrolls_1_arena_wallpaper_by_thejackmoriarty-d8mlpzc.png',
-          title: 'The Elder Scrolls: 1',
-          subtitle: 'Arena',
-          content:"sdcsklcslkvlsmlvksmvlmsvlkmslvmslvm"
-        },
-
-        {
-          date:'01/01/1994',
-          avatarURL: 'https://upload.wikimedia.org/wikipedia/en/8/89/Elder_Scrolls_Arena_Cover.jpg',
-          photo: './the_elder_scrolls_1_arena_wallpaper_by_thejackmoriarty-d8mlpzc.png',
-          title: 'The Elder Scrolls: 1',
-          subtitle: 'Arena',
-          content:"sdcsklcslkvlsmlvksmvlmsvlkmslvmslvm"
-        }
-      ]} />
+        <Timelinedisp/>
 
     </div>
         </div>

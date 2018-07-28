@@ -109,18 +109,6 @@ export default class Timeline extends React.Component {
             {views}
           </SwipeableViews>
         </div>
-        <div className='checkbox text-center' >
-          <label>
-            <input
-              onChange={() => {
-                this.setState({ showConfigurator: !this.state.showConfigurator });
-              }}
-              type='checkbox'
-            />
-            Configure the Timeline
-          </label>
-        </div>
-        { configurator }
       </div>
     );
   }
