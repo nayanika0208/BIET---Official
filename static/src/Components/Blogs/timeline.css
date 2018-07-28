@@ -1,8 +1,7 @@
-.timeline_box
+.timeline-box
 {
   background-color:black;
-  margin-top:50rem;
-  padding:10rem;
-  overflow:scroll;
-  font:1rem;
+  height:400px;
+  margin-top:20rem;
+
 }
