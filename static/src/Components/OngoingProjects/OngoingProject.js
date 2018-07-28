@@ -25,7 +25,7 @@ const PROJECTS=project_list.map((value,index)=>
      <div>
         <Navigation/>
         <NavigationTwo/>
-        <div className="ongoing-box">
+        <div className="ongoing-box" style={{marginTop:"17vh"}}>
         <div className="ongoing-project">
         <div class="Primary-head">
         ONGOING PROJECTS
