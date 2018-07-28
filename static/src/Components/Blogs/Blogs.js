@@ -1,5 +1,6 @@
 import React ,{Component} from 'react';
 import {Carousel,FormControl,FormGroup,Button} from 'react-bootstrap';
+import Timeline from './timeline';
 
 import img1 from './img1.jpeg';
 import img2 from './img2.jpg';
@@ -24,16 +25,17 @@ const Blogs = ()=>
 
     <div>
     <div>
-        <Logobar/>
-        <Collapsebar/>
+      
         
-    <div className="paral1">
+    <div className="Blog_paral1">
         <div className="Blog_Section-1">
+
+
 
     </div>
         </div>
     
-        <div className="paral2">
+        <div className="Blog_paral2">
         <div className="Blog_Section-2">
     <h1 className="primary-head">New Innovations </h1> 
 
