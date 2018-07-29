@@ -74,7 +74,7 @@ class About extends Component
         <div className="Section-1">
              <h1 className="primary-head">MEET OUR TEAM </h1>
               <div className="a-display"> 
-             <div className="wow bounce" data-wow-offset="10">{a_display}
+             <div className="wow bounce" data-wow-offset="10" data-wow-interation="2">{a_display}
              </div>
              </div>
               <div className="b-display">  
