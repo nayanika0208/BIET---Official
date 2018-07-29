@@ -1,7 +1,4 @@
-.Timeline-box
+.test-box
 {
-  background-color:black;
-  margin-top:20rem;
-  border:30px solid red;
-
+  border:3px solid red;
 }

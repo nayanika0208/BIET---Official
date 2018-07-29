@@ -14,10 +14,10 @@ const Pagefooter=()=> {
         <img src={mainLogo} alt="Logo" className="Foot_Logo"  />
       </div>
         <div className="Foot_status-1">
-       <p>Copyright by -----</p>
+       Created by-<br/><div ><a className="Credits" href="https://github.com/Sayan97">Sayan Bandyopadhyay</a></div>
       </div>
       <div className="Foot_status-2">
-      <p>Developed by -----</p>
+      Developed by-<br/><div ><a className="Credits" href="https://github.com/Utkarshmalik">Utkarsh Malik</a><br/><a className="Credits" href="https://github.com/nayanika0208">Nayanika Singh</a></div>
      </div>
       </div>
       

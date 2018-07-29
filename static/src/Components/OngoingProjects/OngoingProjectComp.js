@@ -1,15 +1,16 @@
 import React,{Component} from 'react';
 import image from './img1.jpg';
-import image2 from './img2.jpg';
 import './OngoingProjectComp.css';
 import{Glyphicon} from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
 
 const moveRight=(e)=>{
+  e.preventDefault();
   
- e.target.parentNode.parentNode.style.opacity="0";
+ e.target.parentNode.parentNode.parentNode.parentNode.parentNode.style.opacity="0";
 
- e.target.parentNode.parentNode.parentNode.childNodes[2].style.transform="translateX(0%)";
-  console.log(e.target.parentNode.parentNode)
+e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[2].style.transform="translateX(0%)";
+  console.log(e.target.parentNode.parentNode.parentNode.parentNode.parentNode)
 }
 const moveLeft=(e)=>{
    console.log(e.target.parentNode.parentNode.parentNode.childNodes[1])
@@ -20,39 +21,38 @@ const moveLeft=(e)=>{
 
 
 //import { url } from 'inspector';
-const OngoingProjectComp =() =>
+const OngoingProjectComp =({Title,Summary,Description,Index}) =>
 {
   return(
     <div class="project_component">
     <div className="project_image shadow-5">
     <div className="main">
-    <img src={image} alt="project-image" height="100%" width="100%" className="front-face"/> 
+    <img src={require(`./Images/img${Index}.jpg`)} alt="project-image" height="100%" width="100%" className="front-face"/> 
     <div className="first-display"> 
       <div className="info">
        <div className="details">
        <div className="project_details">
-       <h1>ProjectName</h1>
-      <p >
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu
+       <h1>{Title}</h1>
+      <p>
+      {Summary}
       </p>
-      <a href="#"> <button class="Details_button">Join Project <span>  <Glyphicon glyph="menu-right" /> </span>  </button> </a>
+      <a href="#"> <button class="Details_button"  onClick={moveRight} >Project Details <span>  <Glyphicon glyph="menu-right" /> </span>  </button> </a>
       </div>
 
       </div>
       </div>
      <div className="side_logo">
-      <img src={image2} alt="project-image"  className="img2"/>
+      <img src={require(`./Logo/Logo${Index}.png`)} alt="project-image"  className="img2"/>
      </div>
-     <button className="arrow-button" onClick={moveRight}><Glyphicon glyph="menu-right" /> </button>
      </div>
      <div className="second-display">
      <div className="info2">
        <div className="project_details">
-       <h1>ProjectName</h1>
+       <h1>{Title}</h1>
       <p >
-      Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu
+      {Description}
       </p>
-      <a href="#"> <button class="Details_button">Join Project <span>  <Glyphicon glyph="menu-right" /> </span>  </button> </a>
+      <a href="#"> <button class="Details_button"><NavLink  to='/JoinNew'>Join Project </NavLink><span>  <Glyphicon glyph="menu-right" /> </span>  </button> </a>
       </div>
       </div>
       <button className="arrow-button-left" onClick={moveLeft}><Glyphicon glyph="menu-left" /> </button>

@@ -1,10 +1,14 @@
+
 .Blog_Section-1
 {
   background-color:black;
   width:100%;
-  border:5px solid pink;
   position: relative;
+  color:white;
   height:auto;
+  text-align:left;
+  padding-top:15rem;
+  border-bottom:5px solid #86C232;
 
 }
 .Blog_Section-2 , .Blog_Section-3
@@ -12,9 +16,12 @@
 {
  /* border:3px solid blue;*/
   display:block;
-  margin-bottom:2rem;
+ 
   text-align:center;
   background-color:black;
+  padding:1rem;
+  border-bottom:5px solid #86C232;
+
 }
 
 .Carousel
@@ -31,15 +38,15 @@
 .Blog_form-box
 {
   width:60%;
-  border:3px solid black;
+  height:120rem;
+  border:8px solid #86C232;
   display:block;
   margin-top:0;
   margin-right: auto;
   margin-left:auto;
-  margin-bottom: 3rem;
-  padding:5px;
   background-color:grey;
   text-align:center;
+
 
 }
 
@@ -86,11 +93,14 @@ button {
   outline: none;
 }
 
+/*
 body {
   font: normal 16px/1.5 "Helvetica Neue", sans-serif;
   background: #456990;
   color: #fff;
 }
+
+*/
 
 
 /* .section SECTION

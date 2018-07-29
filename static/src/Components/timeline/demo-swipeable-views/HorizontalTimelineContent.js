@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
-import './timeline.css';
-import HorizontalTimeline from 'react-horizontal-timeline';
-import HorizontalTimelineConfigurator from 'react-horizontal-timeline';
+
+import HorizontalTimeline from '../../src/Components/HorizontalTimeline';
+import HorizontalTimelineConfigurator from './HorizontalTimelineConfigurator';
 
 
-export default class Timeline extends React.Component {
+export default class HorizontalTimelineContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -15,7 +15,7 @@ export default class Timeline extends React.Component {
       showConfigurator: false,
 
       // timelineConfig
-      minEventPadding: 40,
+      minEventPadding: 20,
       maxEventPadding: 120,
       linePadding: 100,
       labelWidth: 100,
@@ -27,22 +27,18 @@ export default class Timeline extends React.Component {
       stylesForeground: '#7b9d6f',
       stylesOutline: '#dfdfdf',
       isTouchEnabled: true,
-      isKeyboardEnabled:true,
-      isOpenEnding:true,
+      isKeyboardEnabled: true,
+      isOpenEnding: true,
       isOpenBeginning: true,
     };
-
-    console.log(this.props);
-
   }
-
 
   static propTypes = {
     content: PropTypes.arrayOf(PropTypes.object).isRequired
   }
 
   componentWillMount() {
-    this.dates = this.props.content.map((entry)=>entry.date);
+    this.dates = this.props.content.map((entry) => entry.date);
   }
 
   componentWillReceiveProps(nextProps) {
@@ -73,8 +69,8 @@ export default class Timeline extends React.Component {
     }
 
     return (
-      <div className="test-box">
-        <div style={{ width: '80%', height:'100px', margin: '0px auto', marginTop:'10rem', backgroundColor:"black" }}>
+      <div>
+        <div style={{ width: '60%', height: '400px', margin: '0 auto' }}>
           <HorizontalTimeline
             fillingMotion={{ stiffness: state.fillingMotionStiffness, damping: state.fillingMotionDamping }}
             index={this.state.value}
@@ -109,6 +105,18 @@ export default class Timeline extends React.Component {
             {views}
           </SwipeableViews>
         </div>
+        <div className='checkbox text-center' >
+          <label>
+            <input
+              onChange={() => {
+                this.setState({ showConfigurator: !this.state.showConfigurator });
+              }}
+              type='checkbox'
+            />
+            Configure the Timeline
+          </label>
+        </div>
+        { configurator }
       </div>
     );
   }

@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "google-maps-react": "^2.0.2",
+    "jarallax": "^1.10.3",
     "material-kit": "^2.0.4",
     "material-kit-react": "^1.1.0",
     "particles.js": "^2.0.0",

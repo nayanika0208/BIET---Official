@@ -17,20 +17,25 @@ import WOW from 'wow.js';//for animations
 
 
 
-const a_members=[{name:"Sayan",designation:"Manager",image:"../img1.jpg"},{name:"Member Name",designation:"Member Post",image:"../img1.jpg"}];
+const a_members=[
+  {name:"Sayan",designation:"Manager"},
+  {name:"Elton",designation:"Post"}];
 
-const b_members=[{name:"Member Name",designation:"Member Post",image:"../img1.jpg"},{name:"Member Name",designation:"Member Post",image:"../img1.jpg"}
-,{name:"Member Name",designation:"Member Post",image:"../img1.jpg"},{name:"Member Name",designation:"Member Post",image:"../img1.jpg"}];
+const b_members=[
+{name:"Sayan",designation:"Manager"},
+{name:"Sayan",designation:"Manager"},
+{name:"Sayan",designation:"Manager"},
+{name:"Sayan",designation:"Manager"}, 
+{name:"Sayan",designation:"Manager"}, 
+{name:"Sayan",designation:"Manager"}, 
+]
 
-const c_members=[{name:"Member Name",image:"../img1.jpg"},{name:"Member Name",image:"../img1.jpg"}
-,{name:"Member Name",image:"../img1.jpg"},{name:"Member Name",image:"../img1.jpg"},{name:"Member Name",image:"../img1.jpg"},{name:"Member Name",image:"../img1.jpg"}
-,{name:"Member Name",image:"../img1.jpg"},{name:"Member Name",image:"../img1.jpg"}];
 
 
 const a_display = a_members.map((element,index)=>
 {
   return(
-    <Acomp name={element.name} designation={element.designation} image={element.image} />
+    <Acomp name={element.name} designation={element.designation} index={index+1} />
   )
 })
 
@@ -38,19 +43,9 @@ const a_display = a_members.map((element,index)=>
 const b_display = b_members.map((element,index)=>
 {
   return(
-    <Bcomp name={element.name} designation={element.designation} image={element.image} />
+    <Bcomp name={element.name} designation={element.designation} index={index+1} />
   )
 })
-
-const c_display = c_members.map((element,index)=>
-{
-  return(
-    <Ccomp name={element.name}  image={element.image} />
-  )
-})
-
-
-
 
 
 class About extends Component
@@ -70,9 +65,7 @@ class About extends Component
         <div className="About-box  shadow-5">
              <h1 className="Primary-head wow fadeInUp">ABOUT US</h1> 
              <div className="Paragraph">
-             <p>I'm a paragraph. Click here to add your own text and edit me.
-             It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
-             </p>
+             <p>The Bio-Inspired Engineering Team is primarily focused on providing solutions and technologies that are geared towards solving the multiple problems that plague society. All the innovations and developments are inspired from the natural structures and designs. Allowing these products to be efficient, compliant, cheap, and an Indian Innovation. All projects are created with the inspiration of nature's design. The team comprises of skilled and motivated individuals who constantly strive to create products which can change human lives. Created by students, for the masses.</p>
              </div>
              </div>
         </div>
@@ -85,10 +78,6 @@ class About extends Component
              </div>
               <div className="b-display">  
              {b_display}
-             </div>
-                
-             <div className="c-display">  
-             {c_display}
              </div>
 
         </div>

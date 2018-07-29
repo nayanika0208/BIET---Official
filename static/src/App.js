@@ -31,11 +31,11 @@ class App extends Component {
    const nav2=document.querySelector('#nav2');
   
    if(window.scrollY>105){
-       nav1.style.transform="translateX(100%)";
-       nav2.style.transform="translateX(0%)";
+       nav1.style.transform="translateY(-100%)";
+       nav2.style.transform="translateY(0%)";
     }else{
-       nav1.style.transform="translateX(0%)";
-       nav2.style.transform="translateX(100%)";
+       nav1.style.transform="translateY(0%)";
+       nav2.style.transform="translateY(-100%)";
     }
 
 }
