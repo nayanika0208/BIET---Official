@@ -4,16 +4,16 @@ import Bcomp from './b-member/member_comp';
 import Ccomp from './c-member/member_comp';
 import './About.css';
 import Pagefooter from '../PageFooter/PageFooter.js';
-import Logobar from '../Home/Logobar';
-import Navigation from '../Navigation/Navigation.js';
-import NavigationTwo from '../Navigation/Navigation2.js'
-//import pictures of logo
+import Navigation from '../Navigation/Navigation.js';//main navigation bar
+import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
 
+//import pictures of logo
 import DSIR from './DSIR.png';
 import DST from './DST.png';
 import ICMR from './ICMR.jpg';
 import VIT from './VIT.png';
 
+import WOW from 'wow.js';//for animations
 
 
 
@@ -68,7 +68,7 @@ class About extends Component
         
         <div className="About_paral1">
         <div className="About-box  shadow-5">
-             <h1 className="Primary-head">ABOUT US</h1> 
+             <h1 className="Primary-head wow fadeInUp">ABOUT US</h1> 
              <div className="Paragraph">
              <p>I'm a paragraph. Click here to add your own text and edit me.
              It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.

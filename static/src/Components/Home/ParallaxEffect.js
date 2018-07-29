@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import './ParallaxEffect.css';
-import ProjectDisplay from './Project_Display';
-import Map from './Maps';
-import ProjectList from '../OngoingProjects/OngoingProject';
-import Footer from './Footer';
-import mainLogo from "../BIETLogo1.png"
-import icon from './bulb.png';
-import Particles from 'react-particles-js';
-import Pagefooter from '../PageFooter/PageFooter.js';
-import Navigation from '../Navigation/Navigation.js';
-import NavigationTwo from '../Navigation/Navigation2.js'
 
+import Navigation from '../Navigation/Navigation.js';//main navigation bar
+import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
+import ProjectDisplay from './Project_Display';//project display section
+import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
+import Map from './Maps';
+import Footer from './Footer';//footer on homepage section
+
+import WOW from 'wow.js';//wow.js for animations
+
+import './ParallaxEffect.css';
+
+//logos used in page
+import mainLogo from "./BietLogo1.svg";
+import icon from './bulb.png';
+
+import Particles from 'react-particles-js';
+//particle js background
 const para=
 {
   particles: {
@@ -28,10 +34,16 @@ const para=
 }
 
 
+class Parallax extends Component{
+
+  componentDidMount(){
+
+      new WOW().init();
+
+  }
 
 
-
-const Parallax=()=>{
+  render(){
  
     return (
     	<div>
@@ -47,7 +59,10 @@ const Parallax=()=>{
         <div className="paral1" >
 
         <div className="head-box">
-        <h1 className="Primary-head"> WELCOME TO </h1> <span className="Main-head">INNOVATION LABS </span>
+       
+        <h1 className="Primary-head wow bounce" data-wow-duration="2s" data-wow-delay="0.1s"> WELCOME TO </h1>
+        
+         <span className="Main-head wow pulse grow" data-wow-delay="2.1s">INNOVATION LABS </span>
         </div>
         </div>
         <div className="About-box">
@@ -64,9 +79,10 @@ const Parallax=()=>{
             </div>
             </div>
       
-    
-        <div className="paral2">
-        <ProjectDisplay/>
+        <div data-scrollax-parent="true">
+          <div className="paral2 " data-scrollax="properties: { translateY: '30%' }">
+          <ProjectDisplay />
+        </div>
         </div>
 
       <div className="head-back">
@@ -80,6 +96,7 @@ const Parallax=()=>{
       </div>
 
     );
+  }
 }
 
 export default Parallax;

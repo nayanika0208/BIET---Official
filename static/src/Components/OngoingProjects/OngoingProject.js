@@ -1,15 +1,15 @@
 import React,{Component} from'react';
-import OngoingProjectComp from './OngoingProjectComp'
-import "./OngoingProjectComp.css";
-import Pagefooter from '../PageFooter/PageFooter.js';
-import Navigation from '../Navigation/Navigation.js';
-import NavigationTwo from '../Navigation/Navigation2.js'
+//single ongoing project component
+import OngoingProjectComp from './OngoingProjectComp';
+import "./OngoingProjectComp.css";//stylesheet
 
-import Logobar from '../Home/Logobar';
+
+import Navigation from '../Navigation/Navigation.js';//main navigation bar
+import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
+import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
 
 
 const project_list =[1,2,3,4,5]
-
 
 
 const ProjectList=()=>
