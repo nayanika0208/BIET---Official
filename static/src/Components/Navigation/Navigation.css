@@ -33,7 +33,7 @@ li {
 .navlogo{
   position:absolute;
   top:0%;
-  left:35%;
+  left:40%;
   opacity: 1
 }
 .navlogo:hover{
@@ -92,18 +92,18 @@ left:20%;
 .Project{
 position: absolute;
 top:25%;
-left:60%;
+left:65%;
 margin-right:100px;
 }
 .JoinNew{
 position: absolute;
 top:25%;
-left:72%;
+left:78%;
 margin-right:100px;
 }
 .Blogs{
 position: absolute;
 top:25%;
-left:84%;
+left:90%;
 margin-right:100px;
 }

@@ -5,17 +5,12 @@ import Timelinedisp from './Timeline_disp';
 import img1 from './img1.jpeg';
 import img2 from './img2.jpg';
 import img3 from './img3.jpg';
-import Navigation from '../Navigation/Navigation.js';
-import NavigationTwo from '../Navigation/Navigation2.js'
 
-import Logobar from '../Home/Logobar';
-import Pagefooter from '../PageFooter/PageFooter.js';
+import Navigation from '../Navigation/Navigation.js';//main navigation bar
+import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
+import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
+
 import './Blogs.css';
-
-
-
-
-
 
 const Blogs = ()=>
 {
@@ -23,12 +18,13 @@ const Blogs = ()=>
   return(
 
     <div>
-    <div>
+      <div>
      
         <NavigationTwo/>
-
         <Navigation/>
 
+          <div className="Blog_paral1">
+            
         
         <div className="Blog_Section-1">
         <h1 className="primary-head">Our Timeline</h1> 
@@ -69,7 +65,9 @@ const Blogs = ()=>
 </Carousel>
 
 
-        </div>
+      </div>
+    </div>
+  );
 
     <div className="Blog_Section-3">
     <h1 className="primary-head">SHARE YOUR IDEA</h1>
@@ -81,6 +79,7 @@ const Blogs = ()=>
 </div>
 </div>
 )
+
 
 }
 

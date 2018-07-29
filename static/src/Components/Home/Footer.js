@@ -1,5 +1,5 @@
 import React from 'react';
-import mainLogo from "./BIETLogo.png";
+import mainLogo from "./BietLogo1.svg";
 import{Glyphicon} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 import './Footer.css';
@@ -28,11 +28,13 @@ const Footer=()=>
 
 
     <div className="Social-media-box">
+
     <h3>Be a SociaLite and  Follow Us:</h3>
-    <SocialIcon className="icon" url="https://www.facebook.com/" />
-    <SocialIcon className="icon" url="https://www.instagram.com/" />
-    <SocialIcon className="icon" url="https://www.twitter.com/" />
-    <SocialIcon className="icon" url="https://www.linkedin.com/" />
+    <SocialIcon className="icon grow" url="https://www.facebook.com/" />
+    <SocialIcon className="icon grow" url="https://www.instagram.com/" />
+    <SocialIcon className="icon grow" url="https://www.twitter.com/" />
+    <SocialIcon className="icon grow" url="https://www.linkedin.com/" />
+
   </div>
 
 

@@ -1,17 +1,24 @@
 import React,{Component} from 'react';
-import prog from './proj.jpg';
+
 import './Project_Comp.css';
+
+import prog from './proj.jpg';
 import{Glyphicon} from 'react-bootstrap';
 
 
 //import { url } from 'inspector';
+
+//ongoing projects section on the home page
+
+
 const ProjectComp =({title,summary,index}) =>
+
 {
 
 
 
   return(
-    <div class="proj_component">
+
     <div className="proj_image">
     <div className="Side-1">
     <img src={require(`./Images/img${index}.jpg`)} alt="project-image"  className="front-face" backgroundSize="cover" height="100%" width="100%"/> 
@@ -24,8 +31,9 @@ const ProjectComp =({title,summary,index}) =>
       <p>{title}</p>
       </div>
       </div>
-      </div>
+      
     )
+
 }
 export default ProjectComp;
 

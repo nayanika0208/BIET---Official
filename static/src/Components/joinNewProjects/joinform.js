@@ -1,25 +1,9 @@
 import React,{Component} from 'react';
-import{form,Form,FormGroup,FormControl,InputGroup,DropdownButton,Button,Glyphicon,MenuItem,ControlLabel} from 'react-bootstrap';
-import{HelpBlock} from 'react-bootstrap';
 import './joinform.css';
-import Pagefooter from '../PageFooter/PageFooter.js';
-import Navigation from '../Navigation/Navigation.js';
-import NavigationTwo from '../Navigation/Navigation2.js'
-import { StickyContainer, Sticky } from 'react-sticky';
-import Collapsebar from '../Home/Collapsebar';
-import Logobar from '../Home/Logobar';
 
-
- const FieldGroup=({ id, label, help, ...props })=>{
-  return (
-    <FormGroup controlId={id}>
-      <ControlLabel>{label}</ControlLabel>
-      <span className="required">*</span>
-      <FormControl {...props} />
-      {help && <HelpBlock>{help}</HelpBlock>}
-    </FormGroup>
-  );
-}
+import Navigation from '../Navigation/Navigation.js';//main navigation bar
+import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
+import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
 
 
 class Joinform extends Component
@@ -41,10 +25,7 @@ class Joinform extends Component
          }
           setTimeout(() => this.setState({ loading: false }), 1500);
         }
-
-
-      
-
+        
   render(){
     const { loading }=this.state;
     if(loading){

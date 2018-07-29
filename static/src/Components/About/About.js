@@ -4,16 +4,16 @@ import Bcomp from './b-member/member_comp';
 import Ccomp from './c-member/member_comp';
 import './About.css';
 import Pagefooter from '../PageFooter/PageFooter.js';
-import Logobar from '../Home/Logobar';
-import Navigation from '../Navigation/Navigation.js';
-import NavigationTwo from '../Navigation/Navigation2.js'
-//import pictures of logo
+import Navigation from '../Navigation/Navigation.js';//main navigation bar
+import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
 
+//import pictures of logo
 import DSIR from './DSIR.png';
 import DST from './DST.png';
 import ICMR from './ICMR.jpg';
 import VIT from './VIT.png';
 
+import WOW from 'wow.js';//for animations
 
 
 
@@ -63,7 +63,7 @@ class About extends Component
         
         <div className="About_paral1">
         <div className="About-box  shadow-5">
-             <h1 className="Primary-head">ABOUT US</h1> 
+             <h1 className="Primary-head wow fadeInUp">ABOUT US</h1> 
              <div className="Paragraph">
              <p>The Bio-Inspired Engineering Team is primarily focused on providing solutions and technologies that are geared towards solving the multiple problems that plague society. All the innovations and developments are inspired from the natural structures and designs. Allowing these products to be efficient, compliant, cheap, and an Indian Innovation. All projects are created with the inspiration of nature's design. The team comprises of skilled and motivated individuals who constantly strive to create products which can change human lives. Created by students, for the masses.</p>
              </div>

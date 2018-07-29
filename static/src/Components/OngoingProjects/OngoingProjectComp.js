@@ -2,13 +2,15 @@ import React,{Component} from 'react';
 import image from './img1.jpg';
 import './OngoingProjectComp.css';
 import{Glyphicon} from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
 
 const moveRight=(e)=>{
+  e.preventDefault();
   
- e.target.parentNode.parentNode.style.opacity="0";
+ e.target.parentNode.parentNode.parentNode.parentNode.parentNode.style.opacity="0";
 
- e.target.parentNode.parentNode.parentNode.childNodes[2].style.transform="translateX(0%)";
-  console.log(e.target.parentNode.parentNode)
+e.target.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.childNodes[2].style.transform="translateX(0%)";
+  console.log(e.target.parentNode.parentNode.parentNode.parentNode.parentNode)
 }
 const moveLeft=(e)=>{
    console.log(e.target.parentNode.parentNode.parentNode.childNodes[1])
@@ -34,7 +36,7 @@ const OngoingProjectComp =({Title,Summary,Description,Index}) =>
       <p>
       {Summary}
       </p>
-      <a href="#"> <button class="Details_button">Join Project <span>  <Glyphicon glyph="menu-right" /> </span>  </button> </a>
+      <a href="#"> <button class="Details_button"  onClick={moveRight} >Project Details <span>  <Glyphicon glyph="menu-right" /> </span>  </button> </a>
       </div>
 
       </div>
@@ -42,7 +44,6 @@ const OngoingProjectComp =({Title,Summary,Description,Index}) =>
      <div className="side_logo">
       <img src={require(`./Logo/Logo${Index}.png`)} alt="project-image"  className="img2"/>
      </div>
-     <button className="arrow-button" onClick={moveRight}><Glyphicon glyph="menu-right" /> </button>
      </div>
      <div className="second-display">
      <div className="info2">
@@ -51,7 +52,7 @@ const OngoingProjectComp =({Title,Summary,Description,Index}) =>
       <p >
       {Description}
       </p>
-      <a href="#"> <button class="Details_button">Join Project <span>  <Glyphicon glyph="menu-right" /> </span>  </button> </a>
+      <a href="#"> <button class="Details_button"><NavLink  to='/JoinNew'>Join Project </NavLink><span>  <Glyphicon glyph="menu-right" /> </span>  </button> </a>
       </div>
       </div>
       <button className="arrow-button-left" onClick={moveLeft}><Glyphicon glyph="menu-left" /> </button>
