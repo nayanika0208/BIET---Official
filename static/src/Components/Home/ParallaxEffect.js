@@ -9,11 +9,7 @@ import Footer from './Footer';//footer on homepage section
 
 import WOW from 'wow.js';//wow.js for animations
 
-import {
-    jarallax,
-    jarallaxElement,
-    jarallaxVideo
-} from 'jarallax';
+import {jarallax} from 'jarallax';
 
 import './ParallaxEffect.css';
 
@@ -86,7 +82,7 @@ class Parallax extends Component{
             </div>
       
         <div >
-        <div className="jarallax" style={{backgroundImage:"url('./img4.3.jpg')"}}>
+        <div className="paral2 jarallax" >
             <ProjectDisplay />
           </div>
         </div>
