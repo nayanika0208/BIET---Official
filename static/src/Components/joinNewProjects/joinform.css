@@ -107,9 +107,12 @@
 	height:300px;
 	width:400px;
 	position:absolute;
-	top:50vh;
-	left:40%;
-	border:3px solid red;
+	top:40vh;
+	left:50%;
+	transform:translateX(-50%);
+	border:5px solid #61892f;
+	border-radius:1rem;
+	text-align:center;
 }
 
 .load .ring {animation: loadingD 1.5s .3s cubic-bezier(.17,.37,.43,.67) infinite;}

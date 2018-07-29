@@ -54,7 +54,7 @@ const Parallax=()=>{
         <div className="left-part"> 
 
         <h2 className="Secondary-head">About Us</h2>
-        <p className="paragraph">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+        <p className="paragraph">The Bio-Inspired Engineering Team is a comglomeration of the brightest minds in The Vellore Institute of Technology to create real solutions in this ever-changing landscape of technical innovations.</p>
              </div>
             <div className="right-part">
             <div className="image-box">

@@ -30,15 +30,13 @@ const Blogs = ()=>
         <Navigation/>
 
         
-    <div className="Blog_paral1">
         <div className="Blog_Section-1">
+        <h1 className="primary-head">Our Timeline</h1> 
 
         <Timelinedisp/>
-
-    </div>
         </div>
+        
     
-        <div className="Blog_paral2">
         <div className="Blog_Section-2">
     <h1 className="primary-head">New Innovations </h1> 
 
@@ -73,55 +71,17 @@ const Blogs = ()=>
 
         </div>
 
-        <div className="paral3">
     <div className="Blog_Section-3">
-
     <h1 className="primary-head">SHARE YOUR IDEA</h1>
-
     <div className="Blog_form-box">
-    <h2>Enter your details </h2>
-    <form>
-    <FormGroup>
-
-    <FormControl
-    id="blog_formControlsText"
-    type="text"
-    label="Name"
-    placeholder="Enter Name Here"
-    />
-
-  <FormControl
-    id="blog_formControlsEmail"
-    type="email"
-    label="Email address"
-    placeholder="Enter email"
-  />
-
-  <FormControl
-  id="blog_formControlsProposal"
-  type="text"
-  label="Proposol"
-  placeholder="Enter Proposol Here"
-  />
-
-  <FormControl 
-  id="blog_formControlsAbstract"
-   componentClass="textarea" 
-   placeholder="Abstract" 
-    />
-  </FormGroup>
-  <Button type="submit">Submit</Button>
-
-</form>
-</div>
-</div>
-</div>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdV1dm6WAqBj7xpPhs-j21SJWNc36VX3A4zjl0O_PkbOMrTzQ/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
 </div>
 <Pagefooter/>
+</div>
+</div>
+)
 
-  </div>
-    </div>
-  )
 }
 
 

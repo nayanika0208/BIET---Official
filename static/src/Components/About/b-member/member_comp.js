@@ -1,13 +1,12 @@
 import React from 'react';
 import './b-member.css';
-import temp_image from './img1.jpg';
 
-const Bcomp=({name,designation,image})=>
+const Bcomp=({name,designation,index})=>
 {
 
   return(
     <div class="b-member shadow-5">
-    <img src={temp_image} alt="Member-photograph" className="member-photo"/>
+    <img src={require(`./Images/img${index}.jpg`)} alt="Member-photograph" className="member-photo" height="100%" width="100%" />
     <div className="part-1">
     <span className="content-1">{name} </span>
     </div>

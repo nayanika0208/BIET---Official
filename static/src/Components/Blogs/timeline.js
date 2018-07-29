@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
-
+import './timeline.css';
 import HorizontalTimeline from 'react-horizontal-timeline';
 import HorizontalTimelineConfigurator from 'react-horizontal-timeline';
 
@@ -15,7 +15,7 @@ export default class Timeline extends React.Component {
       showConfigurator: false,
 
       // timelineConfig
-      minEventPadding: 20,
+      minEventPadding: 40,
       maxEventPadding: 120,
       linePadding: 100,
       labelWidth: 100,
@@ -27,8 +27,8 @@ export default class Timeline extends React.Component {
       stylesForeground: '#7b9d6f',
       stylesOutline: '#dfdfdf',
       isTouchEnabled: true,
-      isKeyboardEnabled: true,
-      isOpenEnding: true,
+      isKeyboardEnabled:true,
+      isOpenEnding:true,
       isOpenBeginning: true,
     };
 
@@ -73,8 +73,8 @@ export default class Timeline extends React.Component {
     }
 
     return (
-      <div>
-        <div style={{ width: '80%', height:'100px', margin: '0px auto', marginTop:'20rem', backgroundColor:"black" }}>
+      <div className="test-box">
+        <div style={{ width: '80%', height:'100px', margin: '0px auto', marginTop:'10rem', backgroundColor:"black" }}>
           <HorizontalTimeline
             fillingMotion={{ stiffness: state.fillingMotionStiffness, damping: state.fillingMotionDamping }}
             index={this.state.value}

@@ -30,7 +30,7 @@
     position:absolute;
     left:50%;
     top:50%;
-    transform:translate(-50%,-50%);
+    transform:translate(-50%,-30%);
 
 }
 
@@ -43,7 +43,7 @@
     top:50%;
     font-size:1.7rem;
     color:lightgrey;
-    background-color:rgba(34,38,41,0.3);
+    /*background-color:rgba(34,38,41,0.3);*/
     border-radius:1rem;
     padding:0.5rem;
     text-align:center;
@@ -59,9 +59,18 @@
     top:50%;
     font-size:1.7rem;
     color:lightgrey;
-    background-color:rgba(34,38,41,0.3);
+    /*background-color:rgba(34,38,41,0.3);*/
     border-radius:1rem;
     padding:0.5rem;
     text-align:center;
 
+}
+
+
+.Credits
+{
+    text-decoration:none;
+    color:white;
+    font:20px;
+    display:inline-block;    
 }
