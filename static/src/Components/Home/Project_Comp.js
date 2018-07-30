@@ -4,6 +4,8 @@ import './Project_Comp.css';
 
 import prog from './proj.jpg';
 import{Glyphicon} from 'react-bootstrap';
+import {NavLink} from 'react-router-dom';
+
 
 
 //import { url } from 'inspector';
@@ -24,7 +26,7 @@ const ProjectComp =({title,summary,index}) =>
     <img src={require(`./Images/img${index}.jpg`)} alt="project-image"  className="front-face" backgroundSize="cover" height="100%" width="100%"/> 
       <div className="Side-2">
       <p className="proj_title">{summary} </p>
-    <a href="#"> <button class="Proj_Details_button">Know More <span>  <Glyphicon glyph="menu-right" /> </span>  </button> </a> 
+    <a href="#"><NavLink  to='/OngoingProject'><button class="Proj_Details_button">Know More <span>  <Glyphicon glyph="menu-right" /> </span>  </button></NavLink> </a> 
     </div>
     </div>
     <div className="proj_name">

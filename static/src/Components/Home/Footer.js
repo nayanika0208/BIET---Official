@@ -3,7 +3,7 @@ import mainLogo from "./BietLogo1.svg";
 import{Glyphicon} from 'react-bootstrap';
 import { SocialIcon } from 'react-social-icons';
 import './Footer.css';
-import Map from './Maps';
+import MapContainer from './Maps';
 
 
 
@@ -44,8 +44,10 @@ const Footer=()=>
 
         <div className="map-box">
 
-        <Map/>
-        </div>
+        <MapContainer/>
+
+    
+      </div>
 
         </div>
         </div>
