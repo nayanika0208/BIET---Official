@@ -27,7 +27,8 @@ const b_members=[
 {name:"Sayan",designation:"Manager"},
 {name:"Sayan",designation:"Manager"}, 
 {name:"Sayan",designation:"Manager"}, 
-{name:"Sayan",designation:"Manager"}, 
+{name:"Sayan",designation:"Manager"},
+{name:"Sayan",designation:"Manager"} 
 ]
 
 

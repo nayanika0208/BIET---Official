@@ -1,23 +1,31 @@
-import React, { Component } from 'react';
-import { withGoogleMap, GoogleMap } from 'react-google-maps';
-class Map extends Component {
-   render() {
-   const GoogleMapExample = withGoogleMap(props => (
-      <GoogleMap
-        defaultCenter = { { lat: 40.756795, lng: -73.954298 } }
-        defaultZoom = { 15 }
-      >
-      </GoogleMap>
-   ));
-   return(
-      <div>
-      
-        <GoogleMapExample
-          containerElement={ <div style={{ height: `40rem`, width: '70rem'}} /> }
-          mapElement={ <div style={{ display:"inline-block", height: `100%`,width:'100%',borderRadius:"0.5rem"   }} /> }
-        />
-      </div>
-   );
-   }
-};
-export default Map;
+import React,{Component} from 'react';
+import {Map, InfoWindow, Marker, GoogleApiWrapper,google} from 'google-maps-react';
+import './Map.css';
+ 
+export class MapContainer extends Component {
+  render() {
+    return (
+      <Map google={this.props.google} initialCenter={{
+        lat:12.971780,
+        lng:79.158904}} zoom={16} style={{width: '95%', height: '95%',borderRadius:"0.8rem",display:"block",margin:"1rem auto",}}  >
+ 
+        <Marker onClick={this.onMarkerClick}
+        position={{lat: 12.971780,lng:79.158904}}
+        title={'Vellore Institute of Technology'}
+        name={'VIT'}
+        
+          />
+ 
+        <InfoWindow onClose={this.onInfoWindowClose}>
+            <div>
+          
+            </div>
+        </InfoWindow>
+      </Map>
+    );
+  }
+}
+ 
+export default GoogleApiWrapper({
+  apiKey:("AIzaSyDwtvWR6J3WI3vzuI6mr0vnM7mZNFIikmQ")
+})(MapContainer)

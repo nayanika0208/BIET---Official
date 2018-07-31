@@ -70,7 +70,7 @@ class Parallax extends Component{
         <div className="About-box">
         <div className="left-part"> 
 
-        <h2 className="Secondary-head">About Us</h2>
+        <h2 className="Secondary-head wow bounce">About Us</h2>
         <p className="paragraph">The Bio-Inspired Engineering Team is a comglomeration of the brightest minds in The Vellore Institute of Technology to create real solutions in this ever-changing landscape of technical innovations.</p>
              </div>
             <div className="right-part">
