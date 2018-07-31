@@ -30,14 +30,22 @@ class Joinform extends Component
     const { loading }=this.state;
     if(loading){
       return(
-        <div className="Form-body">
-        <Navigation/>
+        <div >
         <NavigationTwo/>
-          <div className="load ">
-                <p className="Primary-head">Loading</p>
-                <div className="ring">
+      
+          <div className="load">
+          <p className="load-text">Loading</p>
+          <div className="load5">
+               <div className="ring-2">
+                
+                <div className="ball-holder">
+                <div className="ball">
                 </div>
-       </div> 
+                </div>
+                </div>
+                </div>
+        </div>
+       <Pagefooter/>
        </div>
         );
 
@@ -45,8 +53,6 @@ class Joinform extends Component
         return(
         <div>
         <div>
-       
-         <Navigation/>
         <NavigationTwo/>
         <div className="form-box">
         <div className="form-container" id="form-1">

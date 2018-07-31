@@ -4,8 +4,8 @@ import OngoingProjectComp from './OngoingProjectComp';
 import "./OngoingProjectComp.css";//stylesheet
 
 
-import Navigation from '../Navigation/Navigation.js';//main navigation bar
-import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
+
+import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar 
 import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
 
 
@@ -38,7 +38,7 @@ const ProjectList=()=>
   return(
 
      <div>
-        <Navigation/>
+        
         <NavigationTwo/>
         <div className="ongoing-box" style={{marginTop:"20vh"}}>
         <div className="ongoing-project">
