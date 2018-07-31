@@ -37,12 +37,33 @@ const para=
 
 
 class Parallax extends Component{
-
-  componentDidMount(){
-
-      new WOW().init();
-
+  constructor(props) {
+    super(props)
+    this.handleScroll = this.handleScroll.bind(this);
   }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+      new WOW().init();
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+  //funtion to handle the navbar on scrolling
+  handleScroll(e) {
+   const nav1=document.querySelector("#nav1");
+   const nav2=document.querySelector('#nav2');
+  
+   if(window.scrollY>105){
+       nav1.style.transform="translateY(-100%)";
+       nav2.style.transform="translateY(0%)";
+    }else{
+       nav1.style.transform="translateY(0%)";
+       nav2.style.transform="translateY(-100%)";
+    }
+
+}
 
 
   render(){
@@ -54,7 +75,9 @@ class Parallax extends Component{
         
       
         <Navigation/>
-        <NavigationTwo/>
+        
+        <NavigationTwo />
+        
      
 
         

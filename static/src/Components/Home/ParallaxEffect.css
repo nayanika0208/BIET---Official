@@ -251,4 +251,8 @@
     height:250px;
 }
 
+.hideNav{
+    transform: translateY(-100%);
+}
+
 
