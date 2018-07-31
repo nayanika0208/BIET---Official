@@ -9,6 +9,8 @@ import Footer from './Footer';//footer on homepage section
 
 import WOW from 'wow.js';//wow.js for animations
 
+import { Parallax } from 'react-scroll-parallax';
+import { ParallaxProvider } from 'react-scroll-parallax';
 import {jarallax} from 'jarallax';
 
 import './ParallaxEffect.css';
@@ -36,7 +38,7 @@ const para=
 }
 
 
-class Parallax extends Component{
+class Home extends Component{
   constructor(props) {
     super(props)
     this.handleScroll = this.handleScroll.bind(this);
@@ -69,6 +71,7 @@ class Parallax extends Component{
   render(){
  
     return (
+       <ParallaxProvider>
     	<div>
         <div>
         <Particles params={para} className="Particle"/>
@@ -105,10 +108,25 @@ class Parallax extends Component{
             </div>
       
         <div >
-        <div className="paral2 jarallax" >
-            <ProjectDisplay />
-          </div>
-        </div>
+        <div className="paral2 " >
+       
+        <Parallax
+        className="custom-class"
+        offsetYMax={20}
+        offsetYMin={-20}
+        slowerScrollRate
+        tag="figure"
+        >
+           <ProjectDisplay />
+        </Parallax>
+         
+        
+
+            
+            </div>
+            </div>
+
+        
 
       <div className="head-back">
         <Footer/>
@@ -119,9 +137,10 @@ class Parallax extends Component{
         
 
       </div>
+      </ParallaxProvider>
 
     );
   }
 }
 
-export default Parallax;
+export default Home;

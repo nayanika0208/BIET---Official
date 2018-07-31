@@ -94,18 +94,17 @@
 }
 .load-text{
 	overflow: hidden; /* Ensures the content is not revealed until the animation */
-    
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 1rem; /* Adjust as needed */
     font-size:5rem;
-    
     color:white;
     font-weight:800;
     font-family: 'Open Sans', sans-serif;
     text-align:center;
     position:relative;
-    top:-100%
+    text-transform:uppercase;
+    top:0%
 }
 
 .ring {
@@ -165,3 +164,4 @@
     0 {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
+
