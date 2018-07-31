@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 //each page of the website
-import Parallax from './Components/Home/ParallaxEffect';//homePage
+import Home from './Components/Home/ParallaxEffect';//homePage
 import About from './Components/About/About';//AboutPage
 import ProjectList from './Components/OngoingProjects/OngoingProject';//Ongoing projects Section
 import Joinform from './Components/joinNewProjects/joinform.js';//Form for joning
@@ -23,7 +23,7 @@ class App extends Component {
       <BrowserRouter>
         <switch>
 
-        <Route path="/" component={Parallax} exact/>
+        <Route path="/" component={Home} exact/>
         <Route path="/About" component={About} />
         <Route path="/OngoingProject" component={ProjectList} />
         <Route path="/JoinNew" component={Joinform} />

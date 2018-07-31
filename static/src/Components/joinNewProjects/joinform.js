@@ -45,7 +45,6 @@ class Joinform extends Component
                 </div>
                 </div>
         </div>
-       <Pagefooter/>
        </div>
         );
 
