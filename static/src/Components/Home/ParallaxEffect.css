@@ -182,32 +182,6 @@
 
 }
 
-.paral2{ 
-    /* The image used 
-
-
-  
-
-
-    /* Set a specific height */
-   /* height:100vh;*/
-    background:linear-gradient(to right,rgba(34,38,41,0.5),rgba(34,38,41,0.5)),
-    url("./img4.3.jpg");
-    /* Create the parallax scrolling effect */
-    overflow: hidden;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom:2rem;
-    position: relative;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    z-index: 100;
-  
-}
 
 
 .jarallax {

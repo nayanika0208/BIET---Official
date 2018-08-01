@@ -4,6 +4,9 @@ import Navigation from '../Navigation/Navigation.js';//main navigation bar
 import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
 import ProjectDisplay from './Project_Display';//project display section
 import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
+import LazyHero from 'react-lazy-hero';
+import MyLandingPage from './Landpage';
+
 import Map from './Maps';
 import Footer from './Footer';//footer on homepage section
 
@@ -72,6 +75,7 @@ class Home extends Component{
  
     return (
        <ParallaxProvider>
+       
     	<div>
         <div>
         <Particles params={para} className="Particle"/>
@@ -107,23 +111,11 @@ class Home extends Component{
             </div>
             </div>
       
-        <div >
-        <div className="paral2 " >
-       
-        <Parallax
-        className="custom-class"
-        offsetYMax={20}
-        offsetYMin={-20}
-        slowerScrollRate
-        tag="figure"
-        >
-           <ProjectDisplay />
-        </Parallax>
-         
-        
+        <div>
 
+        <MyLandingPage/>
+     
             
-            </div>
             </div>
 
         
