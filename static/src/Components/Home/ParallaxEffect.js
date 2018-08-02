@@ -12,9 +12,7 @@ import Footer from './Footer';//footer on homepage section
 
 import WOW from 'wow.js';//wow.js for animations
 
-import { Parallax } from 'react-scroll-parallax';
-import { ParallaxProvider } from 'react-scroll-parallax';
-import {jarallax} from 'jarallax';
+import { Parallax, Background } from 'react-parallax'
 
 import './ParallaxEffect.css';
 
@@ -74,7 +72,7 @@ class Home extends Component{
   render(){
  
     return (
-       <ParallaxProvider>
+       
        
     	<div>
         <div>
@@ -112,11 +110,20 @@ class Home extends Component{
             </div>
       
         <div>
-
-        <MyLandingPage/>
-     
+       <Parallax
+      
+      bgImage={require('./img4.3.jpg')}
+      bgImageAlt="the cat"
+      strength={200}
+    >
+    <ProjectDisplay/>
+    </Parallax>
+        
+        
+        
+        
+    </div>            
             
-            </div>
 
         
 
@@ -129,7 +136,7 @@ class Home extends Component{
         
 
       </div>
-      </ParallaxProvider>
+     
 
     );
   }
