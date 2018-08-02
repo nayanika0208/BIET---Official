@@ -111,10 +111,11 @@ class Home extends Component{
       
         <div>
        <Parallax
+      blur={{ min: -15, max: 15 }}
+      bgImage={require('./img4.4.jpg')}
+      strength={500}
+      bgClassName="paral3"
       
-      bgImage={require('./img4.3.jpg')}
-      bgImageAlt="the cat"
-      strength={200}
     >
     <ProjectDisplay/>
     </Parallax>
