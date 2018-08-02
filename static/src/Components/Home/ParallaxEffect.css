@@ -208,7 +208,22 @@
     margin:0px;
  
   display:block;
-  padding:0rem;
+
+      box-sizing: border-box;
+background:linear-gradient(to bottom, rgb(34,38, 41,0.5),rgba(34,38,41,0.5)),url("img2.8.jpeg");    /* Set a specific height */
+    height: 150vh;
+        /* Create the parallax scrolling effect */
+    
+   
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    text-align:center;
+  
+
+    padding:6rem;
+ 
   
 }
 
