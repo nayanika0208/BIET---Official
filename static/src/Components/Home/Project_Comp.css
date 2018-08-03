@@ -18,7 +18,7 @@ border:20px solid palevioletred;
   width:50rem;
   border-radius:1.2rem;
   overflow: hidden;
-  box-shadow:0.5rem 0.5rem #61892f;
+  box-shadow:0.5rem 0.5rem #222629;
   display:inline-block;
   margin:5rem;
  
@@ -65,7 +65,7 @@ border:20px solid palevioletred;
 {
   height:100%;
   width:100%;
-  background-color:rgba(255,255,255,0.3);
+  background-color:rgba(255,255,255,0.6);
   position:absolute;
   cursor:pointer;
   left:0rem;
@@ -128,6 +128,13 @@ border:20px solid palevioletred;
   font-size:5rem;
   margin-bottom:2rem; 
 
+}
+
+.ongoing_secondary_head
+{
+  position:absolute;
+  left:7.3rem;
+  top:3rem;
 }
 
 

@@ -23,7 +23,7 @@ const proj=project_list.map((value,index)=>
 
   return(
     <div>
-    <div class="Secondary-head">
+    <div class="Secondary-head ongoing_secondary_head">
     ONGOING PROJECTS
     </div>
     <div className="project-box">

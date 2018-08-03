@@ -63,6 +63,11 @@
   100% { border-color: black; }
 }
 
+@font-face {
+    font-family:myFirstFont;
+    src: url('../Fonts/Cosmology.ttf');
+}
+
 
 .Primary-head
 {
@@ -112,27 +117,36 @@
 
 .Secondary-head
 {
-    margin-left:10rem;
-    margin-top:4rem;
+   
     display:inline-block;
     color:whitesmoke;
     border-left:1.3rem solid #86C232;
-    padding-left:1.5rem;
     font-size:4.5rem;
     letter-spacing:3px;
+    padding-left:1.2rem;
 }
+
+
+.about_secondary_head
+{
+    position: absolute;;
+    left:7.3rem;
+    top:2rem;
+
+}
+
 
 
 .paragraph
 {
     position: absolute;
-    width:55%;
-    left:28%;
-    top:30%;
-    transform:translateX(-30%);
+    width:60%;
+    left:7.3rem;
+    top:40%;
     color:white;
     font-size:2rem;
     letter-spacing:3px;
+    
 }
 
 
@@ -176,6 +190,8 @@
     border-radius:5px;
     margin-bottom:10px;
     font-family: 'Open Sans', sans-serif;
+    font-family:myFirstFont;
+
 
  
 
@@ -211,6 +227,7 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding:3rem 0;
 
    
   
@@ -224,7 +241,6 @@
     display:block;
     background-color:black;
     color:white;  
-    padding:10px;
     margin:0px;
     height:250px;
 }

@@ -6,6 +6,7 @@ import './About.css';
 import Pagefooter from '../PageFooter/PageFooter.js';
 import Navigation from '../Navigation/Navigation.js';//main navigation bar
 import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
+import { Parallax, Background } from 'react-parallax'
 
 //import pictures of logo
 import DSIR from './DSIR.png';
@@ -60,16 +61,19 @@ class About extends Component
     <div>
       
        <NavigationTwo />
-       
-        
-        <div className="About_paral1">
-        <div className="About-box  shadow-5">
-             <h1 className="Primary-head wow fadeInUp">ABOUT US</h1> 
-             <div className="Paragraph">
+
+       <Parallax
+       blur={{ min: -10, max:10}}
+       bgImage={require('./img2.jpg')}
+       strength={500}
+       bgClassName="About_paral1">
+        <div className="About-box">
+             <h1 className="Primary-head About_primary_head wow fadeInUp">ABOUT US</h1> 
+             <div className="Paragraph ">
              <p>The Bio-Inspired Engineering Team is primarily focused on providing solutions and technologies that are geared towards solving the multiple problems that plague society. All the innovations and developments are inspired from the natural structures and designs. Allowing these products to be efficient, compliant, cheap, and an Indian Innovation. All projects are created with the inspiration of nature's design. The team comprises of skilled and motivated individuals who constantly strive to create products which can change human lives. Created by students, for the masses.</p>
              </div>
-             </div>
         </div>
+        </Parallax>
     
         <div className="About_paral2">
         <div className="Section-1">

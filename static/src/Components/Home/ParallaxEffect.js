@@ -86,7 +86,7 @@ class Home extends Component{
      
 
         
-        <div className="paral1 " >
+        <div className="paral1" >
 
         <div className="head-box">
        
@@ -98,7 +98,7 @@ class Home extends Component{
         <div className="About-box">
         <div className="left-part"> 
 
-        <h2 className="Secondary-head wow bounce">About Us</h2>
+        <h2 className="Secondary-head about_secondary_head wow bounce">About Us</h2>
         <p className="paragraph">The Bio-Inspired Engineering Team is a comglomeration of the brightest minds in The Vellore Institute of Technology to create real solutions in this ever-changing landscape of technical innovations.</p>
              </div>
             <div className="right-part">
@@ -111,7 +111,7 @@ class Home extends Component{
       
         <div>
        <Parallax
-      blur={{ min: -15, max: 15 }}
+      blur={{ min: -10, max:10}}
       bgImage={require('./img4.4.jpg')}
       strength={500}
       bgClassName="paral3"

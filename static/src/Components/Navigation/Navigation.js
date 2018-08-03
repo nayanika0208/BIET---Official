@@ -19,7 +19,6 @@ const Navigation=()=> {
             <div  className="rightPart">
                 <li className="Project" ><a href="#" ><NavLink className="Nav-link" to='/OngoingProject'>Projects </NavLink></a></li>
                 <li  className="JoinNew"><a href="#" ><NavLink className="Nav-link" to='/JoinNew' >Join </NavLink></a></li>
-                <li  className="Blogs"><a href="#" ><NavLink className="Nav-link" to='/Blogs'> Blogs </NavLink></a></li>
             </div>
           </ul>
         </div>

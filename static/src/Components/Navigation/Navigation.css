@@ -53,9 +53,9 @@ li {
 .Nav-link{
   
   color:#86c232;
-  border-radius:.5rem;
-  padding:1rem 2rem;
+  padding:1rem 1rem;
   font-size:2rem;
+  padding-bottom:2rem;
   /*background-color:rgba(71,75,79,0.2);*/
   color:white;
   margin:0 1rem;
@@ -94,13 +94,13 @@ left:20%;
 .Project{
 position: absolute;
 top:25%;
-left:65%;
+left:70%;
 margin-right:100px;
 }
 .JoinNew{
 position: absolute;
 top:25%;
-left:78%;
+left:83%;
 margin-right:100px;
 }
 .Blogs{
