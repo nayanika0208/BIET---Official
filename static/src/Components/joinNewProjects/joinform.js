@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import './joinform.css';
 
 import Navigation from '../Navigation/Navigation.js';//main navigation bar
-import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
+import NavigationThree from '../Navigation/Navigation3.js';//navigation bar on scroll
 import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
 
 
@@ -31,7 +31,7 @@ class Joinform extends Component
     if(loading){
       return(
         <div >
-        <NavigationTwo/>
+        <NavigationThree/>
       
           <div className="load">
           <p className="load-text">Loading</p>
@@ -52,7 +52,7 @@ class Joinform extends Component
         return(
         <div>
         <div>
-        <NavigationTwo/>
+        <NavigationThree/>
         <div className="form-box">
         <div className="form-container" id="form-1">
         <iframe src={this.state.data} width="700" height="1500" frameborder="0" marginheight="0" marginwidth="0"></iframe>

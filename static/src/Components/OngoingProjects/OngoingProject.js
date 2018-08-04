@@ -5,7 +5,7 @@ import "./OngoingProjectComp.css";//stylesheet
 
 
 
-import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar 
+import NavigationThree from '../Navigation/Navigation3.js';//navigation bar 
 import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
 
 
@@ -39,7 +39,7 @@ const ProjectList=()=>
 
      <div>
         
-        <NavigationTwo/>
+        <NavigationThree/>
         <div className="ongoing-box" style={{marginTop:"20vh"}}>
         <div className="ongoing-project">
         <div class="Primary-head">

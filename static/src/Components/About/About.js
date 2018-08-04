@@ -5,7 +5,7 @@ import Ccomp from './c-member/member_comp';
 import './About.css';
 import Pagefooter from '../PageFooter/PageFooter.js';
 import Navigation from '../Navigation/Navigation.js';//main navigation bar
-import NavigationTwo from '../Navigation/Navigation2.js';//navigation bar on scroll
+import NavigationThree from '../Navigation/Navigation3.js';//navigation bar on scroll
 import { Parallax, Background } from 'react-parallax'
 
 //import pictures of logo
@@ -60,7 +60,7 @@ class About extends Component
     <div>
     <div>
       
-       <NavigationTwo />
+       <NavigationThree />
 
        <Parallax
        blur={{ min: -10, max:10}}
