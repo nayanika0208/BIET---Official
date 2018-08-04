@@ -79,9 +79,9 @@ class Home extends Component{
         <Particles params={para} className="Particle"/>
         
       
-        <Navigation/>
+        <Navigation />
         
-        <NavigationTwo />
+        <NavigationTwo className="hide"/>
         
      
 

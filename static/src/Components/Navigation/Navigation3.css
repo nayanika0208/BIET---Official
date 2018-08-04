@@ -1,6 +1,6 @@
 
 
-#nav2{
+#nav3{
   list-style-type: none;
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@
   background-color:rgba(0,0,0,1);
   height:100px;
   transition:all 0.5s;
-  transform: translateY(-100%);
+  transform: translateY(0%);
   z-index:12;
 
 }
@@ -22,7 +22,7 @@ li {
      float: left;
      margin:0 10px;
   }
-.navlogo2{
+.navlogo3{
   position:absolute;
   top:10%;
   left:10%;
@@ -31,32 +31,32 @@ li {
 }
 
 
-.Home2{
+.Home3{
 position:absolute;
 top:25%;
 left:25%;
 
 }
-.About2{
+.About3{
  position:absolute;
 top:25%;
 left:40%;
 
 }
 
-.Project2{
+.Project3{
 position: absolute;
 top:25%;
 left:55%;
 margin-right:100px;
 }
-.JoinNew2{
+.JoinNew3{
 position: absolute;
 top:25%;
 left:70%;
 margin-right:100px;
 }
-.Blogs2{
+.Blogs3{
 position: absolute;
 top:25%;
 left:85%;
