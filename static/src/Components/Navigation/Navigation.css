@@ -17,11 +17,23 @@ li a {
     top: 0;
     width: 100%;
   border-top:1rem solid #61892f ;
-  background:rgba(0,0,0,1);
+  background:rgba(0,0,0,0);
+
  
   z-index:15;
   height:15rem;
 
+}
+
+.temp-box
+{
+  position:absolute;
+  left:0px;
+  top:0px;
+  background-color:black;
+  z-index:5;
+  height:15rem;
+  width:100vw;
 }
 
 li {
