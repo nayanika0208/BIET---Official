@@ -8,6 +8,8 @@ import {NavLink} from 'react-router-dom';
 const Navigation=()=> {
     return (
       <div >
+      <div className="temp-box">
+      </div>
          <ul id="nav1">
            <div className="leftPart">
                 <li  className="Home"><a href="#" ><NavLink className="Nav-link " to='/' >Home </NavLink></a></li>

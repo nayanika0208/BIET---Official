@@ -12,8 +12,13 @@
   background-color:rgba(0,0,0,1);
   height:100px;
   transition:all 0.5s;
+
   transform: translateY(-100%);
   z-index:12;
+
+/*  transform: translateY(0%);
+  z-index:3;*/
+
 
 }
 
