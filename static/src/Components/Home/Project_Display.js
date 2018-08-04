@@ -6,9 +6,9 @@ import img1 from './img1.jpg';
 
 
 
-const project_list =[{title:"Chitrakam",summary:"The home-grown,cheetah inspired robotic limb system"},
-{title:"Kaii",summary:"Active upper limb prosthetics for the masses"},
-{title:"Catch-Fibre",summary:"Laundry ball for mitigating micro-fibre pollution and machine scaling."}];
+const project_list =[{title:"chitrakam",summary:"The home-grown,cheetah inspired robotic limb system"},
+{title:"kaii",summary:"Active upper limb prosthetics for the masses"},
+{title:"catch-fibre",summary:"Laundry ball for mitigating micro-fibre pollution and machine scaling."}];
 
 
 
@@ -23,8 +23,8 @@ const proj=project_list.map((value,index)=>
 
   return(
     <div>
-    <div class="Secondary-head ongoing_secondary_head">
-    ONGOING PROJECTS
+    <div class="Secondary-head ongoing_secondary_head wow fadeIn">
+    Ongoing Projects
     </div>
     <div className="project-box">
     {proj}

@@ -8,9 +8,8 @@
       position: fixed;
     top: 0;
     width: 100%;
-  border-top:1rem solid #61892f ;
   background-color:rgba(0,0,0,1);
-  height:100px;
+  height:80px;
   transition:all 0.5s;
 
   transform: translateY(-100%);
@@ -38,32 +37,32 @@ li {
 
 .Home2{
 position:absolute;
-top:25%;
+top:10%;
 left:25%;
 
 }
 .About2{
  position:absolute;
-top:25%;
+top:10%;
 left:40%;
 
 }
 
 .Project2{
 position: absolute;
-top:25%;
+top:10%;
 left:55%;
 margin-right:100px;
 }
 .JoinNew2{
 position: absolute;
-top:25%;
+top:10%;
 left:70%;
 margin-right:100px;
 }
 .Blogs2{
 position: absolute;
-top:25%;
+top:10%;
 left:85%;
 margin-right:100px;
 }

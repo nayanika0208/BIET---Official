@@ -14,10 +14,10 @@ const Footer=()=>
     <div className="Contact_About-box">
     <div className="Contact_left-part"> 
 
-    <h2 className="Contact_left_Secondary-head">Contact Us</h2>
+    <h2 className="Contact_left_Secondary-head  Secondary-head wow fadeInLeft">Contact us</h2>
 
 
-    <div className="Contact_content-box">
+    <div className="Contact_content-box wow fadeInLeft">
         
     Vellore Institute of Technology<br/>
     Near Katpadi Road,Vellore,<br/>
@@ -27,7 +27,7 @@ const Footer=()=>
     </div>
 
 
-    <div className="Social-media-box">
+    <div className="Social-media-box wow fadeInLeft">
 
     <h3>Be a SociaLite and  Follow Us:</h3>
     <SocialIcon className="icon grow" url="https://www.facebook.com/" />
@@ -40,9 +40,9 @@ const Footer=()=>
 
   </div>
         <div className="Contact_right-part">
-        <h2 className="Contact_right_Secondary-head">Find Us</h2>
+        <h2 className="Secondary-head Contact_right_Secondary-head wow fadeInRight">Find us</h2>
 
-        <div className="map-box">
+        <div className="map-box wow fadeInRight">
 
         <MapContainer/>
 

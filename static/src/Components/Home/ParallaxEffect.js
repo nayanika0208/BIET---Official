@@ -59,11 +59,16 @@ class Home extends Component{
    const nav2=document.querySelector('#nav2');
   
    if(window.scrollY>105){
-       nav1.style.transform="translateY(-100%)";
-       nav2.style.transform="translateY(0%)";
+    nav1.style.transform="translateY(-100%)";
+    nav1.style.display="none";
+    nav2.style.display="block"
+    nav2.style.transform="translateY(0%)";
+
     }else{
-       nav1.style.transform="translateY(0%)";
-       nav2.style.transform="translateY(-100%)";
+      nav2.style.display="none";
+      nav2.style.transform="translateY(-100%)";
+      nav1.style.display="block";
+      nav1.style.transform="translateY(0%)";
     }
 
 }
@@ -90,18 +95,17 @@ class Home extends Component{
 
         <div className="head-box">
        
-        <h1 className="Primary-head wow bounce" data-wow-duration="2s" data-wow-delay="0.1s"> WELCOME TO </h1>
-        
-         <span className="Main-head wow pulse grow" data-wow-delay="2.1s">INNOVATION LABS </span>
+        <h1 className="Primary-head wow fadeIn"> WELCOME TO </h1>        
+         <span className="Main-head wow fadeIn " data-wow-duration="1s" data-wow-delay="0.4s" >INNOVATION LABS </span>
         </div>
         </div>
-        <div className="About-box">
+        <div className="Home_About-box">
         <div className="left-part"> 
 
-        <h2 className="Secondary-head about_secondary_head wow bounce">About Us</h2>
-        <p className="paragraph">The Bio-Inspired Engineering Team is a comglomeration of the brightest minds in The Vellore Institute of Technology to create real solutions in this ever-changing landscape of technical innovations.</p>
+        <h2 className="Secondary-head about_secondary_head wow fadeInLeft">About us</h2>
+        <p className="paragraph wow fadeInLeft">The Bio-Inspired Engineering Team is a comglomeration of the brightest minds in The Vellore Institute of Technology to create real solutions in this ever-changing landscape of technical innovations.</p>
              </div>
-            <div className="right-part">
+            <div className="right-part wow fadeInRight">
             <div className="image-box">
             <img src={icon} alt="icon" width="100%" height="100%" />
             </div>

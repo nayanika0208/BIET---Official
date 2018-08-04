@@ -51,23 +51,66 @@
 }
 
 
+
 /* The typing effect */
+/*
 @keyframes typing {
   from { width: 0% }
   to { width: 50% }
 }
-
+*/
 /* The typewriter cursor effect */
+/*
 @keyframes blink-caret {
   from, to { border-color: white }
   100% { border-color: black; }
 }
+
+
+*/
 
 @font-face {
     font-family:myFirstFont;
     src: url('../Fonts/Cosmology.ttf');
 }
 
+@font-face {
+    font-family:myfirstFont-1;
+    src: url('../Fonts/google_roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family:myfirstFont-2;
+    src: url('../Fonts/Elianto/Elianto-Regular.ttf');
+}
+
+@font-face{
+    font-family:navbar;
+    src: url('../Fonts/google_roboto/Roboto-Thin.ttf')
+  }
+
+@font-face{
+    font-family: sechead;
+    src: url('../Fonts/google_roboto/Roboto-Italic.ttf')
+}
+
+@font-face{
+    font-family: para;
+    src: url('../Fonts/google_roboto/Roboto-Regular.ttf')
+}
+
+@font-face{
+    font-family: label;
+    src: url('../Fonts/google_roboto/Roboto-Medium.ttf')
+}
+@font-face{
+    font-family: img1;
+    src: url('../Fonts/google_roboto/Roboto-Light.ttf')
+}
+@font-face{
+    font-family: img2;
+    src: url('../Fonts/google_roboto/Roboto-LightItalic.ttf')
+}
 
 .Primary-head
 {
@@ -76,21 +119,22 @@
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 1rem; /* Adjust as needed */
-    font-size:6rem;
-    
+    font-size:5rem;
+    display:inline-block;
     color:white;
     font-weight:800;
-    font-family: 'Open Sans', sans-serif;
+    font-family:myfirstFont-1;
     text-align:center;
+    /*
      animation: 
     typing 3.5s steps(10, end),
-    blink-caret .75s step-end infinite;
+    blink-caret .75s step-end infinite;*/
 }
    
    
 
 
-.About-box{
+.Home_About-box{
     height:50rem;
     position:relative;
 }
@@ -120,10 +164,12 @@
    
     display:inline-block;
     color:whitesmoke;
-    border-left:1.3rem solid #86C232;
     font-size:4.5rem;
-    letter-spacing:3px;
+    letter-spacing:0.2rem;
     padding-left:1.2rem;
+    font-family: sechead;
+    font-family:myfirstfont-2;
+
 }
 
 
@@ -132,6 +178,7 @@
     position: absolute;;
     left:7.3rem;
     top:2rem;
+    border-left:1.3rem solid #86C232;
 
 }
 
@@ -146,6 +193,7 @@
     color:white;
     font-size:2rem;
     letter-spacing:3px;
+    font-family: para;
     
 }
 
@@ -188,14 +236,10 @@
     color:whitesmoke;
     padding:5px;
     border-radius:5px;
+    margin-top: 3rem;
     margin-bottom:10px;
-    font-family: 'Open Sans', sans-serif;
-    font-family:myFirstFont;
-
-
- 
-
-
+    font-family:myFirstFont-2;
+    letter-spacing: 0.5rem;
 }
 
 

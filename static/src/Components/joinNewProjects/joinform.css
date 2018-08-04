@@ -79,7 +79,7 @@
 	width:100%;
 	text-align:center;
 	background-color:black;
-	margin-top:6rem;
+	margin-top:-4rem;
 	clip-path:polygon(0% 20%,20% 0%,100% 0%,100% 80%,80% 100%,0% 100%);
 
 	
@@ -100,7 +100,7 @@
     font-size:5rem;
     color:white;
     font-weight:800;
-    font-family: 'Open Sans', sans-serif;
+    font-family:myfirstfont-2;
     text-align:center;
     position:relative;
     text-transform:uppercase;

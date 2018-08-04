@@ -2,6 +2,8 @@ import React,{Component} from'react';
 //single ongoing project component
 import OngoingProjectComp from './OngoingProjectComp';
 import "./OngoingProjectComp.css";//stylesheet
+import { Parallax, Background } from 'react-parallax'
+
 
 
 
@@ -40,16 +42,21 @@ const ProjectList=()=>
      <div>
         
         <NavigationThree/>
-        <div className="ongoing-box" style={{marginTop:"20vh"}}>
-        <div className="ongoing-project">
-        <div class="Primary-head">
-        ONGOING PROJECTS
+        <Parallax
+        blur={{ min: -5, max:10}}
+        bgImage={require('./Images/paral1.jpg')}
+        strength={100}
+        bgClassName="ongoing-box">
+        
+              <div className="ongoing-project">
+        <div class="Primary-head ongoing_primary_head">
+        Ongoing Projects
         </div>
         <div className="project-box">
         {PROJECTS}
     </div>
     </div>
-    </div>
+    </Parallax>
     <Pagefooter/>
    
     </div>

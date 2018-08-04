@@ -2,43 +2,49 @@
 {
   /*background:linear-gradient(to bottom, rgb(34,38, 41,0.8),rgba(34,38,41,0.8)),url("img2.jpg");    /* Set a specific height */
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align:center;
+
   display:flex;
   justify-content: center;
   align-items:center;
   padding:6rem;
-  margin-top:15vh;
   text-align:center;
+  margin-top:7rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding:0rem 0;
+
 }
 
 .About-box
 {
+  position: relative;
   padding-bottom:0px;
-  height:80rem;
+  height:70rem;
+  display:block;
 }
 
 .Paragraph
 {
   position: absolute;
-  top:85%;
-  left:50%;
-  width:80%;
+  top:40%;
+  left:0%;
   display: block;
   margin:0 auto;
-  transform:translate(-50%,-85%);
-
+  font-family: para;
+  text-align: justify;
+  font-size: 2.5rem;
+  padding:6rem;
 }
 
 .About_primary_head
 {
   position:absolute;
-  top:25%;
+  top:30%;
   left:50%;
   transform:translateX(-50%);
+  font-family:myfirstfont-2;
+
 
 }
 
@@ -52,16 +58,23 @@
 .Section-1
 {
   clip-path:polygon(0% 15%,15% 0%,100% 0%,100% 85%,85% 100%,0% 100%);
-  background-color:#222629;
+  background-color: black;
   text-align:center;
   padding:4rem;
+  border-top:1rem solid #86C232;
 }
 
 .Section-2
 {
   text-align:center;
   background:black;
-  padding:2rem 0rem;
+  padding:8rem 0rem;
+  height:40rem;
+
+}
+.paral-3
+{
+  border-top:0.5rem solid #86C232;
 }
 
 .about-1{
@@ -77,20 +90,19 @@
 {
   display:inline-block;
   width:80%;
-  background-color:rgba(107,110,112,0.5);
   border-radius:1rem;
   margin-bottom:2rem;
-  box-shadow:0.4rem 0.4rem 1rem black;
+  border:0.6rem solid #222629;
 
 }
 .b-display
 {
   display:inline-block;
   width:80%;
-  background-color:rgba(107,110,112,0.5);
   border-radius:1rem;
     margin-bottom:2rem;
-    box-shadow:0.4rem 0.4rem 1rem #86C232;
+    border:0.6rem solid #222629;
+
 
 
 
@@ -118,8 +130,8 @@
 
 .info-box
 {
-  height:20rem;
-  width:20rem;
+  height:18rem;
+  width:18rem;
   display: inline-block;
   overflow:hidden;
   margin:4.3rem;
