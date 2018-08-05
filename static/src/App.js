@@ -5,7 +5,7 @@ import Home from './Components/Home/ParallaxEffect';//homePage
 import About from './Components/About/About';//AboutPage
 import ProjectList from './Components/OngoingProjects/OngoingProject';//Ongoing projects Section
 import Joinform from './Components/joinNewProjects/joinform.js';//Form for joning
-import Blogs from './Components/Blogs/Blogs';//Blog section
+//import Blogs from './Components/Blogs/Blogs';//Blog section
 
 import {BrowserRouter, Route} from 'react-router-dom';//router for navigation between different pages
 
@@ -27,7 +27,8 @@ class App extends Component {
         <Route path="/About" component={About} />
         <Route path="/OngoingProject" component={ProjectList} />
         <Route path="/JoinNew" component={Joinform} />
-        <Route path="/Blogs" component={Blogs} />
+        {//<Route path="/Blogs" component={Blogs} />
+    }
 
         </switch>
         </BrowserRouter>
