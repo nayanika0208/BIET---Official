@@ -12,7 +12,7 @@
 
       box-sizing: border-box;
  /*background:linear-gradient(to bottom, rgb(34,38, 41,0.5),rgba(34,38,41,0.5)),url("img2.8.jpeg");    /* Set a specific height */
-    height: 100vh;
+    height:90vh;
         /* Create the parallax scrolling effect */
         background-color:black;
     background-attachment: fixed;
@@ -23,11 +23,10 @@
     text-align:center;
 
     display:flex;
-    justify-content: center;
     
-    align-items:center;
 
-    padding:6rem;
+    padding:6rem 5rem;
+    margin-top:15rem;
 
 }
 .paral1 .paral1-image {
@@ -48,6 +47,10 @@
     letter-spacing:3px;
     border:10px solid #61892f;
     border-radius:1rem;
+    display:block;
+    height:30rem;
+    margin:0 auto;
+
 }
 
 
