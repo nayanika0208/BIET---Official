@@ -23,7 +23,7 @@ const proj=project_list.map((value,index)=>
 
   return(
     <div>
-    <div class="Secondary-head ongoing_secondary_head wow fadeIn">
+    <div className="Secondary-head ongoing_secondary_head wow fadeIn">
     Ongoing Projects
     </div>
     <div className="project-box">
