@@ -42,11 +42,12 @@ const ProjectList=()=>
      <div>
         
         <NavigationThree/>
+        {/*
         <Parallax
         blur={{ min: -5, max:10}}
         bgImage={require('./Images/paral1.jpg')}
         strength={100}
-        bgClassName="ongoing-box">
+        bgClassName="ongoing-box">*/}
         
               <div className="ongoing-project">
         <div class="Primary-head ongoing_primary_head">
@@ -56,7 +57,8 @@ const ProjectList=()=>
         {PROJECTS}
     </div>
     </div>
-    </Parallax>
+    {//</Parallax>
+    }
     <Pagefooter/>
    
     </div>

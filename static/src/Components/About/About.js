@@ -65,19 +65,21 @@ class About extends Component
     <div>
       
        <NavigationThree />
-
+       {
+/*
        <Parallax
        blur={{ min: -10, max:10}}
        bgImage={require('./img2.jpg')}
        strength={500}
-       bgClassName="About_paral1">
+       bgClassName="About_paral1">*/}
         <div className="About-box">
              <h1 className="Primary-head About_primary_head wow fadeIn">About Us</h1> 
              <div className="Paragraph wow fadeIn" data-wow-delay='0.5s'>
              <p>The Bio-Inspired Engineering Team is primarily focused on providing solutions and technologies that are geared towards solving the multiple problems that plague society. All the innovations and developments are inspired from the natural structures and designs. Allowing these products to be efficient, compliant, cheap, and an Indian Innovation. All projects are created with the inspiration of nature's design. The team comprises of skilled and motivated individuals who constantly strive to create products which can change human lives. Created by students, for the masses.</p>
              </div>
         </div>
-        </Parallax>
+        {//</Parallax>
+        }
     
         <div className="About_paral2">
         <div className="Section-1">
