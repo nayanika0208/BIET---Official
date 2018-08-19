@@ -45,6 +45,7 @@ const Footer=()=>
         <div className="map-box wow fadeInRight">
 
         <MapContainer/>
+  
 
     
       </div>

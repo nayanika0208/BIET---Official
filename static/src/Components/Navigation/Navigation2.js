@@ -12,10 +12,10 @@ const NavigationTwo=()=> {
       <div className="wow fadeInX">
          <ul id="nav2">
             <li className="navlogo2" ><a href="#" ><img src={mainLogo} alt="Logo"/></a></li>
-            <NavLink className="Nav-link Home2" to='/' > <Button text={"Home"} className=""/></NavLink>
-            <NavLink className="Nav-link About2" to='/About' > <Button text={"About"} className="nav-font"/></NavLink>
-            <NavLink className="Nav-link Project2" to='/OngoingProject' > <Button text={"Projects"} className=""/></NavLink>
-            <NavLink className="Nav-link JoinNew2" to='/JoinNew' > <Button text={"Join"} className=""/></NavLink>
+            <NavLink className="Nav-link Home2" to={`${process.env.PUBLIC_URL}/`} > <Button text={"Home"} className=""/></NavLink>
+            <NavLink className="Nav-link About2" to={`${process.env.PUBLIC_URL}/About`} > <Button text={"About"} className="nav-font"/></NavLink>
+            <NavLink className="Nav-link Project2" to={`${process.env.PUBLIC_URL}/OngoingProject`} > <Button text={"Projects"} className=""/></NavLink>
+            <NavLink className="Nav-link JoinNew2" to={`${process.env.PUBLIC_URL}/JoinNew`} > <Button text={"Join"} className=""/></NavLink>
             </ul>
 
       </div>
