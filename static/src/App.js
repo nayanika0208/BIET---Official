@@ -7,33 +7,51 @@ import ProjectList from './Components/OngoingProjects/OngoingProject';//Ongoing 
 import Joinform from './Components/joinNewProjects/joinform.js';//Form for joning
 //import Blogs from './Components/Blogs/Blogs';//Blog section
 
-import {BrowserRouter, Route} from 'react-router-dom';//router for navigation between different pages
+import {BrowserRouter, Route,Switch} from 'react-router-dom';//router for navigation between different pages
 
 import 'tachyons';
 
-class App extends Component {
 
- 
+class ScrollToTop extends Component {
+  componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+      window.scrollTo(0, 0)
+    }
+  }
 
   render() {
-  
+    return this.props.children
+  }
+}
+
+// export default withRouter(ScrollToTop);
+
+class App extends Component {
+
+
+
+  render() {
+
     return (
 
 
       <BrowserRouter>
-        <switch>
 
+        <Switch>
+          <ScrollToTop>
         <Route path="/" component={Home} exact/>
         <Route path="/About" component={About} />
         <Route path="/OngoingProject" component={ProjectList} />
         <Route path="/JoinNew" component={Joinform} />
         {//<Route path="/Blogs" component={Blogs} />
     }
+  </ScrollToTop>
 
-        </switch>
+        </Switch>
+
         </BrowserRouter>
-      
-      
+
+
     );
   }
 }
