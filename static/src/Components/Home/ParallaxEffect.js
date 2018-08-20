@@ -7,6 +7,7 @@ import Pagefooter from '../PageFooter/PageFooter.js';//footer on each page
 import LazyHero from 'react-lazy-hero';
 import MyLandingPage from './Landpage';
 
+
 import Map from './Maps';
 import Footer from './Footer';//footer on homepage section
 
@@ -110,17 +111,19 @@ class Home extends Component{
             <div className="right-part wow fadeInRight">
             <div className="image-box">
             <img src={icon} alt="icon" width="100%" height="100%" />
+          
             </div>
 
             </div>
             </div>
 
         <div>
-        {
-      /* <Parallax
+      
+       <Parallax
       blur={{ min: -10, max:10}}
       bgImage={require('./img4.4.jpg')}
       strength={500}
+
       bgClassName="paral3"
 
         >*/}
@@ -128,9 +131,6 @@ class Home extends Component{
 
     {//</Parallax>
     }
-
-
-
 
     </div>
 
