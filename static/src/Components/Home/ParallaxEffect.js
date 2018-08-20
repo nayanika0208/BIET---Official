@@ -83,7 +83,7 @@ class Home extends Component{
 
     	<div>
         <div>
-        
+
         <Particles params={para} className="Particle"/>
 
 
@@ -111,26 +111,26 @@ class Home extends Component{
             <div className="right-part wow fadeInRight">
             <div className="image-box">
             <img src={icon} alt="icon" width="100%" height="100%" />
-          
+
             </div>
 
             </div>
             </div>
 
-        <div>
-      
+
+
        <Parallax
-      blur={{ min: -10, max:10}}
+    
       bgImage={require('./img4.4.jpg')}
       strength={500}
 
       bgClassName="paral3"
 
-        >*/}
+    >
     <ProjectDisplay/>
 
-    {//</Parallax>
-    }
+    // </Parallax>
+
 
     </div>
 
@@ -142,11 +142,6 @@ class Home extends Component{
         <Pagefooter />
       </div>
       </div>
-
-
-
-      </div>
-
 
     );
   }
