@@ -17,6 +17,7 @@ class Joinform extends Component
       }
 
       componentDidMount(){
+          window.scrollTo(0, 0);
         const source ="https://docs.google.com/forms/d/e/1FAIpQLSegQ3wPCz3bs3YfuGwMKxaQX0uUKMV2LsM154wOi94g9reYBQ/viewform?embedded=true";
           this.setState({ data: source});
           const form =document.querySelector('#form-1');
@@ -25,19 +26,19 @@ class Joinform extends Component
          }
           setTimeout(() => this.setState({ loading: false }), 1500);
         }
-        
+
   render(){
     const { loading }=this.state;
     if(loading){
       return(
         <div >
         <NavigationThree/>
-      
+
           <div className="load">
           <p className="load-text">Loading</p>
           <div className="load5">
                <div className="ring-2">
-                
+
                 <div className="ball-holder">
                 <div className="ball">
                 </div>
@@ -52,6 +53,7 @@ class Joinform extends Component
         return(
         <div>
         <div>
+
         <NavigationThree/>
         <div className="form-box">
         <div className="form-container" id="form-1">

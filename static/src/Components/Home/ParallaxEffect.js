@@ -46,6 +46,7 @@ class Home extends Component{
   }
 
   componentDidMount() {
+      window.scrollTo(0, 0);
     window.addEventListener('scroll', this.handleScroll);
       new WOW().init();
   }
@@ -57,7 +58,7 @@ class Home extends Component{
   handleScroll(e) {
    const nav1=document.querySelector("#nav1");
    const nav2=document.querySelector('#nav2');
-  
+
    if(window.scrollY>105){
     nav1.style.transform="translateY(-100%)";
     nav1.style.display="none";
@@ -75,32 +76,33 @@ class Home extends Component{
 
 
   render(){
- 
+
     return (
-       
-       
+
+
     	<div>
         <div>
+        
         <Particles params={para} className="Particle"/>
-        
-      
-        <Navigation />
-        
-        <NavigationTwo className="hide"/>
-        
-     
 
-        
+
+        <Navigation />
+
+        <NavigationTwo className="hide"/>
+
+
+
+
         <div className="paral1" >
 
         <div className="head-box">
-       
-        <h1 className="Primary-head wow fadeIn"> WELCOME TO </h1>        
+
+        <h1 className="Primary-head wow fadeIn"> WELCOME TO </h1>
          <span className="Main-head wow fadeIn " data-wow-duration="1s" data-wow-delay="0.4s" >INNOVATION LABS </span>
         </div>
         </div>
         <div className="Home_About-box">
-        <div className="left-part"> 
+        <div className="left-part">
 
         <h2 className="Secondary-head about_secondary_head wow fadeInLeft">About us</h2>
         <p className="paragraph wow fadeInLeft">The Bio-Inspired Engineering Team is a comglomeration of the brightest minds in The Vellore Institute of Technology to create real solutions in this ever-changing landscape of technical innovations.</p>
@@ -112,7 +114,7 @@ class Home extends Component{
 
             </div>
             </div>
-      
+
         <div>
         {
       /* <Parallax
@@ -120,31 +122,31 @@ class Home extends Component{
       bgImage={require('./img4.4.jpg')}
       strength={500}
       bgClassName="paral3"
-      
+
         >*/}
     <ProjectDisplay/>
-    
+
     {//</Parallax>
     }
-        
-        
-        
-        
-    </div>            
-            
 
-        
+
+
+
+    </div>
+
+
+
 
       <div className="head-back">
         <Footer/>
         <Pagefooter />
       </div>
       </div>
-        
-        
+
+
 
       </div>
-     
+
 
     );
   }

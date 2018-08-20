@@ -37,6 +37,7 @@
     "start-prod": "yarn run build && cross-env NODE_ENV=production && forever server.js"
   },
   "devDependencies": {
-    "react-social-icons": "^3.0.0"
+    "react-social-icons": "^3.0.0",
+    "uglify-js-brunch": "^2.10.0"
   }
 }
