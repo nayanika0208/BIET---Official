@@ -1,5 +1,4 @@
 import React,{Component} from 'react';
-import image from './img1.jpg';
 import './OngoingProjectComp.css';
 import{Glyphicon} from 'react-bootstrap';
 import {NavLink} from 'react-router-dom';
@@ -9,53 +8,52 @@ import {NavLink} from 'react-router-dom';
 
 //import { url } from 'inspector';
 class OngoingProjectComp extends Component{
-  constructor(props){
-    super(props)
-    this.moveRight = this.moveRight.bind(this);
-    this.moveLeft = this.moveLeft.bind(this);
-  }
-  moveRight=(e)=>{
-    e.preventDefault();
-   let f=document.querySelectorAll(".first-display");
-     let s=document.querySelectorAll(".second-display");
-
-  let index=this.props.Index;
-    switch(index){
-      case 1:f[0].style.opacity="0";
-            s[0].style.transform="translateX(0%)";
-      break;
-      case 2:f[1].style.opacity="0";
-      s[1].style.transform="translateX(0%)";
-        break;
-      case 3:f[2].style.opacity="0";
-      s[2].style.transform="translateX(0%)";
-        break;
+    constructor(props){
+      super(props)
+      this.moveRight = this.moveRight.bind(this);
+      this.moveLeft = this.moveLeft.bind(this);
     }
-
-
-  }
-  moveLeft=(e)=>{
-    let f=document.querySelectorAll(".first-display");
-    let s=document.querySelectorAll(".second-display");
-      let index=this.props.Index;
-     switch(index){
-       case 1:f[0].style.opacity="1";
-             s[0].style.transform="translateX(100%)";
-       break;
-       case 2:f[1].style.opacity="1";
-       s[1].style.transform="translateX(100%)";
-         break;
-       case 3:f[2].style.opacity="1";
-       s[2].style.transform="translateX(100%)";
-         break;
-     }
-
-  }
+    //logic for displaying the details on clicking the details button
+    moveRight=(e)=>{
+        e.preventDefault();
+        let f=document.querySelectorAll(".first-display");
+        let s=document.querySelectorAll(".second-display");
+        //set index for each specific component
+        let index=this.props.Index;
+        switch(index){
+            case 1:f[0].style.opacity="0";
+                  s[0].style.transform="translateX(0%)";
+            break;
+            case 2:f[1].style.opacity="0";
+                  s[1].style.transform="translateX(0%)";
+            break;
+            case 3:f[2].style.opacity="0";
+                  s[2].style.transform="translateX(0%)";
+            break;
+            }
+      }
+      //logic for displaying the main side on clcking the left button
+      moveLeft=(e)=>{
+        let f=document.querySelectorAll(".first-display");
+        let s=document.querySelectorAll(".second-display");
+        let index=this.props.Index;
+         switch(index){
+           case 1:f[0].style.opacity="1";
+                  s[0].style.transform="translateX(100%)";
+           break;
+           case 2:f[1].style.opacity="1";
+                  s[1].style.transform="translateX(100%)";
+           break;
+           case 3:f[2].style.opacity="1";
+                  s[2].style.transform="translateX(100%)";
+           break;
+         }
+      }
 
   render(){
 
   return(
-    <div class="project_component">
+    <div className="project_component">
         <div className="project_image shadow-5">
             <div className="main">
                   <img src={require(`./Images/img${this.props.Index}.jpg`)} alt="project-image" height="100%" width="100%" className="front-face"/>

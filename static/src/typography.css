@@ -1,0 +1,42 @@
+@font-face {
+    font-family:myFirstFont;
+    src: url('./Components/Fonts/Cosmology.ttf');
+}
+
+@font-face {
+    font-family:myfirstFont-1;
+    src: url('./Components/Fonts/google_roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+    font-family:myfirstFont-2;
+    src: url('./Components/Fonts/Elianto/Elianto-Regular.ttf');
+}
+
+@font-face{
+    font-family:navbar;
+    src: url('./Components/Fonts/google_roboto/Roboto-Thin.ttf')
+  }
+
+@font-face{
+    font-family: sechead;
+    src: url('./Components/Fonts/google_roboto/Roboto-Italic.ttf')
+}
+
+@font-face{
+    font-family: para;
+    src: url('./Components/Fonts/google_roboto/Roboto-Regular.ttf')
+}
+
+@font-face{
+    font-family: label;
+    src: url('./Components/Fonts/google_roboto/Roboto-Medium.ttf')
+}
+@font-face{
+    font-family: img1;
+    src: url('./Components/Fonts/google_roboto/Roboto-Light.ttf')
+}
+@font-face{
+    font-family: img2;
+    src: url('./Components/Fonts/google_roboto/Roboto-LightItalic.ttf')
+}

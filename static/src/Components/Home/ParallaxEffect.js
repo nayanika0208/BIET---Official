@@ -120,7 +120,7 @@ class Home extends Component{
 
 
        <Parallax
-    
+
       bgImage={require('./img4.4.jpg')}
       strength={500}
 

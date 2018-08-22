@@ -2,7 +2,7 @@
 {
   height:35rem;
   width:35rem;
-  
+
   display:inline-block;
   margin: 5rem 8rem;
   position:relative;
@@ -12,8 +12,6 @@
   border-radius:1rem;
   /*box-shadow:0.5rem 0.5rem 1rem #61892f;
   border:0.7rem solid #61892f*/
-
-
 }
 
 
@@ -83,6 +81,3 @@
 {
   transform:translateY(0%);
 }
-
-
-

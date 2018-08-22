@@ -10,27 +10,27 @@ import { Parallax, Background } from 'react-parallax';
 import ScrollToTop from '../ScrollToTop';
 
 //import pictures of logo
-import DSIR from './DSIR.png';
-import DST from './DST.png';
-import ICMR from './ICMR.jpg';
-import VIT from './VIT.png';
+import DSIR from './benefactors/DSIR.png';
+import DST from './benefactors/DST.png';
+import ICMR from './benefactors/ICMR.jpg';
+import VIT from './benefactors/VIT.png';
 
 import WOW from 'wow.js';//for animations
 
 
 
 const a_members=[
-  {name:"Sayan",designation:"Team-Manager"},
-  {name:"Elton",designation:"Team-Leader"}];
+    {name:"Sayan",designation:"Team-Manager"},
+    {name:"Elton",designation:"Team-Leader"}];
 
 const b_members=[
-{name:"Tharun",designation:"member"},
-{name:"delete",designation:"Member"},
-{name:"delete",designation:"Member"},
-{name:"Aman",designation:"Member"},
-{name:"Deepanshu",designation:"Member"},
-{name:"Prithviraj",designation:"Member"},
-{name:"Ashish",designation:"Member"}
+    {name:"Tharun",designation:"member"},
+    {name:"delete",designation:"Member"},
+    {name:"delete",designation:"Member"},
+    {name:"Aman",designation:"Member"},
+    {name:"Deepanshu",designation:"Member"},
+    {name:"Prithviraj",designation:"Member"},
+    {name:"Ashish",designation:"Member"}
 ]
 
 
@@ -38,7 +38,7 @@ const b_members=[
 const a_display = a_members.map((element,index)=>
 {
   return(
-    <Acomp name={element.name} designation={element.designation} index={index+1} />
+    <Acomp name={element.name} designation={element.designation} index={index+1} key={index+1}/>
   )
 })
 
@@ -46,7 +46,7 @@ const a_display = a_members.map((element,index)=>
 const b_display = b_members.map((element,index)=>
 {
   return(
-    <Bcomp name={element.name} designation={element.designation} index={index+1} />
+    <Bcomp name={element.name} designation={element.designation} index={index+1} key={index+1}/>
   )
 })
 
@@ -65,70 +65,59 @@ class About extends Component
     <div>
         {/* <ScrollToTop/> */}
        <NavigationThree />
-       {
-/*
        <Parallax
-       blur={{ min: -10, max:10}}
-       bgImage={require('./img2.jpg')}
-       strength={500}
-       bgClassName="About_paral1">*/}
-        <div className="About-box">
-             <h1 className="Primary-head About_primary_head wow fadeIn">About Us</h1>
-             <div className="Paragraph wow fadeIn" data-wow-delay='0.5s'>
-             <p>The Bio-Inspired Engineering Team is primarily focused on providing solutions and technologies that are geared towards solving the multiple problems that plague society. All the innovations and developments are inspired from the natural structures and designs. Allowing these products to be efficient, compliant, cheap, and an Indian Innovation. All projects are created with the inspiration of nature's design. The team comprises of skilled and motivated individuals who constantly strive to create products which can change human lives. Created by students, for the masses.</p>
-             </div>
-        </div>
-        {//</Parallax>
-        }
+           blur={{ min: -10, max:10}}
+           bgImage={require('./img2.jpg')}
+           strength={500}
+           bgClassName="About_paral1"
+        >
+            <div className="About-box">
+                 <h1 className="Primary-head About_primary_head wow fadeIn">About Us</h1>
+                 <div className="Paragraph wow fadeIn" data-wow-delay='0.5s'>
+                     <p>The Bio-Inspired Engineering Team is primarily focused on providing solutions and technologies that are geared towards solving the multiple problems that plague society. All the innovations and developments are inspired from the natural structures and designs. Allowing these products to be efficient, compliant, cheap, and an Indian Innovation. All projects are created with the inspiration of nature's design. The team comprises of skilled and motivated individuals who constantly strive to create products which can change human lives. Created by students, for the masses.</p>
+                 </div>
+            </div>
+        </Parallax>
+
 
         <div className="About_paral2">
         <div className="Section-1">
              <h1 className="Primary-head wow fadeIn">The Innovators</h1><br/><br/>
-              <div className="a-display wow fadeInLeft" data-wow-delay='0.4s'> {a_display}
-             </div>
+              <div className="a-display wow fadeInLeft" data-wow-delay='0.4s'>
+                {a_display}
+              </div>
               <div className="b-display wow fadeInRight" data-wow-delay='0.4s'>
-             {b_display}
-             </div>
+                {b_display}
+              </div>
 
         </div>
         </div>
-
+       {/* Benefactors section*/}
         <div className="paral-3">
 
-         <div className="Section-2">
-     <h1 className="Primary-head wow fadeIn" data-wow-delay='0.3s'>Benefactors</h1>
-     <div className="section-detail wow fadeIn" data-wow-delay='0.7s'>
-     <div className="info-box">
-     <img src={DSIR} alt="Logo" className="org_logo"/>
+             <div className="Section-2">
+                <h1 className="Primary-head wow fadeIn" data-wow-delay='0.3s'>Benefactors</h1>
+                <div className="section-detail wow fadeIn" data-wow-delay='0.7s'>
+                     <div className="info-box">
+                       <img src={DSIR} alt="Logo" className="org_logo"/>
+                      </div>
+
+                      <div className="info-box">
+                        <img src={DST} alt="Logo" className="org_logo"/>
+                      </div>
+
+                      <div className="info-box">
+                        <img src={ICMR} alt="Logo" className="org_logo"/>
+                      </div>
+
+                      <div className="info-box">
+                       <img src={VIT} alt="Logo" className="org_logo"/>
+                      </div>
+                </div>
+             </div>
+        </div>
+        <Pagefooter/>
      </div>
-
-     <div className="info-box">
-     <img src={DST} alt="Logo" className="org_logo"/>
-     </div>
-
-     <div className="info-box">
-     <img src={ICMR} alt="Logo" className="org_logo"/>
-     </div>
-
-     <div className="info-box">
-     <img src={VIT} alt="Logo" className="org_logo"/>
-     </div>
-
-     </div>
-
-     </div>
-     </div>
-
-
-
-     <Pagefooter/>
-
-
-
-     </div>
-
-
-
      </div>
   )
 }

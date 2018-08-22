@@ -1,43 +1,29 @@
-
-ul {
-   
-    
-}
-
 li a {
     display: inline;
     width: 100px;
-
 }
 #nav1{
-   list-style-type: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-     overflow: hidden;
-      position: fixed;
+    overflow: hidden;
+    position: fixed;
     top: 0;
     width: 100%;
-
-  background:rgba(0,0,0,0.5);
-
-  /*background:rgba(0,0,0,0);*/
-
-
- 
-  z-index:15;
-  height:15rem;
-
+    background:rgba(0,0,0,0.5);
+    z-index:15;
+    height:15rem;
 }
 
 .temp-box
 {
-  position:absolute;
-  left:0px;
-  top:0px;
-  background-color:black;
-  z-index:5;
-  height:15rem;
-  width:100vw;
+    position:absolute;
+    left:0px;
+    top:0px;
+    background-color:black;
+    z-index:5;
+    height:15rem;
+    width:100vw;
 }
 
 li {
@@ -47,40 +33,24 @@ li {
   }
 
 .navlogo{
-  position:absolute;
-  top:0%;
-  left:40%;
-  opacity: 1
+    position:absolute;
+    top:0%;
+    left:40%;
+    opacity: 1
 }
-.navlogo:hover{
-
-}
-
-/*.Nav-link:hover{
-  /*color:#61892f;*/
-  /*box-sizing: border-box;
-  text-decoration:none;
- border-bottom:1rem solid #86c232;
- color:white;
-  
-
-}*/
-
 
 .Nav-link{
-  
-  color:#86c232;
-  padding:1rem 1rem;
-  font-size:2rem;
-  padding-bottom:2rem;
-  /*background-color:rgba(71,75,79,0.2);*/
-  color:white;
-  margin:0 1rem;
-  position:absolute;
-  font-family: navbar;
- letter-spacing: 0.1rem;
+    color:#86c232;
+    padding:1rem 1rem;
+    font-size:2rem;
+    padding-bottom:2rem;
+    color:white;
+    margin:0 1rem;
+    position:absolute;
+    font-family: navbar;
+    letter-spacing: 0.1rem;
 }
-
+/*the half circle for logo*/
 .half-circle {
     width: 300px;
     height: 130px; /* as the half of the width */
@@ -90,40 +60,35 @@ li {
     border: 10px solid #86c232;
     border-bottom: 0;
 }
-.leftPart{
-  
-}
+/*defined position of each list item*/
 .Home{
-position:absolute;
-top:10%;
-left:13%;
-
+    position:absolute;
+    top:10%;
+    left:13%;
 }
 .About{
- position:absolute;
-top:10%;
-left:28%;
-
+    position:absolute;
+    top:10%;
+    left:28%;
 }
 .rightPart{
-  float:right;
-
+    float:right;
 }
 .Project{
-position: absolute;
-top:10%;
-left:67%;
-margin-right:100px;
+    position: absolute;
+    top:10%;
+    left:67%;
+    margin-right:100px;
 }
 .JoinNew{
-position: absolute;
-top:10%;
-left:80%;
-margin-right:100px;
+    position: absolute;
+    top:10%;
+    left:80%;
+    margin-right:100px;
 }
 .Blogs{
-position: absolute;
-top:25%;
-left:90%;
-margin-right:100px;
+    position: absolute;
+    top:25%;
+    left:90%;
+    margin-right:100px;
 }

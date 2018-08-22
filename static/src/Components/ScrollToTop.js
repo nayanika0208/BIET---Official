@@ -1,3 +1,5 @@
+//ensuring that on routing each page loads from the ScrollToTop
+//one of the issues faced with react router
 import React,{Component} from'react';
 import { withRouter } from 'react-router';
 
