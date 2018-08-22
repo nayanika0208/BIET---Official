@@ -7,7 +7,7 @@ import ProjectList from './Components/OngoingProjects/OngoingProject';//Ongoing 
 import Joinform from './Components/joinNewProjects/joinform.js';//Form for joning
 //import Blogs from './Components/Blogs/Blogs';//Blog section
 
-import {BrowserRouter, Route,Switch} from 'react-router-dom';//router for navigation between different pages
+import {BrowserRouter, Route,Switch,HashRouter} from 'react-router-dom';//router for navigation between different pages
 
 import 'tachyons';
 
@@ -35,7 +35,7 @@ class App extends Component {
     return (
 
 
-      <BrowserRouter>
+      <HashRouter>
 
         <Switch>
           <ScrollToTop>
@@ -49,7 +49,7 @@ class App extends Component {
 
         </Switch>
 
-        </BrowserRouter>
+        </HashRouter>
 
 
     );

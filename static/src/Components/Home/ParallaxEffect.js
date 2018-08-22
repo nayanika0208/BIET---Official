@@ -126,11 +126,11 @@ class Home extends Component{
 
       bgClassName="paral3"
 
-        >*/}
+        >
     <ProjectDisplay/>
 
-    {//</Parallax>
-    }
+    </Parallax>
+    
 
     </div>
 
