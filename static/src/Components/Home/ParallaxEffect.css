@@ -8,7 +8,7 @@
   z-index:6;
 }
 
-.paral1{ 
+.paral1{
 
       box-sizing: border-box;
  /*background:linear-gradient(to bottom, rgb(34,38, 41,0.5),rgba(34,38,41,0.5)),url("img2.8.jpeg");    /* Set a specific height */
@@ -23,7 +23,7 @@
     text-align:center;
 
     display:flex;
-    
+
 
     padding:6rem 5rem;
     margin-top:15rem;
@@ -72,53 +72,11 @@
 
 */
 
-@font-face {
-    font-family:myFirstFont;
-    src: url('../Fonts/Cosmology.ttf');
-}
-
-@font-face {
-    font-family:myfirstFont-1;
-    src: url('../Fonts/google_roboto/Roboto-Thin.ttf');
-}
-
-@font-face {
-    font-family:myfirstFont-2;
-    src: url('../Fonts/Elianto/Elianto-Regular.ttf');
-}
-
-@font-face{
-    font-family:navbar;
-    src: url('../Fonts/google_roboto/Roboto-Thin.ttf')
-  }
-
-@font-face{
-    font-family: sechead;
-    src: url('../Fonts/google_roboto/Roboto-Italic.ttf')
-}
-
-@font-face{
-    font-family: para;
-    src: url('../Fonts/google_roboto/Roboto-Regular.ttf')
-}
-
-@font-face{
-    font-family: label;
-    src: url('../Fonts/google_roboto/Roboto-Medium.ttf')
-}
-@font-face{
-    font-family: img1;
-    src: url('../Fonts/google_roboto/Roboto-Light.ttf')
-}
-@font-face{
-    font-family: img2;
-    src: url('../Fonts/google_roboto/Roboto-LightItalic.ttf')
-}
 
 .Primary-head
 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    
+
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 1rem; /* Adjust as needed */
@@ -129,12 +87,18 @@
     font-family:myfirstFont-1;
     text-align:center;
     /*
-     animation: 
+     animation:
     typing 3.5s steps(10, end),
     blink-caret .75s step-end infinite;*/
 }
-   
-   
+@media only screen and (max-width: 56.25em){
+  .Primary-head
+  {
+    font-size:3rem;
+  }
+}
+
+
 
 
 .Home_About-box{
@@ -156,7 +120,7 @@
     display:inline-block;
     width:100%;
     height:100%;
-    background-color:#222629;  
+    background-color:#222629;
     clip-path: polygon(0 0, 81% 0, 63% 100%, 0 100%);
 
 }
@@ -164,7 +128,7 @@
 
 .Secondary-head
 {
-   
+
     display:inline-block;
     color:whitesmoke;
     font-size:4.5rem;
@@ -196,7 +160,7 @@
     font-size:2rem;
     letter-spacing:3px;
     font-family: para;
-    
+
 }
 
 
@@ -207,7 +171,7 @@
     position:absolute;
     left:0px;
     top:0px;
-    display:inline-block;    
+    display:inline-block;
     width:100%;
     height:100%;
     background-color:#86C232;
@@ -252,9 +216,9 @@
 }
 /*.jarallax > .para12 {
     position: absolute;
-      
+
     object-fit: cover;
-     support for plugin https://github.com/bfred-it/object-fit-images 
+     support for plugin https://github.com/bfred-it/object-fit-images
     font-family: 'object-fit: cover;';
     top: 0;
     left: 0;
@@ -264,19 +228,19 @@
 }*/
 
 
-.paral3{ 
+.paral3{
     /* The image used */
 
         /* Create the parallax scrolling effect */
-    
-   
+
+
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding:3rem 0;
 
-   
-  
+
+
 }
 .hide{
     transform: translateY(-100%);
@@ -289,7 +253,7 @@
 {
     display:block;
     background-color:black;
-    color:white;  
+    color:white;
     margin:0px;
     height:250px;
 }
@@ -297,5 +261,3 @@
 .hideNav{
     transform: translateY(-100%);
 }
-
-

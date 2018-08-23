@@ -16,6 +16,16 @@
 
 }
 
+@media only screen and (max-width: 75em){
+  .About_paral1
+  {
+    /*background:linear-gradient(to bottom, rgb(34,38, 41,0.8),rgba(34,38,41,0.8)),url("img2.jpg");    /* Set a specific height */
+    /* Create the parallax scrolling effect */
+    margin-top:5rem;
+
+  }
+}
+
 .About-box
 {
   position: relative;
@@ -37,6 +47,16 @@
   padding:6rem;
 }
 
+@media only screen and (max-width: 37.5em){
+  .Paragraph
+  {
+
+    top:30%;
+    font-size: 2rem;
+    padding:3rem;
+  }
+}
+
 .About_primary_head
 {
   position:absolute;
@@ -44,9 +64,34 @@
   left:50%;
   transform:translateX(-50%);
   font-family:myfirstfont-2;
-
-
 }
+@media only screen and (max-width: 75em){
+  .About_primary_head
+  {
+    top:20%;
+
+  }
+}
+/* @media only screen and (max-width: 37.5em){
+  .About_primary_head
+  {
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translateX(-50%);
+    font-family:myfirstfont-2;
+  }
+}
+@media only screen and (max-width: 56.25em){
+  .About_primary_head
+  {
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform:translateX(-50%);
+    font-family:myfirstfont-2;
+  }
+} */
 
 
 .About_paral2
@@ -102,10 +147,6 @@
   border-radius:1rem;
     margin-bottom:2rem;
     border:0.6rem solid #222629;
-
-
-
-
 }
 .c-display
 {
@@ -125,7 +166,7 @@
   display:box;
   text-align:center;
   margin:0 auto;
- 
+
 }
 
 .info-box
@@ -136,7 +177,31 @@
   overflow:hidden;
   margin:4.3rem;
 }
+@media only screen and (max-width: 75em){
+  .info-box
+  {
+    height:14rem;
+    width:14rem;
+    margin:3rem;
+  }
+}
+@media only screen and (max-width: 56.25em){
+  .info-box
+  {
+    height:10rem;
+    width:10rem;
+    margin:3rem;
+  }
 
+}
+@media only screen and (max-width: 56.25em){
+  .info-box
+  {
+    height:10rem;
+    width:8rem;
+    margin:2rem;
+  }
+}
 .org_logo
 {
   width:100%;

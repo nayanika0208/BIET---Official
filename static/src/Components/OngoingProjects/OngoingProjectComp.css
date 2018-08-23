@@ -13,7 +13,19 @@
   margin-top:5rem;
 
 }
-
+.Primary-head-project
+{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1rem; /* Adjust as needed */
+    font-size:5rem;
+    display:inline-block;
+    color:white;
+    font-weight:800;
+    font-family:myfirstFont-1;
+    text-align:center;
+}
 .ongoing_primary_head
 {
   position:absolute;
@@ -33,6 +45,69 @@
   box-shadow:0.3rem 0.3rem #86C232;
 }
 
+@media only screen and (max-width: 75em){
+  .project_image
+  {
+    position:relative;
+    height:60rem;
+    width:65rem;
+    border-radius:1.2rem;
+  }
+  .ongoing-project
+  {
+    /*clip-path:polygon(0% 15%,15% 0%,100% 0%,100% 85%,85% 100%,0% 100%);*/
+    border-top:.8rem solid #86C232;
+    margin-top:5rem;
+
+  }
+  .project_component
+  {
+    padding:.8rem;
+    display:inline-block;
+    margin-top:3rem;
+
+  }
+}
+@media only screen and (max-width: 56.25em){
+  .project_image
+  {
+    position:relative;
+    height:30rem;
+    width:50rem;
+    border-radius:1.2rem;
+  }
+  .ongoing-project
+  {
+    /*clip-path:polygon(0% 15%,15% 0%,100% 0%,100% 85%,85% 100%,0% 100%);*/
+    border-top:.5rem solid #86C232;
+    margin-top:5rem;
+
+  }
+  .project_component
+  {
+    padding:.6rem;
+    display:inline-block;
+    margin-top:1rem;
+
+  }
+  .Primary-head-project{
+    letter-spacing: .8rem; /* Adjust as needed */
+    font-size:3rem;
+  }
+}
+@media only screen and (max-width: 37.25em){
+  .project_image
+  {
+    position:relative;
+    height:40rem;
+    width:35rem;
+    border-radius:1rem;
+  }
+  .Primary-head-project{
+    letter-spacing: .8rem; /* Adjust as needed */
+    font-size:3rem;
+  }
+}
 
 .ongoing_para
 {
@@ -40,6 +115,31 @@
   font-family:para;
   font-size:2.2rem;
   letter-spacing:0.2rem;
+}
+@media only screen and (max-width: 75em){
+  .ongoing_para
+  {
+    margin-top:4rem;
+    font-size:2rem;
+    letter-spacing:0.1rem;
+  }
+}
+@media only screen and (max-width: 56.25em){
+  .ongoing_para
+  {
+    margin-top:2rem;
+    font-size:1rem;
+    letter-spacing:0.1rem;
+  }
+}
+@media only screen and (max-width: 37.25em){
+  .ongoing_para
+  {
+    margin-top:1rem;
+    font-size:1rem;
+    letter-spacing:0.1rem;
+  }
+
 }
 
 
@@ -51,6 +151,31 @@
   letter-spacing:0.2rem;
 }
 
+@media only screen and (max-width: 75em){
+  .ongoing_para-2
+  {
+    margin-top:4rem;
+    font-size:2rem;
+    letter-spacing:0.1rem;
+  }
+}
+@media only screen and (max-width: 56.25em){
+  .ongoing_para-2
+  {
+    margin-top:2rem;
+    font-size:1rem;
+    letter-spacing:0.1rem;
+  }
+}
+@media only screen and (max-width: 37.25em){
+  .ongoing_para-2
+  {
+    margin-top:1rem;
+    font-size:1rem;
+    letter-spacing:0.1rem;
+  }
+
+}
 .proj_name
 {
   height:10%;
@@ -104,7 +229,7 @@
   left:0rem;
   top:0rem;
   text-align:left;
- 
+
   transition:all 1.5s;
   opacity:1;
   transform:translateX(0%);
@@ -126,21 +251,23 @@
   transform:translateX(0%);
 }
 .arrow-button{
-  border-radius:100px;
+  border-radius:10rem;
   background-color:#61892f;
   position:absolute;
   right:0rem;
   top:50%;
 
 }
+
 .arrow-button-left{
-  border-radius:100px;
+  border-radius:10rem;
   background-color:#61892f;
   position:absolute;
   left:0rem;
   top:50%;
 
 }
+/*second part of ongoing component=>details  */
 .second-display{
    height:100%;
   width:100%;
@@ -177,7 +304,7 @@
 {
   font-size:2rem;
   text-align:center;
-  
+
   width:90%;
 
   position: absolute;
@@ -233,7 +360,7 @@
   position: relative;
   left:3rem;
   font-size:5rem;
-  margin-bottom:2rem; 
+  margin-bottom:2rem;
 
 }
 
