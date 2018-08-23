@@ -61,7 +61,7 @@ class OngoingProjectComp extends Component{
                   <div className="info wow fadeInLeft" data-wow-delay='0.4s'>
                     <div className="details">
                        <div className="project_details">
-                         <div className="Primary-head">{this.props.Title}</div>
+                         <div className="Primary-head-project">{this.props.Title}</div>
                             <div className="ongoing_para">
                                 {this.props.Summary}
                             </div>
@@ -76,7 +76,7 @@ class OngoingProjectComp extends Component{
                   <div className="second-display">
                     <div className="info2">
                       <div className="project_details">
-                        <div className="Primary-head">{this.props.Title}</div>
+                        <div className="Primary-head-project">{this.props.Title}</div>
                           <div className="ongoing_para-2">
                                 {this.props.Description}
                           </div>

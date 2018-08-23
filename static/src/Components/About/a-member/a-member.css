@@ -1,9 +1,9 @@
 .a-member
 {
   height:35rem;
-  width:35rem;
+  width:35rem;h
 
-  display:inline-block;
+  display:flex;
   margin: 5rem 8rem;
   position:relative;
   overflow:hidden;
@@ -23,6 +23,14 @@
   border-radius:1rem;
 }
 
+/* @media only screen and (max-width: 56.25em){
+  .member-photo
+  {
+
+    width:70%;
+  }
+} */
+
 .team_part-1
 {
   position:absolute;
@@ -35,6 +43,7 @@
   transform:translateY(-50%);
   transition:all 1s;
 }
+
 
 .content-1
 {

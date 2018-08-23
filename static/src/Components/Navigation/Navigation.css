@@ -1,6 +1,6 @@
 li a {
     display: inline;
-    width: 100px;
+    width: 10rem;
 }
 #nav1{
     list-style-type: none;
@@ -9,7 +9,7 @@ li a {
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background:rgba(0,0,0,0.5);
     z-index:15;
     height:15rem;
@@ -52,13 +52,35 @@ li {
 }
 /*the half circle for logo*/
 .half-circle {
-    width: 300px;
-    height: 130px; /* as the half of the width */
+    width: 30rem;
+    height: 13rem; /* as the half of the width */
     background:transparent;
-    border-bottom-left-radius: 140px;  /* 100px of height + 10px of border */
-    border-bottom-right-radius: 140px; /* 100px of height + 10px of border */
-    border: 10px solid #86c232;
+    border-bottom-left-radius: 14rem;  /* 10rem of height + 1rem of border */
+    border-bottom-right-radius: 14rem; /* 10rem of height + 1rem of border */
+    border: 1rem solid #86c232;
     border-bottom: 0;
+
+
+
+}
+@media only screen and (max-width: 75em){
+  .half-circle{
+  width: 25rem;
+  height: 11rem;
+  border-bottom-left-radius: 10rem;  /* 10rem of height + 1rem of border */
+  border-bottom-right-radius: 10rem;
+
+}
+
+}
+@media only screen and (max-width: 56.25em){
+  .half-circle{
+  width: 20rem;
+  height: 10rem;
+  border-bottom-left-radius: 10rem;  /* 10rem of height + 1rem of border */
+  border-bottom-right-radius: 10rem;
+}
+
 }
 /*defined position of each list item*/
 .Home{
@@ -78,17 +100,25 @@ li {
     position: absolute;
     top:10%;
     left:67%;
-    margin-right:100px;
+    margin-right:10rem;
 }
 .JoinNew{
     position: absolute;
     top:10%;
     left:80%;
-    margin-right:100px;
+    margin-right:10rem;
 }
 .Blogs{
     position: absolute;
     top:25%;
     left:90%;
-    margin-right:100px;
+    margin-right:10rem;
+}
+@media only screen and (max-width: 56.25em){
+  .Home{
+    left: 5%;
+  }
+  .About{
+    left: 20%;
+  }
 }
