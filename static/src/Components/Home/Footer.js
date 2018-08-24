@@ -12,13 +12,13 @@ const Footer=()=>
   return(
 
     <div className="Contact_About-box">
-    <div className="Contact_left-part"> 
+    <div className="Contact_left-part">
 
     <h2 className="Contact_left_Secondary-head  Secondary-head wow fadeInLeft">Contact us</h2>
 
 
     <div className="Contact_content-box wow fadeInLeft">
-        
+
     Vellore Institute of Technology<br/>
     Near Katpadi Road,Vellore,<br/>
      632014 , Tamil Nadu<br/>
@@ -48,14 +48,14 @@ const Footer=()=>
 
        //<MapContainer/>
        }
-  
 
-    
+
+
       </div>
 
         </div>
         </div>
-  
+
 
 
   )

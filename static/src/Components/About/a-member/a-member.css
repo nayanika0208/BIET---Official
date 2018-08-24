@@ -3,7 +3,7 @@
   height:35rem;
   width:35rem;h
 
-  display:flex;
+  display:inline-block;
   margin: 5rem 8rem;
   position:relative;
   overflow:hidden;

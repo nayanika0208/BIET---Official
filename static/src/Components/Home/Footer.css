@@ -47,9 +47,9 @@
   top:1rem;
   left:47.5%;
     display:inline-block;
-    color:whitesmoke;  
+    color:whitesmoke;
     font-size:4.5rem;
-    letter-spacing:3px;
+    letter-spacing:.3rem;
     border-left:1.3rem solid #86C232;
     padding-left:1.5rem;
 }
@@ -57,7 +57,7 @@
 
 .Contact-box
 {
- 
+
   display:inline-block;
   position:absolute;
   left:15%;
@@ -98,6 +98,7 @@
 
 }
 
+
 .icon
 {
   display:inline-block;
@@ -120,6 +121,77 @@
   border:6px solid #86C232;
   border-radius:1rem;
   text-align: center;
+
+}
+
+@media only screen and (max-width:600px){
+
+  .Contact_content-box
+  {
+    font-size:2rem;
+    width:50rem;
+
+  }
+
+
+
+  .Contact_left_Secondary-head
+  {
+      margin-left:5rem;
+      margin-top:4rem;
+      padding-left:1.5rem;
+      font-size:3.5rem;
+    }
+
+
+  .Social-media-box
+  {
+
+    border-radius:1rem;
+    width:40rem;
+
+  }
+
+  .map-box{
+    height:30rem;
+    width:50rem;
+
+  }
+
+}
+@media only screen and (max-width:300px){
+
+  .Contact_content-box
+  {
+    font-size:2rem;
+    width:40rem;
+
+  }
+
+
+
+  .Contact_left_Secondary-head
+  {
+      margin-left:4rem;
+      margin-top:3rem;
+      padding-left:1.5rem;
+      font-size:3rem;
+    }
+
+
+  .Social-media-box
+  {
+
+    border-radius:1rem;
+    width:30rem;
+
+  }
+
+  .map-box{
+    height:30rem;
+    width:40rem;
+
+  }
 
 }
 
@@ -158,7 +230,7 @@
   position:absolute;
   left:0px;
   top:0px;
-  display:inline-block;    
+  display:inline-block;
   width:100%;
   height:100%;
   background-color:#222629;

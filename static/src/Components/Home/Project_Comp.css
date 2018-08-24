@@ -3,7 +3,7 @@
 {
   padding:0rem;
   display:inline-block;
-transform:skewX(100px);
+transform:skewX(10rem);
 margin:1rem;
 
 
@@ -19,9 +19,20 @@ margin:1rem;
   overflow: hidden;
   display:inline-block;
   margin:5rem;
- 
-}
 
+}
+@media only screen and (max-width: 37.25em){
+  .proj_image{
+    width:40rem;
+      margin:3rem;
+  }
+}
+@media only screen and (max-width: 250px){
+  .proj_image{
+    width:20rem;
+      margin:2rem;
+  }
+}
 .home_proj_name
 {
   height:15%;
@@ -32,7 +43,7 @@ margin:1rem;
   text-align:center;
   text-transform: uppercase;
   background-color:black;
-  
+
 }
 
 .home_proj_name p
@@ -120,7 +131,7 @@ margin:1rem;
 .project-box
 {
   text-align:center;
-  padding:100px;
+  padding:10rem;
 }
 
 .primary-head
@@ -129,7 +140,7 @@ margin:1rem;
   position: relative;
   left:3rem;
   font-size:5rem;
-  margin-bottom:2rem; 
+  margin-bottom:2rem;
 
 }
 
@@ -140,6 +151,3 @@ margin:1rem;
   top:3rem;
   border-left:1.3rem solid #86c232;
 }
-
-
-
