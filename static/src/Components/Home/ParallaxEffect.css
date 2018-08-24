@@ -12,6 +12,8 @@
 
       box-sizing: border-box;
       height:90vh;
+      width:100vw;
+      overflow:hidden;
       background-color:black;
       background-attachment: fixed;
       background-position: center center;
@@ -39,12 +41,14 @@
 .head-box
 {
     padding:2rem;
+    width:100%;
     letter-spacing:0.3rem;
-    border:10px solid #61892f;
+    border:1rem solid #61892f;
     border-radius:1rem;
     display:block;
     height:30rem;
     margin:0 auto;
+    overflow: hidden;
 }
 
 
@@ -99,6 +103,11 @@
   .Primary-head
   {
     font-size:3rem;
+  }
+
+  .Main-head
+  {
+      font-size:6rem;
   }
 }
 
