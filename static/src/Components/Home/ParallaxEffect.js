@@ -91,7 +91,7 @@ class Home extends Component
           <NavigationTwo className="hide"/>
           <div className="paral1" >
             <div className="head-box">
-              <h1 className="Primary-head wow fadeIn"> WELCOME TO </h1>
+              <h1 className="Primary-head wow fadeIn"> WELCOME TO <br/> </h1>
               <span className="Main-head wow fadeIn " data-wow-duration="1s" data-wow-delay="0.4s" >INNOVATION LABS </span>
             </div>
           </div>
