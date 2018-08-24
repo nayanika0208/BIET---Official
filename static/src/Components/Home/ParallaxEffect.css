@@ -1,4 +1,4 @@
-.Particle
+.Particle          /*position of particles*/
 {
   position:absolute;
   top:0px;
@@ -11,29 +11,25 @@
 .paral1{
 
       box-sizing: border-box;
- /*background:linear-gradient(to bottom, rgb(34,38, 41,0.5),rgba(34,38,41,0.5)),url("img2.8.jpeg");    /* Set a specific height */
-    height:90vh;
-        /* Create the parallax scrolling effect */
-        background-color:black;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+      height:90vh;
+      background-color:black;
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align:center;
+      display:flex;
+      padding:6rem 5rem;
+      margin-top:15rem;
+    }
+    
 
-    text-align:center;
-
-    display:flex;
-
-
-    padding:6rem 5rem;
-    margin-top:15rem;
-
-}
 .paral1 .paral1-image {
   width: 100%;
   overflow: hidden;
   position: absolute;
 }
+
 
 .paral1 .paral1-image img {
   width: 100%;
@@ -42,88 +38,30 @@
 
 .head-box
 {
-    /*background-color:rgba(0,0,0,0.6);*/
-    padding:20px;
-    letter-spacing:3px;
+    padding:2rem;
+    letter-spacing:0.3rem;
     border:10px solid #61892f;
     border-radius:1rem;
     display:block;
     height:30rem;
     margin:0 auto;
-
 }
 
-
-
-/* The typing effect */
-/*
-@keyframes typing {
-  from { width: 0% }
-  to { width: 50% }
-}
-*/
-/* The typewriter cursor effect */
-/*
-@keyframes blink-caret {
-  from, to { border-color: white }
-  100% { border-color: black; }
-}
-
-
-*/
 
 
 .Primary-head
 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 1rem; /* Adjust as needed */
+   
+    margin: 0 auto;
+    letter-spacing: 1rem;
     font-size:5rem;
     display:inline-block;
     color:white;
     font-weight:800;
     font-family:myfirstFont-1;
     text-align:center;
-    /*
-     animation:
-    typing 3.5s steps(10, end),
-    blink-caret .75s step-end infinite;*/
-}
-@media only screen and (max-width: 56.25em){
-  .Primary-head
-  {
-    font-size:3rem;
-  }
 }
 
-
-
-
-.Home_About-box{
-    height:50rem;
-    position:relative;
-}
-
-.Paragraph{
-    font-size:3rem;
-    color:#fff;
-    font-weight: 1000;
-}
-
-.left-part
-{
-    position:absolute;
-    left:0px;
-    top:0px;
-    display:inline-block;
-    width:100%;
-    height:100%;
-    background-color:#222629;
-    clip-path: polygon(0 0, 81% 0, 63% 100%, 0 100%);
-
-}
 
 
 .Secondary-head
@@ -138,6 +76,64 @@
 
 }
 
+
+
+.Main-head
+{
+
+    font-size:10rem;
+    display:inline-block;
+    color:whitesmoke;
+    padding:5px;
+    border-radius:5px;
+    margin-top: 3rem;
+    margin-bottom:10px;
+    font-family:myFirstFont-2;
+    letter-spacing: 0.5rem;
+}
+
+
+
+@media only screen and (max-width: 56.25em)
+{
+  .Primary-head
+  {
+    font-size:3rem;
+  }
+}
+
+
+
+.Home_About-box
+{
+    height:50rem;
+    position:relative;
+}
+
+
+
+.Paragraph
+{
+    
+    font-size:3rem;
+    color:#fff;
+    font-weight: 1000;
+}
+
+
+
+
+.left-part
+{
+    position:absolute;
+    left:0px;
+    top:0px;
+    display:inline-block;
+    width:100%;
+    height:100%;
+    background-color:#222629;
+    clip-path: polygon(0 0, 81% 0, 63% 100%, 0 100%);
+}
 
 .about_secondary_head
 {
@@ -193,60 +189,9 @@
 }
 
 
-.Main-head
-{
-
-      font-size:10rem;
-
-    display:inline-block;
-    color:whitesmoke;
-    padding:5px;
-    border-radius:5px;
-    margin-top: 3rem;
-    margin-bottom:10px;
-    font-family:myFirstFont-2;
-    letter-spacing: 0.5rem;
-}
-
-
-
-.jarallax {
-    position: relative;
-    z-index: 200;
-}
-/*.jarallax > .para12 {
-    position: absolute;
-
-    object-fit: cover;
-     support for plugin https://github.com/bfred-it/object-fit-images
-    font-family: 'object-fit: cover;';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}*/
-
-
-.paral3{
-    /* The image used */
-
-        /* Create the parallax scrolling effect */
-
-
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding:3rem 0;
-
-
-
-}
 .hide{
     transform: translateY(-100%);
 }
-
-
 
 
 .head-back
@@ -258,6 +203,3 @@
     height:250px;
 }
 
-.hideNav{
-    transform: translateY(-100%);
-}
