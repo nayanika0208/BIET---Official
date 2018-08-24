@@ -46,7 +46,7 @@
     border:1rem solid #61892f;
     border-radius:1rem;
     display:block;
-    height:30rem;
+    height:fit-content;
     margin:0 auto;
     overflow: hidden;
     position:absolute;
