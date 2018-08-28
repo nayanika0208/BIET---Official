@@ -59,3 +59,34 @@ top:10%;
 left:85%;
 margin-right:10rem;
 }
+
+@media only screen and (max-width: 500px){
+
+
+  .Home3{
+  position:absolute;
+  top:1%;
+
+  }
+  .About3{
+   position:absolute;
+  top:1%;
+
+  }
+
+  .Project3{
+  position: absolute;
+  top:1%;
+
+  }
+  .JoinNew3{
+  position: absolute;
+  top:1%;
+
+  }
+  .Blogs3{
+  position: absolute;
+  top:1%;
+  
+  }
+}

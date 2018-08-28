@@ -114,11 +114,40 @@ li {
     left:90%;
     margin-right:10rem;
 }
-@media only screen and (max-width: 56.25em){
+@media only screen and (max-width: 500px){
+
+  .navlogo{
+      position:absolute;
+      top:10%;
+      left:0%;
+      opacity: 1
+  }
+  .half-circle{
+  border:none;
+}
+
   .Home{
-    left: 5%;
+      position:absolute;
+      top:1%;
+      left:25%;
   }
   .About{
-    left: 20%;
+      position:absolute;
+      top:1%;
+      left:40%;
   }
+
+  .Project{
+      position: absolute;
+      top:1%;
+      left:55%;
+      margin-right:10rem;
+  }
+  .JoinNew{
+      position: absolute;
+      top:1%;
+      left:70%;
+      margin-right:10rem;
+  }
+
 }

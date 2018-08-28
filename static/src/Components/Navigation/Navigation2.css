@@ -58,3 +58,36 @@ li {
     left:85%;
     margin-right:10rem;
 }
+@media only screen and (max-width: 500px){
+
+  .Home2{
+
+      top:1%;
+      left:25%;
+
+  }
+  .About2{
+
+      top:1%;
+      left:40%;
+
+  }
+  .Project2{
+
+      top:1%;
+      left:55%;
+      margin-right:10rem;
+  }
+  .JoinNew2{
+
+      top:1%;
+      left:70%;
+
+  }
+  .Blogs2{
+
+      top:1%;
+      left:85%;
+
+  }
+}

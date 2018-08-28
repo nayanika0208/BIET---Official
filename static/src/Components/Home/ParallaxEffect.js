@@ -38,21 +38,21 @@ const para=
 
 class Home extends Component
 {
-  
+
   constructor(props) {
     super(props)
     this.handleScroll = this.handleScroll.bind(this);
   }
 
-  
-  componentDidMount() 
+
+  componentDidMount()
   {
       window.scrollTo(0, 0);
     window.addEventListener('scroll', this.handleScroll);
       new WOW().init();
   }
-    
-    
+
+
   componentWillUnmount() {
     window.removeEventListener('scroll', this.handleScroll);
   }
@@ -62,28 +62,28 @@ class Home extends Component
   handleScroll(e) {
    const nav1=document.querySelector("#nav1");
    const nav2=document.querySelector('#nav2');
-   
+
    if(window.scrollY>105){
     nav1.style.transform="translateY(-100%)";
     nav1.style.display="none";
-    nav2.style.display="block"
+    nav2.style.display="block";
     nav2.style.transform="translateY(0%)";
   }
     else{
       nav2.style.display="none";
       nav2.style.transform="translateY(-100%)";
-      nav1.style.display="block";
+      nav1.style.display="flex";
       nav1.style.transform="translateY(0%)";
     }
   }
 
 
   render()
-  
+
   {
-    
+
     return (
-      
+
       <div>
         <div>
           <Particles params={para} className="Particle"/>
@@ -106,16 +106,16 @@ class Home extends Component
             </div>
             </div>
           </div>
-          
+
           <Parallax
           bgImage={require('./img4.4.jpg')}
           strength={500}
           bgClassName="paral3">
-              
+
           <ProjectDisplay/>
-          
+
           </Parallax>
-          
+
         </div>
         <div className="head-back">
           <Footer/>

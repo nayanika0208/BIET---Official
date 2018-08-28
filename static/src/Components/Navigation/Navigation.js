@@ -12,15 +12,17 @@ const Navigation=()=> {
         <div className="temp-box">
         </div>
            <ul id="nav1">
-             <div className="leftPart">
+
+             {/* <label for="toggle" class="toggle_bar">&#9776;</label>
+             <input type="checkbox" id="toggle"/> */}
+
+
                  <NavLink className="Nav-link Home" to={`/`} > <Button text={"Home"} className=""/></NavLink>
                  <NavLink className="Nav-link About" to={`/About`} > <Button text={"About"} className="nav-font"/></NavLink>
-             </div>
-                <li className="navlogo" ><img src={mainLogo} alt="Logo"  className="half-circle"/></li>
-             <div  className="rightPart">
+                 <li className="navlogo" ><img src={mainLogo} alt="Logo"  className="half-circle"/></li>
                  <NavLink className="Nav-link Project" to={`/OngoingProject`} > <Button text={"Projects"} className=""/></NavLink>
                  <NavLink className="Nav-link JoinNew" to={`/JoinNew`} > <Button text={"Join"} className=""/></NavLink>
-            </div>
+
           </ul>
       </div>
  );
